@@ -23,9 +23,9 @@ export function Standings() {
   const rows = standings.map((element) => (
     <Table.Tr key={element.team}>
       <Table.Td>{element.team}</Table.Td>
-      <Table.Td>{element.PtsAgainst}</Table.Td>
-      <Table.Td>{element.PtsFor}</Table.Td>
       <Table.Td>{element.record}</Table.Td>
+      <Table.Td>{element.PtsFor}</Table.Td>
+      <Table.Td>{element.PtsAgainst}</Table.Td>
     </Table.Tr>
   ));
 

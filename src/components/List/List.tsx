@@ -6,7 +6,7 @@ interface AccordionLabelProps {
   name: string;
   image: string;
   coach: string;
-  rank: string;
+  rank: number;
 }
 
 function AccordionLabel({ name, image, coach, rank }: AccordionLabelProps) {
@@ -37,13 +37,14 @@ function AccordionLabel({ name, image, coach, rank }: AccordionLabelProps) {
 }
 
 export default function List() {
-  const items = teams.map((item) => (
+  const items = teams.sort((a,b) => a.rank - b.rank).map((item) => (
     <Accordion.Item value={item.id} key={item.name}>
       <Accordion.Control>
         <AccordionLabel {...item} />
       </Accordion.Control>
       <Accordion.Panel>
-        <Text size="sm">{item.content}</Text>
+        <Text size="sm" className={classes.listContent}>{item.content}</Text>
+        {/* {item.content} */}
       </Accordion.Panel>
     </Accordion.Item>
   ));
