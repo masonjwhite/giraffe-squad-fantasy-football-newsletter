@@ -5,6 +5,10 @@
     justify-content: center;
 
     margin: 1rem 10vw;
+
+    @media (max-width: $mantine-breakpoint-md) {
+      margin: 0 5vw;
+     }
 }
 
 .title {

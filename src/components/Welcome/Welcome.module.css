@@ -4,7 +4,10 @@
   font-weight: 900;
   letter-spacing: rem(-2px);
 
+  margin-bottom: .75rem;
+
   @media (max-width: $mantine-breakpoint-md) {
-    font-size: rem(50px);
+    font-size: rem(40px);
+    margin-top: 1rem !important
   }
 }
