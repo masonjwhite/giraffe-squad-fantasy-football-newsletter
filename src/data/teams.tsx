@@ -98,7 +98,7 @@ const adamArticle = (
 
 const masonArticle = (
   <>
-  <Title order={3} >Florida Man Loses Fantasy but Wins Reality </Title>
+  <Title order={3}>Florida Man Loses Fantasy but Wins Reality </Title>
   <Text size="xl">Fantasy football was probably the last thing on coach Mason and his team's mind this weekend as he tied the knot! Headed down to Florida for his honeymoon, the Jaguar King loses his first game as a Florida Man. Average Joes were feeling generous, but picked a gift off the registry in the form of 26 points from Justin Jefferson. Russel Wilson catered the event, but for once letting Russ cook didn't end in disaster as he served up 22 fantasy points of his own. This matchup also saw an epic showdown between tight ends, as Dawson Knox and Luke Musgrave duked it out in a clash to see who could be more useless for fantasy owners. In the end Musgrave came out victorious scoring 1.1 points (1 reception for 1 yards) compared to Knox's monster afternoon of 2.2 points (1 catch 12 yards)  </Text>
     <Alert variant="light" color="orange" title="Fun Fact" style={{ marginTop: '1rem' }}>
       Yahoo gave Mason the worst draft-day grade (yahoo is small brain)
@@ -109,6 +109,8 @@ const masonArticle = (
 
 const kristenArticle = (
   <>
+   <Title order={3}>Managing Expectations</Title>
+   <Text size="xl">A shocking win last week over Henry's Hustle jumped this team a couple spots in these rankings. Any Given Sunday has been leaned on star running back Christian McCaffrey to this point in the season and he has delivered a string of unbelievable performances. McCaffrey has been the clear steal of the draft in hindsight, and at this point just needs any help he can get from the rest of the team. If Kristen can inspire second running back AJ Dillon to play competently as an average performer, McCaffrey can do the rest and drag this squad to the playoffs. A win this week over Pattibot would go a long way in proving this team is a contender, not a pretedner.</Text>
     <Alert variant="light" color="orange" title="Fun Fact" style={{ marginTop: '1rem' }}>
       Christian McCaffrey is the #1 fantasy player this season with 120 points! (Next highest is Justin Jefferson with 103)
     </Alert>
@@ -118,6 +120,8 @@ const kristenArticle = (
 
 const davidArticle = (
   <>
+     <Title order={3} >Dak to Basics</Title>
+     <Text size="xl">Mixon it with Dak sits near the bottom of the Power Rankings based on their ELO rating, but can return to the win column this week with a tough matchup against the DakStreet Boys, in the "battle of the Daks". DakStreet Boys is favored but anything can happen. David's RB Breece Hall is reportedly off his snap-count this week as it marks the anniversery of his ACL injury. So look out for some more usage in the redzone from him. But with several starters on bye this week, Mixon it may find themselves just treading water in this showdown.</Text>
     <Alert variant="light" color="orange" title="Fun Fact" style={{ marginTop: '1rem' }}>
       Dak stealers never prosper.
     </Alert>
@@ -127,6 +131,8 @@ const davidArticle = (
 
 const karaArticle = (
   <>
+  <Title order={3} >Trouble in Karadise</Title>
+  <Text size="xl">You hate to see it. Kara's team is still searching for their first win of the season, but with Jonathan Taylor designated to reuturn in the coming weeks, I wouldn't count this team out altogether just yet. Is he the missing piece? Or is it too little too late?</Text>
     <Alert variant="light" color="orange" title="Fun Fact" style={{ marginTop: '1rem' }}>
       With a 4 game losing streak, Kara is just 11 away from tying Kristen's all-time losing streak record of 15 in a row.
     </Alert>
