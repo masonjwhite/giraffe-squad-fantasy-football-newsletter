@@ -83,10 +83,10 @@ const adamArticle = (
    <Blockquote color="grey" radius="xs" iconSize={30} cite="– Will" mt="xl">
      Care to comment on your teams recent stumbles this week?
     </Blockquote>
-    <Blockquote color="blue" radius="xs" iconSize={30} cite="– Audrey" mt="xl">
+    <Blockquote color="blue" radius="xs" iconSize={30} cite="– Adam" mt="xl">
       Ooooof
     </Blockquote>
-    <Blockquote color="blue" radius="xs" iconSize={30} cite="– Audrey" mt="xl">
+    <Blockquote color="blue" radius="xs" iconSize={30} cite="– Adam" mt="xl">
       All I can say is, I got in my own way. I should've stuck to my tried and ture game plan nof thinking about my lineup for no more than three minutes. But I didn't. I thought about it for like fifteen minutes and I ended up shooting myself in the foot. All I had to do was start the Dallas defense instead of the Chiefs... but I didn't. I failed. I am a terrible failure.
     </Blockquote>
     <Alert variant="light" color="orange" title="Fun Fact" style={{ marginTop: '1rem' }}>
