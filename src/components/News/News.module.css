@@ -1,0 +1,27 @@
+.container {
+    margin: 1rem 10vw;
+
+    @media (max-width: $mantine-breakpoint-md) {
+       margin: 1rem 5vw;
+      }
+}
+
+.title:hover {
+    color: orange;
+}
+
+.expandable:hover {
+    cursor: pointer;
+}
+
+.quote {
+    margin: 2rem;
+}
+
+.quoteReply {
+    margin: 2rem 3rem;;
+}
+
+.mainImage {
+    max-height: 70vh;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.cdnfonts.com/css/espn');
+
+.navbar {
+    width: 100%;
+    margin-top: 0 !important;
+    background-color: orange;
+    padding: 0 1rem;
+
+    display: flex;
+}
+
+.espnFont {
+    font-family: 'ESP', sans-serif;
+    font-family: 'ESP_Italic', sans-serif;
+    font-family: 'ESP_Bold', sans-serif;
+    font-family: 'ESP_Bold_Italic', sans-serif;
+
+    color: #1a1b1e;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        font-size: rem(10px);
+      }
+}
+
+.lightEspnFont {
+    font-family: 'ESP', sans-serif;
+    font-family: 'ESP_Italic', sans-serif;
+    font-family: 'ESP_Bold', sans-serif;
+    font-family: 'ESP_Bold_Italic', sans-serif;
+
+    color: white !important;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        font-size: rem(10px);
+      }
+}

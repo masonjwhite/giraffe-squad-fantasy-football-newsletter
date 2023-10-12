@@ -1,4 +1,4 @@
-import { Title, Text, Anchor } from '@mantine/core';
+import { Title, Text } from '@mantine/core';
 import classes from './Welcome.module.css';
 
 export function Welcome() {
@@ -6,12 +6,15 @@ export function Welcome() {
     <>
       <Title className={classes.title} ta="center" mt={100}>
         I'm a Giraffe!
-        <Text inherit variant="gradient" component="span" gradient={{ from: 'orange', to: 'yellow' }}>
+        <Text
+          inherit
+          variant="gradient"
+          component="span"
+          gradient={{ from: 'orange', to: 'yellow' }}
+        >
           Power Rankings
         </Text>
       </Title>
-
-
 
       {/* <Text color="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
         This starter Vite project includes a minimal setup, if you want to learn more on Mantine +

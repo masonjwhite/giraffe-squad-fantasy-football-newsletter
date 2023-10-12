@@ -2,23 +2,20 @@ import { Table, Title } from '@mantine/core';
 import classes from './StandingsTable.module.css';
 
 export function Standings() {
-
-    const standings = [
-        { team: 'DakStreet Boys', record: '4-0', PtsFor: 504, PtsAgainst: 350 },
-        { team: 'The Bus Stop', record: '3-1', PtsFor: 511, PtsAgainst: 459 },
-        { team: 'Pattibot', record: '3-1', PtsFor: 466, PtsAgainst: 431 },
-        { team: 'Henrys Hustle', record: '2-2', PtsFor: 520, PtsAgainst: 563 },
-        { team: 'Jaguar King', record: '2-2', PtsFor: 458, PtsAgainst: 411 },
-        { team: 'VisiGoffs', record: '2-2', PtsFor: 477, PtsAgainst: 443 },
-        { team: 'Lets Get Wiested', record: '2-2', PtsFor: 447, PtsAgainst: 526 },
-        { team: 'Average Joes', record: '2-2', PtsFor: 438, PtsAgainst: 451 },
-        { team: 'CeeDee Phone Home', record: '2-2', PtsFor: 405, PtsAgainst: 436 },
-        { team: 'Any Given Sunday', record: '1-3', PtsFor: 445, PtsAgainst: 490 },
-        { team: 'Mixon it with Dak', record: '1-3', PtsFor: 437, PtsAgainst: 464 },
-        { team: 'Hurts So Good', record: '0-4', PtsFor: 428, PtsAgainst: 540 },
-      ];
-
-
+  const standings = [
+    { team: 'DakStreet Boys', record: '5-0', PtsFor: 658, PtsAgainst: 431 },
+    { team: 'The Bus Stop', record: '4-1', PtsFor: 647, PtsAgainst: 569 },
+    { team: 'Henrys Hustle', record: '3-2', PtsFor: 617, PtsAgainst: 643 },
+    { team: 'Pattibot', record: '3-2', PtsFor: 599, PtsAgainst: 571 },
+    { team: 'Average Joes', record: '3-2', PtsFor: 564, PtsAgainst: 549 },
+    { team: 'Jaguar King', record: '2-3', PtsFor: 595, PtsAgainst: 547 },
+    { team: 'Any Given Sunday', record: '2-3', PtsFor: 586, PtsAgainst: 623 },
+    { team: 'VisiGoffs', record: '2-3', PtsFor: 575, PtsAgainst: 569 },
+    { team: 'Lets Get Wiested', record: '2-3', PtsFor: 527, PtsAgainst: 622 },
+    { team: 'CeeDee Phone Home', record: '2-3', PtsFor: 522, PtsAgainst: 576 },
+    { team: 'Hurts So Good', record: '1-4', PtsFor: 568, PtsAgainst: 658 },
+    { team: 'Mixon it with Dak', record: '1-4', PtsFor: 518, PtsAgainst: 619 },
+  ];
 
   const rows = standings.map((element) => (
     <Table.Tr key={element.team}>
@@ -31,9 +28,7 @@ export function Standings() {
 
   return (
     <div className={classes.container}>
-      <Title className={classes.title}>
-        Standings
-      </Title>
+      <Title className={classes.title}>Standings</Title>
       <Table striped withTableBorder withColumnBorders>
         <Table.Thead>
           <Table.Tr>

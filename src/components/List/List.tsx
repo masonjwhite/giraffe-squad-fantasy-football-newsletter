@@ -14,20 +14,17 @@ function AccordionLabel({ name, image, coach, rank }: AccordionLabelProps) {
     <Group wrap="nowrap">
       <div>
         <Text
-        size="xl"
-        fw={900}
-        variant="gradient"
-        gradient={{ from: 'orange', to: 'yellow', deg: 90 }}
-      >
-        {rank}
-      </Text>
+          size="xl"
+          fw={900}
+          variant="gradient"
+          gradient={{ from: 'orange', to: 'yellow', deg: 90 }}
+        >
+          {rank}
+        </Text>
       </div>
       <Avatar src={image} radius="xl" size="lg" />
       <div>
         <Title>{name}</Title>
-        {/* <Text size="sm" c="dimmed" fw={400}>
-          {description}
-        </Text> */}
         <Title order={5} c="dimmed">
           {coach}
         </Title>
@@ -37,17 +34,20 @@ function AccordionLabel({ name, image, coach, rank }: AccordionLabelProps) {
 }
 
 export default function List() {
-  const items = teams.sort((a,b) => a.rank - b.rank).map((item) => (
-    <Accordion.Item value={item.id} key={item.name}>
-      <Accordion.Control>
-        <AccordionLabel {...item} />
-      </Accordion.Control>
-      <Accordion.Panel>
-        <Text size="sm" className={classes.listContent}>{item.content}</Text>
-        {/* {item.content} */}
-      </Accordion.Panel>
-    </Accordion.Item>
-  ));
+  const items = teams
+    .sort((a, b) => a.rank - b.rank)
+    .map((item) => (
+      <Accordion.Item value={item.id} key={item.name}>
+        <Accordion.Control>
+          <AccordionLabel {...item} />
+        </Accordion.Control>
+        {/* <Accordion.Panel>
+          <Text size="sm" className={classes.listContent}>
+            {item.content}
+          </Text>
+        </Accordion.Panel> */}
+      </Accordion.Item>
+    ));
 
   return (
     <div className={classes.listContainer}>
