@@ -10,7 +10,7 @@ export default function Hero() {
   useEffect(() => {
     const updateHeight = () => {
       if (heroContainerRef.current) {
-        setContainerHeight(heroContainerRef.current.offsetHeight);
+        setContainerHeight((heroContainerRef.current as HTMLElement).offsetHeight);
       }
     };
 
