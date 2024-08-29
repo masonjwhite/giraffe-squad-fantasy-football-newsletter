@@ -16,8 +16,9 @@ function AccordionLabel({ name, image, coach, rank }: AccordionLabelProps) {
         <Text
           size="xl"
           fw={900}
-          variant="gradient"
-          gradient={{ from: 'orange', to: 'yellow', deg: 90 }}
+          // variant="gradient"
+          // gradient={{ from: 'orange', to: 'yellow', deg: 90 }}
+          c="#ff9c5a"
         >
           {rank}
         </Text>

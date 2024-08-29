@@ -8,9 +8,10 @@ export function Welcome() {
         I'm a Giraffe!
         <Text
           inherit
-          variant="gradient"
+          // variant="gradient"
           component="span"
-          gradient={{ from: 'orange', to: 'yellow' }}
+          c="#ff9c5a"
+          // gradient={{ from: '#ff9c5a', to: '#fbd089' }}
         >
           Power Rankings
         </Text>

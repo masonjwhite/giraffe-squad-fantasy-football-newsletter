@@ -15,6 +15,7 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Snickers from '../../images/snickers3.png';
+import Jersey from '../../images/Giraffe_Jersey.png';
 import SnickersCloseUp from '../../images/snickers1.png';
 
 import classes from './News.module.css';
@@ -62,7 +63,7 @@ export default function News() {
       <Grid>
         <Grid.Col span={{ md: 12, lg: 8 }} className={classes.expandable}>
           <Box onClick={toggle}>
-            <Image radius="md" src={Snickers} className={classes.mainImage} />
+            <Image radius="md" src={Jersey} className={classes.mainImage} />
             <Title className={classes.title}>Squirrel-Steroids Scandal</Title>
             <Text>
               Exclusive Investigation Uncovers Shocking Scandal: Squirrel Masterminds Fantasy
