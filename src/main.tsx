@@ -14,6 +14,7 @@ import NotFound from './routes/notFound';
 
 // TODO MW:
 // - Rework existing components to utilize new data/teams struture
+// - Styles for WeekNav component
 
 const router = createBrowserRouter([
     {

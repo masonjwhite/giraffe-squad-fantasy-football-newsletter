@@ -14,7 +14,6 @@ import {
   Divider,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import Snickers from '../../images/snickers3.png';
 import Jersey from '../../images/Giraffe_Jersey.png';
 import SnickersCloseUp from '../../images/snickers1.png';
 

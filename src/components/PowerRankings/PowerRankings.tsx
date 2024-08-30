@@ -1,15 +1,19 @@
 import { Group, Avatar, Text, Accordion, Title } from '@mantine/core';
-import teams from '../../data/teams';
-import classes from './List.module.css';
+import { Team } from '../../types';
+import classes from './PowerRankings.module.css';
 
 interface AccordionLabelProps {
   name: string;
-  image: string;
+  logo: string;
   coach: string;
   rank: number;
 }
 
-function AccordionLabel({ name, image, coach, rank }: AccordionLabelProps) {
+interface PowerRankingsProps {
+  teams: Team[];
+}
+
+function AccordionLabel({ name, logo, coach, rank }: AccordionLabelProps) {
   return (
     <Group wrap="nowrap">
       <div>
@@ -23,7 +27,7 @@ function AccordionLabel({ name, image, coach, rank }: AccordionLabelProps) {
           {rank}
         </Text>
       </div>
-      <Avatar src={image} radius="xl" size="lg" />
+      <Avatar src={logo} radius="xl" size="lg" />
       <div>
         <Title>{name}</Title>
         <Title order={5} c="dimmed">
@@ -34,19 +38,19 @@ function AccordionLabel({ name, image, coach, rank }: AccordionLabelProps) {
   );
 }
 
-export default function List() {
+export default function PowerRankings({ teams }: PowerRankingsProps) {
   const items = teams
     .sort((a, b) => a.rank - b.rank)
-    .map((item) => (
-      <Accordion.Item value={item.id} key={item.name}>
+    .map((team) => (
+      <Accordion.Item value={team.id} key={team.name}>
         <Accordion.Control>
-          <AccordionLabel {...item} />
+          <AccordionLabel {...team} />
         </Accordion.Control>
-        {/* <Accordion.Panel>
+        <Accordion.Panel>
           <Text size="sm" className={classes.listContent}>
-            {item.content}
+            {team.powerRankingText}
           </Text>
-        </Accordion.Panel> */}
+        </Accordion.Panel>
       </Accordion.Item>
     ));
 

@@ -15,9 +15,9 @@ export default function WeekNav({ prevWeek, nextWeek }: WeekNavProps) {
             {prevWeek && (
                 <Link to={`/giraffe-squad-fantasy-football/weeks/${prevWeekStr}`}>
                     <Text style={{ color: 'white' }}>
+                        &lt;&lt;
                         Week{' '}
                             {prevWeekStr}{' '}
-                        &lt;&lt;
                     </Text>
                 </Link>
             )}
