@@ -13,7 +13,10 @@ import NotFound from './routes/notFound';
 // import { theme } from './theme';
 
 // TODO MW:
-// - Rework existing components to utilize new data/teams struture
+// - Week selector styles
+// - News component
+// - Scores component
+// - Standings component
 // - Styles for WeekNav component
 
 const router = createBrowserRouter([

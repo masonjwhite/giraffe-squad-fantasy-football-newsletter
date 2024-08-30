@@ -1,3 +1,4 @@
+import WeekSelector from '../../components/WeekSelector/WeekSelector';
 import PowerRankings from '../../components/PowerRankings/PowerRankings';
 import WeekNav from '../../components/WeekNav/WeekNav';
 import * as data from '../../data/week2';
@@ -5,7 +6,7 @@ import * as data from '../../data/week2';
 export default function Week2() {
     return (
         <div>
-            <h1>WEEK 2</h1>
+            <WeekSelector />
             <PowerRankings
               teams={data.teams}
             />

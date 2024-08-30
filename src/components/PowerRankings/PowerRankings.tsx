@@ -6,14 +6,14 @@ interface AccordionLabelProps {
   name: string;
   logo: string;
   coach: string;
-  rank: number;
+  powerRank: number;
 }
 
 interface PowerRankingsProps {
   teams: Team[];
 }
 
-function AccordionLabel({ name, logo, coach, rank }: AccordionLabelProps) {
+function AccordionLabel({ name, logo, coach, powerRank }: AccordionLabelProps) {
   return (
     <Group wrap="nowrap">
       <div>
@@ -24,7 +24,7 @@ function AccordionLabel({ name, logo, coach, rank }: AccordionLabelProps) {
           // gradient={{ from: 'orange', to: 'yellow', deg: 90 }}
           c="#ff9c5a"
         >
-          {rank}
+          {powerRank}
         </Text>
       </div>
       <Avatar src={logo} radius="xl" size="lg" />
@@ -40,7 +40,7 @@ function AccordionLabel({ name, logo, coach, rank }: AccordionLabelProps) {
 
 export default function PowerRankings({ teams }: PowerRankingsProps) {
   const items = teams
-    .sort((a, b) => a.rank - b.rank)
+    .sort((a, b) => a.powerRank - b.powerRank)
     .map((team) => (
       <Accordion.Item value={team.id} key={team.name}>
         <Accordion.Control>
@@ -48,7 +48,7 @@ export default function PowerRankings({ teams }: PowerRankingsProps) {
         </Accordion.Control>
         <Accordion.Panel>
           <Text size="sm" className={classes.listContent}>
-            {team.powerRankingText}
+            {team.powerRankText}
           </Text>
         </Accordion.Panel>
       </Accordion.Item>
