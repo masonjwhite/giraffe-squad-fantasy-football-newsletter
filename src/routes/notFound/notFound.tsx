@@ -1,4 +1,4 @@
-import NotFoundMessage from '../components/NotFound/NotFound';
+import NotFoundMessage from '../../components/NotFound/NotFound';
 
 export default function NotFound() {
     return (

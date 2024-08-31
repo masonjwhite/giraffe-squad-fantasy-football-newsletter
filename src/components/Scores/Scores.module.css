@@ -12,14 +12,18 @@
 
 .scoreTileScore {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-
-    margin: 0 1rem;
+    align-items: center;
+    margin: 0 2rem;
 }
 
 .scoreGridCol * {
     border-radius: 0;
+}
+
+.winner {
+    font-weight: 700;
+    color: rgb(255, 156, 90);
 }
 
 .pic {

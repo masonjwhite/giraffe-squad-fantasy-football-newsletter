@@ -1,35 +1,43 @@
 import { Link } from 'react-router-dom';
 import { Text } from '@mantine/core';
+import { CURRENT_PUBLISHED_WEEK } from '../../settings';
+import classes from './WeekNav.module.css';
 
 interface WeekNavProps {
-    prevWeek: Number | null,
-    nextWeek: Number | null,
+    selectedWeek: number;
 }
 
-export default function WeekNav({ prevWeek, nextWeek }: WeekNavProps) {
-    const nextWeekStr = nextWeek?.toString();
-    const prevWeekStr = prevWeek?.toString();
+export default function WeekNav({ selectedWeek }: WeekNavProps) {
+    const showPrevWeek = selectedWeek > 1;
+    const prevWeek = selectedWeek - 1;
+
+    const showNextWeek = selectedWeek < CURRENT_PUBLISHED_WEEK;
+    const nextWeek = selectedWeek + 1;
 
     return (
-        <div>
-            {prevWeek && (
-                <Link to={`/giraffe-squad-fantasy-football/weeks/${prevWeekStr}`}>
-                    <Text style={{ color: 'white' }}>
-                        &lt;&lt;
-                        Week{' '}
-                            {prevWeekStr}{' '}
-                    </Text>
-                </Link>
-            )}
-            {nextWeek && (
-                <Link to={`/giraffe-squad-fantasy-football/weeks/${nextWeekStr}`}>
-                    <Text style={{ color: 'white' }}>
-                        Week{' '}
-                        {nextWeekStr}{' '}
-                        &gt;&gt;
-                    </Text>
-                </Link>
-            )}
+        <div className={classes.weekNavContainer}>
+            <div>
+                {showPrevWeek && (
+                    <Link to={`/giraffe-squad-fantasy-football/weeks/${prevWeek.toString()}`}>
+                        <Text className={classes.linkText}>
+                            &lt;&lt;
+                            Week{' '}
+                            {prevWeek}{' '}
+                        </Text>
+                    </Link>
+                )}
+            </div>
+            <div>
+                {showNextWeek && (
+                    <Link to={`/giraffe-squad-fantasy-football/weeks/${nextWeek.toString()}`}>
+                        <Text className={classes.linkText}>
+                            Week{' '}
+                            {nextWeek}{' '}
+                            &gt;&gt;
+                        </Text>
+                    </Link>
+                )}
+            </div>
         </div>
     );
 }

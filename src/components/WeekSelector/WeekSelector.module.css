@@ -1,0 +1,11 @@
+.button {
+    background-color: unset;
+    color: rgb(255, 156, 90);
+    margin: 0 0 0.5rem 1rem;
+    cursor: pointer;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        margin: .75rem 0;
+        width: 100%;
+    }
+}

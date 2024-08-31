@@ -1,4 +1,6 @@
-import { Team, Matchup } from '../types';
+import { Text, Mark } from '@mantine/core';
+import { Team, Matchup, Article } from '../types';
+import Jersey from '../images/Giraffe_Jersey.png';
 
 export const teams: Team[] = [
   {
@@ -6,7 +8,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_a.png',
       name: 'TBD',
       coach: 'Adam LaCasse',
-      score: 100,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -18,7 +19,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_j.png',
       name: 'TBD',
       coach: 'Jackie Munger',
-      score: 99,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -30,7 +30,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_j.png',
       name: 'TBD',
       coach: 'Jaime Sheppard',
-      score: 100,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -42,7 +41,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_j.png',
       name: 'TBD',
       coach: 'Joe Pecosky',
-      score: 99,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -54,7 +52,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_k.png',
       name: 'TBD',
       coach: 'Kara Prescott',
-      score: 100,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -66,7 +63,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_m.png',
       name: 'TBD',
       coach: 'Marc Bouvier',
-      score: 99,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -78,7 +74,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_m.png',
       name: 'TBD',
       coach: 'Mason White',
-      score: 100,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -90,7 +85,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_n.png',
       name: 'TBD',
       coach: 'Nick Bradfish',
-      score: 99,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -102,7 +96,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_s.png',
       name: 'TBD',
       coach: 'Scott Quinn',
-      score: 100,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -114,7 +107,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_w.png',
       name: 'TBD',
       coach: 'Will Stone',
-      score: 99,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -126,7 +118,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_z.png',
       name: 'TBD',
       coach: 'Zac Fermanis',
-      score: 100,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -138,7 +129,6 @@ export const teams: Team[] = [
       logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_z.png',
       name: 'TBD',
       coach: 'Zari Bazarian',
-      score: 99,
       record: '0-0',
       pointsFor: 0,
       pointsAgainst: 0,
@@ -149,27 +139,90 @@ export const teams: Team[] = [
 
 export const matchups: Matchup[] = [
   {
-    homeTeam: 'adam',
-    awayTeam: 'jackie',
+    homeTeam: {
+      id: 'zari',
+      score: 0,
+    },
+    awayTeam: {
+      id: 'adam',
+      score: 0,
+    },
   },
   {
-    homeTeam: 'jaime',
-    awayTeam: 'joe',
+    homeTeam: {
+      id: 'jackie',
+      score: 0,
+    },
+    awayTeam: {
+      id: 'jaime',
+      score: 0,
+    },
   },
   {
-    homeTeam: 'kara',
-    awayTeam: 'marc',
+    homeTeam: {
+      id: 'joe',
+      score: 0,
+    },
+    awayTeam: {
+      id: 'kara',
+      score: 0,
+    },
   },
   {
-    homeTeam: 'mason',
-    awayTeam: 'nick',
+    homeTeam: {
+      id: 'marc',
+      score: 0,
+    },
+    awayTeam: {
+      id: 'mason',
+      score: 0,
+    },
   },
   {
-    homeTeam: 'scott',
-    awayTeam: 'will',
+    homeTeam: {
+      id: 'nick',
+      score: 0,
+    },
+    awayTeam: {
+      id: 'scott',
+      score: 0,
+    },
   },
   {
-    homeTeam: 'zac',
-    awayTeam: 'zari',
+    homeTeam: {
+      id: 'will',
+      score: 0,
+    },
+    awayTeam: {
+      id: 'zac',
+      score: 0,
+    },
   },
+];
+
+export const article: Article = {
+  coverImage: Jersey,
+  title: 'Week 2 Article',
+  summary: 'A really interesting article!',
+  author: 'Mason White',
+  content: (
+    <Text>
+      In the vast, unpredictable realm of fantasy football, one team recently emerged from
+      the depths of despair to savor the sweet nectar of victory for the very first time.
+      Yes, you read that right; the underdog, the underachiever, last weeks power
+      rankings laughingstock, <Mark color="orange">Hurts So Good</Mark>, has finally
+      broken the curse and tasted the glory of a win.
+    </Text>
+  ),
+};
+
+export const jokeArticles: string[] = [
+  'Lorem ipsum dolor sit amet',
+  'Incredible Breakthrough: Researchers Deploy App on the First Try Without Bamboozlement',
+  'Alien Invasion Aborted as Extraterrestrials Discover Philadelphia.',
+  "Chiefs Forced to Forfeit Victory Because Although They Won Together, it Wasn't With Purpose",
+  "World's Most Advanced Fiber Optics Developed: Can NPM Install in Only 90 Minutes",
+  "Exclusive: Man Discovers a Hidden Third Pedal in His Car – Claims to Have Invented 'Turbo Reverse'",
+  'Fish Oil Softgel Supplements Key to Immortality',
+  'New Company CEO Crowned After Man Reports All Four Phishing Attempts',
 ];

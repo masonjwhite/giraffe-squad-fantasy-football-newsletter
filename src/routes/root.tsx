@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import Hero from '../components/Hero/Hero';
-import Nav from '../components/Nav/Nav';
-import { CURRENT_WEEK } from '../settings';
+import Banner from '../components/Banner/Banner';
+import { CURRENT_PUBLISHED_WEEK } from '../settings';
 
 export default function Root() {
     const { pathname } = useLocation();
@@ -13,14 +13,14 @@ export default function Root() {
 
     useEffect(() => {
         if (isOnRootPath) {
-            navigate(`${basePath}/weeks/${CURRENT_WEEK}`);
+            navigate(`${basePath}/weeks/${CURRENT_PUBLISHED_WEEK}`);
         }
     }, []);
 
     return (
         <>
             <Hero />
-            <Nav />
+            <Banner />
             <Outlet />
         </>
     );

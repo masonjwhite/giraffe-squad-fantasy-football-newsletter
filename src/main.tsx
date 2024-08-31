@@ -9,15 +9,8 @@ import Root from './routes/root';
 import Week1 from './routes/weeks/week1';
 import Week2 from './routes/weeks/week2';
 import Week3 from './routes/weeks/week3';
-import NotFound from './routes/notFound';
+import NotFound from './routes/notFound/notFound';
 // import { theme } from './theme';
-
-// TODO MW:
-// - Week selector styles
-// - News component
-// - Scores component
-// - Standings component
-// - Styles for WeekNav component
 
 const router = createBrowserRouter([
     {

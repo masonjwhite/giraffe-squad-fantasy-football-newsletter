@@ -1,9 +1,10 @@
+import { ReactNode } from 'react';
+
 export interface Team {
     id: string;
     logo: string;
     name: string;
     coach: string;
-    score: number;
     record: string;
     pointsFor: number;
     pointsAgainst: number;
@@ -12,6 +13,20 @@ export interface Team {
 }
 
 export interface Matchup {
-    homeTeam: string;
-    awayTeam: string;
+    homeTeam: {
+        id: string;
+        score: number;
+    };
+    awayTeam: {
+        id: string;
+        score: number;
+    }
+}
+
+export interface Article {
+    coverImage: string;
+    title: string;
+    summary: string;
+    author: string;
+    content: ReactNode;
 }

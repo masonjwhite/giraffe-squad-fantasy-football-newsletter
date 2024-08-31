@@ -1,5 +1,6 @@
 import { Group, Avatar, Text, Accordion, Title } from '@mantine/core';
 import { Team } from '../../types';
+import globalClasses from '../../global.module.css';
 import classes from './PowerRankings.module.css';
 
 interface AccordionLabelProps {
@@ -18,11 +19,8 @@ function AccordionLabel({ name, logo, coach, powerRank }: AccordionLabelProps) {
     <Group wrap="nowrap">
       <div>
         <Text
+          className={classes.powerRank}
           size="xl"
-          fw={900}
-          // variant="gradient"
-          // gradient={{ from: 'orange', to: 'yellow', deg: 90 }}
-          c="#ff9c5a"
         >
           {powerRank}
         </Text>
@@ -47,7 +45,7 @@ export default function PowerRankings({ teams }: PowerRankingsProps) {
           <AccordionLabel {...team} />
         </Accordion.Control>
         <Accordion.Panel>
-          <Text size="sm" className={classes.listContent}>
+          <Text className={classes.powerRankText} size="sm">
             {team.powerRankText}
           </Text>
         </Accordion.Panel>
@@ -55,10 +53,15 @@ export default function PowerRankings({ teams }: PowerRankingsProps) {
     ));
 
   return (
-    <div className={classes.listContainer}>
-      <Accordion chevronPosition="right" variant="contained" className={classes.accordian}>
-        {items}
-      </Accordion>
-    </div>
+    <>
+      <Title className={globalClasses.sectionHeader}>
+        Power Rankings
+      </Title>
+      <div className={classes.listContainer}>
+        <Accordion chevronPosition="right" variant="contained" className={classes.accordian}>
+          {items}
+        </Accordion>
+      </div>
+    </>
   );
 }

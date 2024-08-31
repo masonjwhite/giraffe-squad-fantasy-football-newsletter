@@ -1,0 +1,12 @@
+.weekNavContainer {
+    margin: 1rem 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkText {
+    color: rgb(255, 156, 90);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
