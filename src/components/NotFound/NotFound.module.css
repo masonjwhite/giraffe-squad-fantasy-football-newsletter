@@ -1,0 +1,23 @@
+
+.messageContainer {
+    height: 90vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.path {
+    color: rgb(255, 156, 90);
+}
+
+.link {
+    color: rgb(255, 156, 90);
+    margin-top: 3rem;
+    font-weight: 700;
+}

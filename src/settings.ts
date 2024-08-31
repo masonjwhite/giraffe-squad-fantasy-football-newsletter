@@ -1,0 +1,1 @@
+export const CURRENT_PUBLISHED_WEEK = 1;

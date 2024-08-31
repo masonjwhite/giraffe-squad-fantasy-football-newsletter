@@ -3,18 +3,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
 
-    margin: 1rem 10vw;
+.powerRank {
+    font-weight: 900;
+    color: #ff9c5a;
+}
 
-    @media (max-width: $mantine-breakpoint-md) {
-       margin: 0 5vw;
-      }
+.powerRankText {
+    padding: 0.5rem;
 }
 
 .accordian {
     width: 100%;
-}
-
-.listContent {
-    margin: 0 2rem;
 }
