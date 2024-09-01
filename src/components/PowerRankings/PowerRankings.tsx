@@ -18,10 +18,7 @@ function AccordionLabel({ name, logo, coach, powerRank }: AccordionLabelProps) {
   return (
     <Group wrap="nowrap">
       <div>
-        <Text
-          className={classes.powerRank}
-          size="xl"
-        >
+        <Text className={classes.powerRank} size="xl">
           {powerRank}
         </Text>
       </div>
@@ -54,9 +51,7 @@ export default function PowerRankings({ teams }: PowerRankingsProps) {
 
   return (
     <>
-      <Title className={globalClasses.sectionHeader}>
-        Power Rankings
-      </Title>
+      <Title className={globalClasses.sectionHeader}>Power Rankings</Title>
       <div className={classes.listContainer}>
         <Accordion chevronPosition="right" variant="contained" className={classes.accordian}>
           {items}

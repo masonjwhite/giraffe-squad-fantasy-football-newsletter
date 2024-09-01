@@ -1,14 +1,4 @@
-import {
-  Grid,
-  Card,
-  Image,
-  Title,
-  Text,
-  Flex,
-  Collapse,
-  Box,
-  Divider,
-} from '@mantine/core';
+import { Grid, Card, Image, Title, Text, Flex, Collapse, Box, Divider } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Article } from '../../types';
 import classes from './News.module.css';
@@ -28,9 +18,7 @@ export default function News({ article, jokeArticles }: Props) {
           <Box onClick={toggle}>
             <Image radius="md" src={article.coverImage} className={classes.mainImage} />
             <Title className={classes.title}>{article.title}</Title>
-            <Text>
-              {article.summary}
-            </Text>
+            <Text>{article.summary}</Text>
             <Flex gap="sm" align="Center">
               <Text c="dimmed" size="sm">
                 {article.author}
@@ -44,9 +32,7 @@ export default function News({ article, jokeArticles }: Props) {
             </Flex>
             <Collapse in={opened}>
               <Divider my="sm" variant="dashed" />
-              <Text>
-                {article.content}
-              </Text>
+              <Text>{article.content}</Text>
             </Collapse>
           </Box>
         </Grid.Col>

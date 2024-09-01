@@ -5,23 +5,23 @@ import Banner from '../components/Banner/Banner';
 import { CURRENT_PUBLISHED_WEEK } from '../settings';
 
 export default function Root() {
-    const { pathname } = useLocation();
-    const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
 
-    const basePath = '/';
-    const isOnRootPath = pathname === basePath;
+  const basePath = '/';
+  const isOnRootPath = pathname === basePath;
 
-    useEffect(() => {
-        if (isOnRootPath) {
-            navigate(`/weeks/${CURRENT_PUBLISHED_WEEK}`);
-        }
-    }, []);
+  useEffect(() => {
+    if (isOnRootPath) {
+      navigate(`/weeks/${CURRENT_PUBLISHED_WEEK}`);
+    }
+  }, []);
 
-    return (
-        <>
-            <Hero />
-            <Banner />
-            <Outlet />
-        </>
-    );
+  return (
+    <>
+      <Hero />
+      <Banner />
+      <Outlet />
+    </>
+  );
 }

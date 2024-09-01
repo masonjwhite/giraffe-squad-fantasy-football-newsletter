@@ -20,15 +20,9 @@ function Score({ homeTeam, homeTeamScore, awayTeam, awayTeamScore }: ScoreProps)
         <Avatar src={awayTeam?.logo} radius="xl" size="s" className={classes.pic} />
       </div>
       <div className={classes.scoreTileScore}>
-        <span className={isTie ? '' : homeTeamWon ? classes.winner : ''}>
-          {homeTeamScore}
-        </span>
-        <span>
-          -
-        </span>
-        <span className={isTie ? '' : homeTeamWon ? '' : classes.winner}>
-          {awayTeamScore}
-        </span>
+        <span className={isTie ? '' : homeTeamWon ? classes.winner : ''}>{homeTeamScore}</span>
+        <span>-</span>
+        <span className={isTie ? '' : homeTeamWon ? '' : classes.winner}>{awayTeamScore}</span>
       </div>
       <div className={classes.scoreTileTeam}>
         <div>{homeTeam?.id}</div>
@@ -43,19 +37,19 @@ interface ScoresProps {
   matchups: Matchup[];
 }
 
-export default function Scores({ teams, matchups } : ScoresProps) {
+export default function Scores({ teams, matchups }: ScoresProps) {
   return (
     <Grid gutter="0">
       {matchups.map((matchup) => (
-          <Grid.Col span={{ xs: 12, sm: 6, md: 6, lg: 2 }} className={classes.scoreGridCol}>
-            <Score
-              homeTeam={teams.find(team => team.id === matchup.homeTeam.id) || null}
-              homeTeamScore={matchup.homeTeam.score}
-              awayTeam={teams.find(team => team.id === matchup.awayTeam.id) || null}
-              awayTeamScore={matchup.awayTeam.score}
-            />
-          </Grid.Col>
-        ))}
+        <Grid.Col span={{ xs: 12, sm: 6, md: 6, lg: 2 }} className={classes.scoreGridCol}>
+          <Score
+            homeTeam={teams.find((team) => team.id === matchup.homeTeam.id) || null}
+            homeTeamScore={matchup.homeTeam.score}
+            awayTeam={teams.find((team) => team.id === matchup.awayTeam.id) || null}
+            awayTeamScore={matchup.awayTeam.score}
+          />
+        </Grid.Col>
+      ))}
     </Grid>
   );
 }
