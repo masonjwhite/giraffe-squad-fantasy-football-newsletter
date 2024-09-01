@@ -27,6 +27,7 @@ export default function Week1() {
         <PowerRankings teams={data.teams} />
         <MatchupOfTheWeek awayTeam={data.teams[9]} homeTeam={data.teams[1]} />
         <Standings teams={data.teams} />
+
         <WeekNav selectedWeek={1} />
       </div>
     </div>
