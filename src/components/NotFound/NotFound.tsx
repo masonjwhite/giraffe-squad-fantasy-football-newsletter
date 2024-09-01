@@ -5,7 +5,7 @@ import classes from './NotFound.module.css';
 
 export default function NotFound() {
     const location = useLocation();
-    const shortPath = location.pathname.replace('/giraffe-squad-fantasy-football', '');
+    const { pathname } = location;
 
     return (
         <Grid>
@@ -13,7 +13,7 @@ export default function NotFound() {
                 <Title className={classes.header}>
                     Whoops, the page{' '}
                     <span className={classes.path}>
-                        {shortPath}{' '}
+                        {pathname}{' '}
                     </span>
                     does not exist!
                 </Title>
@@ -23,7 +23,7 @@ export default function NotFound() {
                   h={400}
                   w={400}
                 />
-                <Link to="/giraffe-squad-fantasy-football">
+                <Link to="/">
                     <Text className={classes.link}>
                         Back to the huddle &gt;&gt;
                     </Text>

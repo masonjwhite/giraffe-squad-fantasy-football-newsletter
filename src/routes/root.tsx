@@ -8,12 +8,12 @@ export default function Root() {
     const { pathname } = useLocation();
     const navigate = useNavigate();
 
-    const basePath = '/giraffe-squad-fantasy-football';
-    const isOnRootPath = pathname === basePath || pathname === `${basePath}/`;
+    const basePath = '/';
+    const isOnRootPath = pathname === basePath;
 
     useEffect(() => {
         if (isOnRootPath) {
-            navigate(`${basePath}/weeks/${CURRENT_PUBLISHED_WEEK}`);
+            navigate(`/weeks/${CURRENT_PUBLISHED_WEEK}`);
         }
     }, []);
 

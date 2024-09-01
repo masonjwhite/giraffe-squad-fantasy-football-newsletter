@@ -12,7 +12,7 @@ import NotFound from './routes/notFound/notFound';
 
 const router = createBrowserRouter([
     {
-        path: '/giraffe-squad-fantasy-football',
+        path: '/',
         element: <Root />,
         children: [
             {

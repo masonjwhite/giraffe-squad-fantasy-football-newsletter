@@ -21,7 +21,7 @@ export default function WeekSelector() {
             </Menu.Target>
             <Menu.Dropdown>
                 {availableWeekNumbers.map((weekNumber) => (
-                    <Link to={`/giraffe-squad-fantasy-football/weeks/${weekNumber}`}>
+                    <Link to={`/weeks/${weekNumber}`}>
                         <Menu.Item disabled={weekNumber === selectedWeekNumber}>
                             Week{' '}
                             {weekNumber}

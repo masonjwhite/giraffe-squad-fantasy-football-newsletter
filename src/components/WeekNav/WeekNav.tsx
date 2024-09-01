@@ -18,7 +18,7 @@ export default function WeekNav({ selectedWeek }: WeekNavProps) {
         <div className={classes.weekNavContainer}>
             <div>
                 {showPrevWeek && (
-                    <Link to={`/giraffe-squad-fantasy-football/weeks/${prevWeek.toString()}`}>
+                    <Link to={`/weeks/${prevWeek.toString()}`}>
                         <Text className={classes.linkText}>
                             &lt;&lt;
                             Week{' '}
@@ -29,7 +29,7 @@ export default function WeekNav({ selectedWeek }: WeekNavProps) {
             </div>
             <div>
                 {showNextWeek && (
-                    <Link to={`/giraffe-squad-fantasy-football/weeks/${nextWeek.toString()}`}>
+                    <Link to={`/weeks/${nextWeek.toString()}`}>
                         <Text className={classes.linkText}>
                             Week{' '}
                             {nextWeek}{' '}
