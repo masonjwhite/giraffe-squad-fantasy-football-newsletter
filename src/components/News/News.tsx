@@ -38,7 +38,7 @@ export default function News({ article, jokeArticles }: Props) {
         </Grid.Col>
         <Grid.Col span={{ md: 12, lg: 4 }}>
           <Card>
-            <Title>In the News</Title>
+            <Title className={classes.newsSubHeader}>In the News</Title>
             <Divider my="sm" variant="dotted" />
             {jokeArticles.map((title, i) => {
               const isLastArticle = i === jokeArticles.length - 1;

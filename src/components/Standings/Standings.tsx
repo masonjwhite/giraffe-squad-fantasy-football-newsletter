@@ -18,8 +18,8 @@ export default function Standings({ teams }: { teams: Team[] }) {
     <Table.Tr key={team.name}>
       <Table.Td>{team.name}</Table.Td>
       <Table.Td>{team.record}</Table.Td>
-      <Table.Td>{team.pointsFor}</Table.Td>
-      <Table.Td>{team.pointsAgainst}</Table.Td>
+      <Table.Td align="right">{team.pointsFor}</Table.Td>
+      <Table.Td align="right">{team.pointsAgainst}</Table.Td>
     </Table.Tr>
   ));
 

@@ -21,39 +21,44 @@
 }
 
 .spotlightImage {
-    max-height: 75vh;
+    max-height: 45vh;
     object-fit: contain;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        max-height: 30vh;
+    }
 }
 
 .spotlightImage:hover {
     transform: scale(1.1);
+    transition: all 0.2s;
 }
 
 .playerContainer {
     background-color: #fbd089;
     color: #1A1B1E;
+    text-align: center;
 }
 
 .playerName {
     font-family: 'Molot', sans-serif;
     font-weight: 700;
     font-size: 3rem;
-   
     text-decoration: underline;
-    padding-left: 1rem;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        font-size: 1.5rem;
+    }
 }
 
 .playerPoints {
     font-family: 'Molot', sans-serif;
     font-weight: 700;
     font-size: 2rem;
+    text-decoration: none;
+    margin-left: 1rem;
 
-    text-align: end;
-    padding-right: 1rem;
-}
-
-.flexColumn {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    @media (max-width: $mantine-breakpoint-md) {
+        font-size: 1rem;
+    }
 }
