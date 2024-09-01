@@ -10,6 +10,7 @@ export interface Team {
     pointsAgainst: number;
     powerRank: number;
     powerRankText: string;
+    helmetImage?: string;
 }
 
 export interface Matchup {
@@ -29,4 +30,11 @@ export interface Article {
     summary: string;
     author: string;
     content: ReactNode;
+}
+
+export interface Player {
+    name: string;
+    points: number;
+    image?: string;
+    coach?: string;
 }

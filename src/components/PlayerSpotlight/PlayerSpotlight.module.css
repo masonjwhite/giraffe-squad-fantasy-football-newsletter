@@ -1,0 +1,59 @@
+@import url('https://fonts.cdnfonts.com/css/molot');
+
+.spotlightContainer {
+    background-color:  #ff9c5a;
+    background-image: url(./text_only.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-top: 1rem;
+}
+
+.spotlightText {
+    font-family: 'Molot', sans-serif;
+    line-height: .75 !important;
+
+    color: #fbd089;
+    font-size: 21rem;
+    white-space: nowrap;
+
+}
+
+.spotlightImage {
+    max-height: 75vh;
+    object-fit: contain;
+}
+
+.spotlightImage:hover {
+    transform: scale(1.1);
+}
+
+.playerContainer {
+    background-color: #fbd089;
+    color: #1A1B1E;
+}
+
+.playerName {
+    font-family: 'Molot', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+   
+    text-decoration: underline;
+    padding-left: 1rem;
+}
+
+.playerPoints {
+    font-family: 'Molot', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+
+    text-align: end;
+    padding-right: 1rem;
+}
+
+.flexColumn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

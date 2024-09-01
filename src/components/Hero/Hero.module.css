@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/molot');
+
 .heroContainer {
     background-color: #ff9c5a;
 }
@@ -7,6 +9,7 @@
 }
 
 .heroText {
+    font-family: 'Molot', sans-serif;
     color: #fbd089;
     text-align: center;
     padding: 0;
