@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/molot');
 
 .contentContainer {
     margin: 1rem 12vw;
@@ -17,6 +18,7 @@
 }
 
 .pageHeader {
+    font-family: 'Molot', sans-serif;
     color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
     font-size: rem(100px);
     font-weight: 900;
@@ -30,6 +32,7 @@
 }
 
 .sectionHeader {
+    font-family: 'Molot', sans-serif;
     text-align: center;
     color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
     font-size: rem(75px);
