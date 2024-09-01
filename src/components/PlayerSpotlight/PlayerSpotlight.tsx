@@ -1,7 +1,6 @@
 import { Image, Text, Grid } from '@mantine/core';
 import classes from './PlayerSpotlight.module.css';
 import PlayerImg from './player_only.webp';
-import BackgroundText from './text_only.webp';
 import { Player } from '../../types';
 
 interface Props {
