@@ -1,4 +1,4 @@
-import { Image, Text, Grid } from '@mantine/core';
+import { Image, Text } from '@mantine/core';
 import classes from './PlayerSpotlight.module.css';
 import PlayerImg from './player_only.webp';
 import { Player } from '../../types';
