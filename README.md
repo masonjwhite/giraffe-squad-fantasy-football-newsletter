@@ -14,7 +14,7 @@
 4. The project should be accessible at http://localhost:5173
 
 ## Folder structure
-
+- `api/createdata.js` - Script to automate data collection from the Yahoo Fantasy Football API 
 - `src/components` - Reusable components that are utilized in various pages
 - `src/data` - The data that will be used to populate content for a week.
   - **IMPORTANT: Each week should have its own unique data file.**

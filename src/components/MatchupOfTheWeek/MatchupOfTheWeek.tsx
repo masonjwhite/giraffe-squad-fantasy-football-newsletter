@@ -2,7 +2,7 @@ import { Title, Container, Image } from '@mantine/core';
 import Crest from '../../images/fantasy_league.webp';
 import GameOfWeek from '../../images/game_of_week.webp';
 import classes from './MatchupOfTheWeek.module.css';
-import { Team } from '@/types';
+import { Team } from '../../types';
 
 interface Props {
   awayTeam: Team;

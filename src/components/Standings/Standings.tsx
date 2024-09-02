@@ -6,10 +6,20 @@ function sortTeams(teamA: Team, teamB: Team) {
   const teamAWins = teamA.record.split('-')[0];
   const teamBWins = teamB.record.split('-')[0];
 
-  if (teamAWins === teamBWins) {
+  const equalWins = teamAWins === teamBWins;
+  const equalPointsFor = teamA.pointsFor === teamB.pointsFor;
+
+  // Use alphabetical if equal wins and equal points
+  if (equalWins && equalPointsFor) {
+    return teamA.name > teamB.name ? 1 : -1;
+  }
+
+  // Use points for if equal wins
+  if (equalWins) {
     return teamA.pointsFor < teamB.pointsFor ? 1 : -1;
   }
 
+  // Use number of wins by default
   return teamAWins < teamBWins ? 1 : -1;
 }
 

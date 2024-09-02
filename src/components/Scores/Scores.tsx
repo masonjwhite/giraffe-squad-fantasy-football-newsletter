@@ -12,20 +12,25 @@ interface ScoreProps {
 function Score({ homeTeam, homeTeamScore, awayTeam, awayTeamScore }: ScoreProps) {
   const isTie = homeTeamScore === awayTeamScore;
   const homeTeamWon = homeTeamScore > awayTeamScore;
+  const awayTeamWon = awayTeamScore > homeTeamScore;
+  const homeTeamClassname = !isTie && homeTeamWon ? classes.winner : '';
+  const awayTeamClassname = !isTie && awayTeamWon ? classes.winner : '';
+
+  const getCoachFistName = (coach: String | undefined) => coach?.split(' ')[0] || '';
 
   return (
     <Card withBorder className={classes.scoreTile}>
       <div className={classes.scoreTileTeam}>
-        <div>{awayTeam?.id}</div>
+        <div>{getCoachFistName(awayTeam?.coach)}</div>
         <Avatar src={awayTeam?.logo} radius="xl" size="s" className={classes.pic} />
       </div>
       <div className={classes.scoreTileScore}>
-        <span className={isTie ? '' : homeTeamWon ? classes.winner : ''}>{homeTeamScore}</span>
+        <span className={awayTeamClassname}>{awayTeamScore}</span>
         <span>-</span>
-        <span className={isTie ? '' : homeTeamWon ? '' : classes.winner}>{awayTeamScore}</span>
+        <span className={homeTeamClassname}>{homeTeamScore}</span>
       </div>
       <div className={classes.scoreTileTeam}>
-        <div>{homeTeam?.id}</div>
+        <div>{getCoachFistName(homeTeam?.coach)}</div>
         <Avatar src={homeTeam?.logo} radius="xl" size="s" className={classes.pic} />
       </div>
     </Card>

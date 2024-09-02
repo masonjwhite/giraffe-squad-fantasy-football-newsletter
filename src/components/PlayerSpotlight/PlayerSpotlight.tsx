@@ -15,13 +15,8 @@ export default function PlayerSpotlight({ player }: Props) {
       </div>
       <div className={classes.playerContainer}>
         <Text>
-          <span className={classes.playerName}>
-            {player.name}
-          </span>
-          {' '}
-          <span className={classes.playerPoints}>
-            {player.points}
-          </span>
+          <span className={classes.playerName}>{player.name}</span>{' '}
+          <span className={classes.playerPoints}>{player.points}</span>
         </Text>
       </div>
     </>

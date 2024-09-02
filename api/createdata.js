@@ -72,7 +72,7 @@ async function getAllFileData() {
         pointsAgainst: ${team.standings.points_against},
         powerRank: 0,
         powerRankText: "",
-        helmetImage: undefined,
+        helmetImage: GiraffeHelmet,
         draftGrade: "${team.draft_grade}"
       }
         `;
