@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Text, Image, Tooltip } from '@mantine/core';
+import { Text, Image } from '@mantine/core';
 import Logo from '../../images/Logo.png';
 import { CURRENT_PUBLISHED_WEEK } from '../../settings';
 import classes from './Footer.module.css';
@@ -17,21 +17,15 @@ export default function Footer() {
                 </div>
                 <div className={classes.footerList}>
                     <Text fw={700}>League</Text>
-                    <Tooltip label="Coming soon!">
-                        <Text className={classes.link}>
-                            History
-                        </Text>
-                    </Tooltip>
-                    <Tooltip label="Coming soon!">
-                        <Text className={classes.link}>
-                            Administration
-                        </Text>
-                    </Tooltip>
-                    <Tooltip label="Coming soon!">
-                        <Text className={classes.link}>
-                            Careers
-                        </Text>
-                    </Tooltip>
+                    <Text className={classes.link}>
+                        History - Coming soon!
+                    </Text>
+                    <Text className={classes.link}>
+                        Administration - Coming soon!
+                    </Text>
+                    <Text className={classes.link}>
+                        Careers - Coming soon!
+                    </Text>
                 </div>
                 <div className={classes.footerList}>
                     <Text fw={700}>Community</Text>
