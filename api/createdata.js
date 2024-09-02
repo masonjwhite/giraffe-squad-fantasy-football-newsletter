@@ -101,7 +101,7 @@ async function getAllFileData() {
 }
 
 getAllFileData().then((fileText) => {
-   fs.writeFile(`src/data/week${week}output.tsx`, fileText, (err) => {
+   fs.writeFile(`src/data/week${week}.tsx`, fileText, (err) => {
     if (err) {
       console.log('error:', err);
     } else {
