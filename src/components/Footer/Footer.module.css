@@ -1,0 +1,58 @@
+.footerContainer {
+    padding: 2rem 20rem;
+    background-color: var(--mantine-color-dark-6);
+
+    @media (max-width: $mantine-breakpoint-lg) {
+        padding: 2rem 10rem;
+    }
+
+    @media (max-width: $mantine-breakpoint-md) {
+        padding: 2rem 5rem;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.footerList {
+    display: flex; 
+    flex-direction: column;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        margin-top: 1rem;
+    }
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
+.link {
+    color: var(--mantine-color-text);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(255, 156, 90);
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center; 
+    margin-top: 4rem;
+}
