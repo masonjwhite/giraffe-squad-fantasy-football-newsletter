@@ -15,6 +15,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 1,
     powerRankText: 'Adam Week 1 Power Ranking',
+    draftGrade: '',
   },
   {
     id: 'jackie',
@@ -27,6 +28,7 @@ export const teams: Team[] = [
     powerRank: 2,
     powerRankText: 'Jackie Week 1 Power Ranking',
     helmetImage: PattiHelmet,
+    draftGrade: '',
   },
   {
     id: 'jaime',
@@ -38,6 +40,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 3,
     powerRankText: 'Jaime Week 1 Power Ranking',
+    draftGrade: '',
   },
   {
     id: 'joe',
@@ -49,6 +52,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 4,
     powerRankText: 'Joe Week 1 Power Ranking',
+    draftGrade: '',
   },
   {
     id: 'kara',
@@ -60,6 +64,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 5,
     powerRankText: 'Kara Week 1 Power Ranking',
+    draftGrade: '',
   },
   {
     id: 'marc',
@@ -71,6 +76,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 6,
     powerRankText: 'Marc Week 1 Power Ranking',
+    draftGrade: '',
   },
   {
     id: 'mason',
@@ -82,6 +88,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 7,
     powerRankText: 'Mason Week 1 Power Ranking',
+    draftGrade: '',
   },
   {
     id: 'nick',
@@ -93,6 +100,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 8,
     powerRankText: 'Nick Week 1 Power Ranking',
+    draftGrade: '',
   },
   {
     id: 'scott',
@@ -104,6 +112,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 9,
     powerRankText: 'Scott Week 1 Power Ranking',
+    draftGrade: '',
   },
   {
     id: 'will',
@@ -116,6 +125,7 @@ export const teams: Team[] = [
     powerRank: 10,
     powerRankText: 'Will Week 1 Power Ranking',
     helmetImage: GiraffeHelmet,
+    draftGrade: '',
   },
   {
     id: 'zac',
@@ -127,6 +137,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 11,
     powerRankText: 'Zac Week 1 Power Ranking',
+    draftGrade: '',
   },
   {
     id: 'zari',
@@ -138,6 +149,7 @@ export const teams: Team[] = [
     pointsAgainst: 0,
     powerRank: 12,
     powerRankText: 'Zari Week 1 Power Ranking',
+    draftGrade: '',
   },
 ];
 
@@ -145,60 +157,72 @@ export const matchups: Matchup[] = [
   {
     homeTeam: {
       id: 'adam',
+      name: 'TBD',
       score: 0,
     },
     awayTeam: {
       id: 'jackie',
+      name: 'TBD',
       score: 0,
     },
   },
   {
     homeTeam: {
       id: 'jaime',
+      name: 'TBD',
       score: 0,
     },
     awayTeam: {
       id: 'joe',
+      name: 'TBD',
       score: 0,
     },
   },
   {
     homeTeam: {
       id: 'kara',
+      name: 'TBD',
       score: 0,
     },
     awayTeam: {
       id: 'marc',
+      name: 'TBD',
       score: 0,
     },
   },
   {
     homeTeam: {
       id: 'mason',
+      name: 'TBD',
       score: 0,
     },
     awayTeam: {
       id: 'nick',
+      name: 'TBD',
       score: 0,
     },
   },
   {
     homeTeam: {
       id: 'scott',
+      name: 'TBD',
       score: 0,
     },
     awayTeam: {
       id: 'will',
+      name: 'TBD',
       score: 0,
     },
   },
   {
     homeTeam: {
       id: 'zac',
+      name: 'TBD',
       score: 0,
     },
     awayTeam: {
       id: 'zari',
+      name: 'TBD',
       score: 0,
     },
   },

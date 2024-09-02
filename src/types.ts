@@ -11,14 +11,17 @@ export interface Team {
   powerRank: number;
   powerRankText: string;
   helmetImage?: string;
+  draftGrade: string;
 }
 
 export interface Matchup {
   homeTeam: {
+    name: string;
     id: string;
     score: number;
   };
   awayTeam: {
+    name: string;
     id: string;
     score: number;
   };
