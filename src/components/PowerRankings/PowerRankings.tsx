@@ -24,7 +24,7 @@ function AccordionLabel({ name, logo, coach, powerRank }: AccordionLabelProps) {
       </div>
       <Avatar src={logo} radius="xl" size="lg" />
       <div>
-        <Title>{name}</Title>
+        <Title className={classes.teamName}>{name}</Title>
         <Title order={5} c="dimmed">
           {coach}
         </Title>

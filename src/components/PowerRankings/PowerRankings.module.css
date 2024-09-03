@@ -3,6 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    width: 75%;
+    margin: 0 auto;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 100%;
+    }
 }
 
 .powerRank {
@@ -13,6 +20,11 @@
 .powerRankText {
     padding: 0.5rem;
 }
+
+.teamName {
+    font-size: 1.5rem;
+}
+
 
 .accordian {
     width: 100%;

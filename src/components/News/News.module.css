@@ -1,5 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/molot');
+
+.title {
+    font-family: 'Molot', sans-serif;
+}
+
 .title:hover {
     color: rgb(255, 156, 90);
+}
+
+.expandable {
+    @media (max-width: $mantine-breakpoint-md) {
+        margin: 2rem 0;
+    }
 }
 
 .expandable:hover {

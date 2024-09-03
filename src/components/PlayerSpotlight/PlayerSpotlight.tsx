@@ -9,8 +9,8 @@ interface Props {
 
 export default function PlayerSpotlight({ player }: Props) {
   return (
-    <>
-      <div className={classes.spotlightContainer}>
+    <div className={classes.spotlightContainer}>
+      <div className={classes.spotlightImageContainer}>
         <Image src={PlayerImg} className={classes.spotlightImage} />
       </div>
       <div className={classes.playerContainer}>
@@ -19,6 +19,6 @@ export default function PlayerSpotlight({ player }: Props) {
           <span className={classes.playerPoints}>{player.points}</span>
         </Text>
       </div>
-    </>
+    </div>
   );
 }

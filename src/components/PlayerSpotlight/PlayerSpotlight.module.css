@@ -1,6 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/molot');
 
 .spotlightContainer {
+    margin: 3rem 0;
+}
+
+.spotlightImageContainer {
     background-color:  #ff9c5a;
     background-image: url(./text_only.webp);
     background-size: contain;
