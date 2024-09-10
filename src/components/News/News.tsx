@@ -1,11 +1,12 @@
 import { Grid, Card, Image, Title, Text, Flex, Collapse, Box, Divider } from '@mantine/core';
+import { IconExternalLink } from '@tabler/icons-react';
 import { useDisclosure } from '@mantine/hooks';
-import { Article } from '../../types';
+import { MainArticle, JokeArticle } from '../../types';
 import classes from './News.module.css';
 
 interface Props {
-  article: Article;
-  jokeArticles: string[];
+  article: MainArticle;
+  jokeArticles: JokeArticle[];
 }
 
 export default function News({ article, jokeArticles }: Props) {
@@ -40,17 +41,20 @@ export default function News({ article, jokeArticles }: Props) {
           <Card>
             <Title className={classes.newsSubHeader}>In the News</Title>
             <Divider my="sm" variant="dotted" />
-            {jokeArticles.map((title, i) => {
+            {jokeArticles.map((jokeArticle, i) => {
               const isLastArticle = i === jokeArticles.length - 1;
 
               return (
                 <a
                   className={classes.jokeArticleLink}
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  href={jokeArticle.link}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Text>{title}</Text>
+                  <Text span>
+                    {jokeArticle.title}
+                    <IconExternalLink className={classes.jokeArticleIcon} size={18} />
+                  </Text>
                   {!isLastArticle && <Divider my="sm" variant="dotted" />}
                 </a>
               );

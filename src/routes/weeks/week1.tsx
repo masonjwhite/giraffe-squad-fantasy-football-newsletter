@@ -6,7 +6,7 @@ import PowerRankings from '../../components/PowerRankings/PowerRankings';
 import Standings from '../../components/Standings/Standings';
 import WeekNav from '../../components/WeekNav/WeekNav';
 import useScrollToTop from '../../hooks/useScrollToTop';
-import * as data from '../../data/week1';
+import * as data from '../../data/week1-DRAFT';
 import globalClasses from '../../global.module.css';
 import MatchupOfTheWeek from '../../components/MatchupOfTheWeek/MatchupOfTheWeek';
 import PlayerSpotlight from '../../components/PlayerSpotlight/PlayerSpotlight';

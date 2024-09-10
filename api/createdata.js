@@ -19,7 +19,7 @@ const yf = new YahooFantasy(
 
 const imports = `
 import { Text } from '@mantine/core';
-import { Team, Matchup, Article, Player } from '../types';
+import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
 import Jersey from '../images/Giraffe_Jersey.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';\n\n`;
 
@@ -28,7 +28,7 @@ const endTeamsData = "];\n";
 let matchupsHeader = `\nexport const matchups: Matchup[] = [\n`;
 
 const articlePlaceholder = `
-export const article: Article = {
+export const article: MainArticle = {
   coverImage: Jersey,
   title: 'TBD',
   summary: 'Some summary',
@@ -36,7 +36,32 @@ export const article: Article = {
   content: <Text>PLACEHOLDER</Text>,
 };
 
-export const jokeArticles: string[] = ['TBD', 'TBD', 'TBD', 'TBD', 'TBD', 'TBD'];
+export const jokeArticles: JokeArticle[] = [
+  { 
+    title: 'TBD',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  },
+  { 
+    title: 'TBD',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  },
+  { 
+    title: 'TBD',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  },
+  { 
+    title: 'TBD',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  },
+  { 
+    title: 'TBD',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  },
+  { 
+    title: 'TBD',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+  }
+];
 
 export const playerOfTheWeek: Player = {
   name: 'Dak Prescott',

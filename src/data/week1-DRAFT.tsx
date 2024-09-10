@@ -1,5 +1,5 @@
 import { Text } from '@mantine/core';
-import { Team, Matchup, Article, Player } from '../types';
+import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
 import Jersey from '../images/Giraffe_Jersey.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
 
@@ -20,7 +20,7 @@ export const teams: Team[] = [
   {
     id: '2',
     logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_1_k.png',
-    name: 'Hurts So Good',
+    name: 'Pukamon',
     coach: 'Kara Prescott',
     record: '0-0',
     pointsFor: 0,
@@ -45,8 +45,8 @@ export const teams: Team[] = [
   },
   {
     id: '4',
-    logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/f81eb36e9164b5d16a14a0d98cb10325a3ecd5c40a18762114c0e8992be89eec.jpg',
-    name: 'VisiGoffs',
+    logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/d4e9119c74190a7e41c5d1f849050cff5b25ad29c67481ed3aefb761a9e0554c.jpg',
+    name: 'All you need is Love',
     coach: 'Zac Fermanis',
     record: '0-0',
     pointsFor: 0,
@@ -58,8 +58,8 @@ export const teams: Team[] = [
   },
   {
     id: '5',
-    logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/2482266e246e51fc0a087de4fb4aa927a806305ef1966242d06f57251d836504.jpg',
-    name: 'CeeDee Phone Home',
+    logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/46632e5f7e5ea783ff5b6916aa67cc3a1e4db1b62a34c31e88869e31fb5266a6.jpg',
+    name: 'Super LaMario',
     coach: 'Will Stone',
     record: '0-0',
     pointsFor: 0,
@@ -165,79 +165,79 @@ export const teams: Team[] = [
 export const matchups: Matchup[] = [
   {
     homeTeam: {
-      name: 'Hurts So Good',
+      name: 'Pukamon',
       id: '2',
-      score: 0.0,
+      score: 113.48,
     },
     awayTeam: {
       name: 'Joey B & The Q-tips',
       id: '1',
-      score: 0.0,
+      score: 80.46,
     },
   },
   {
     homeTeam: {
-      name: 'CeeDee Phone Home',
+      name: 'Super LaMario',
       id: '5',
-      score: 0.0,
+      score: 118.52,
     },
     awayTeam: {
       name: 'The Replacements',
       id: '3',
-      score: 0.0,
+      score: 96.18,
     },
   },
   {
     homeTeam: {
       name: 'Candace Bergen',
       id: '6',
-      score: 0.0,
+      score: 102.36,
     },
     awayTeam: {
-      name: 'VisiGoffs',
+      name: 'All you need is Love',
       id: '4',
-      score: 0.0,
+      score: 103.5,
     },
   },
   {
     homeTeam: {
       name: 'Purdy Good',
       id: '9',
-      score: 0.0,
+      score: 101.9,
     },
     awayTeam: {
       name: "Henry's Hustle",
       id: '7',
-      score: 0.0,
+      score: 73.72,
     },
   },
   {
     homeTeam: {
       name: 'The Wharf Rats',
       id: '12',
-      score: 0.0,
+      score: 99.06,
     },
     awayTeam: {
       name: 'Pattibot',
       id: '8',
-      score: 0.0,
+      score: 113.76,
     },
   },
   {
     homeTeam: {
       name: 'Jaiwalking to Victory',
       id: '11',
-      score: 0.0,
+      score: 88.54,
     },
     awayTeam: {
       name: 'Nacua Matata',
       id: '10',
-      score: 0.0,
+      score: 150.78,
     },
   },
 ];
 
-export const article: Article = {
+export const article: MainArticle = {
   coverImage: Jersey,
   title: 'TBD',
   summary: 'Some summary',
@@ -245,7 +245,32 @@ export const article: Article = {
   content: <Text>PLACEHOLDER</Text>,
 };
 
-export const jokeArticles: string[] = ['TBD', 'TBD', 'TBD', 'TBD', 'TBD', 'TBD'];
+export const jokeArticles: JokeArticle[] = [
+  {
+    title: 'VIDEO: Uncle Rico reacts to Anthony Richardson’s 66 yard bomb',
+    link: 'https://youtube.com/shorts/jP8kHbaPs0s?si=awYGojV14e6ulebY',
+  },
+  {
+    title: 'WILL TBD',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  },
+  {
+    title: 'Nacua rushed to the Pukamon Center after Week 1 Injury',
+    link: 'https://youtu.be/bPPWK77WxGQ?si=iNpbnCtRbSdTU05f&t=83',
+  },
+  {
+    title: 'WILL TBD',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  },
+  {
+    title: 'Kendrick Lamar and Drake announce  they will live tweet their beef on stage for upcoming Super Bowl LIX halftime show',
+    link: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExajV3MjdydnJtM2hzMXducjB6ZXVoOXI3MHViZW84OWI4eGJxZHFjcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8GQoiQaVEFCYfZLQPq/giphy.gif',
+  },
+  {
+    title: 'WILL TBD',
+    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  },
+];
 
 export const playerOfTheWeek: Player = {
   name: 'Dak Prescott',

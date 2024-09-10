@@ -47,3 +47,8 @@
     color: rgb(255, 156, 90);
     text-decoration: underline;
 }
+
+.jokeArticleIcon {
+    vertical-align: text-top;
+    margin-left: .25rem;
+}
