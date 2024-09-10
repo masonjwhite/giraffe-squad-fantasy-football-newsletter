@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Text, Image } from '@mantine/core';
+import { IconExternalLink } from '@tabler/icons-react';
 import Logo from '../../images/Logo.png';
 import { CURRENT_PUBLISHED_WEEK } from '../../settings';
 import classes from './Footer.module.css';
@@ -30,6 +31,7 @@ export default function Footer() {
             rel="noreferrer"
           >
             Complaints
+            <IconExternalLink className={classes.linkIcon} />
           </a>
           <a
             className={classes.link}
@@ -38,6 +40,7 @@ export default function Footer() {
             rel="noreferrer"
           >
             Github
+            <IconExternalLink className={classes.linkIcon} />
           </a>
           <a
             className={classes.link}
@@ -46,6 +49,7 @@ export default function Footer() {
             rel="noreferrer"
           >
             Extra link so it looks good
+            <IconExternalLink className={classes.linkIcon} />
           </a>
         </div>
       </div>

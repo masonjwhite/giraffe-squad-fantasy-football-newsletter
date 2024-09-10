@@ -18,12 +18,9 @@
     cursor: pointer;
 }
 
-.quote {
-    margin: 2rem;
-}
-
-.quoteReply {
-    margin: 2rem 3rem;
+.expand:hover {
+    color: rgb(255, 156, 90) !important;
+    text-decoration: underline;
 }
 
 .mainImage {

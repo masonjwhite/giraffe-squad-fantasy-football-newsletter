@@ -20,20 +20,21 @@ export default function News({ article, jokeArticles }: Props) {
             <Image radius="md" src={article.coverImage} className={classes.mainImage} />
             <Title className={classes.title}>{article.title}</Title>
             <Text>{article.summary}</Text>
-            <Flex gap="sm" align="Center">
+            <Flex gap="sm" align="Center" mt="xs">
               <Text c="dimmed" size="sm">
                 {article.author}
               </Text>
               <Text c="dimmed" size="sm">
                 -
               </Text>
-              <Text c="dimmed" size="xs">
+              <Text className={classes.expand} c="dimmed" size="xs">
                 Click to expand
               </Text>
             </Flex>
             <Collapse in={opened}>
               <Divider my="sm" variant="dashed" />
               <Text>{article.content}</Text>
+              <Divider my="sm" variant="dashed" />
             </Collapse>
           </Box>
         </Grid.Col>

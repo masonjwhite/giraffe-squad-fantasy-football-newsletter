@@ -1,4 +1,4 @@
-import { Text, Mark, Blockquote, Divider } from '@mantine/core';
+import { Text, Mark, Blockquote } from '@mantine/core';
 import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
 import Jersey from '../images/Giraffe_Jersey.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
@@ -389,7 +389,6 @@ export const article: MainArticle = {
         - Commish
       </Text>
       <br />
-      <Divider />
     </>
   ),
 };
