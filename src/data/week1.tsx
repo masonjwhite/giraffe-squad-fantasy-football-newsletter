@@ -1,6 +1,9 @@
-import { Text, Mark, Blockquote } from '@mantine/core';
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable max-len */
+
+import { Text, Blockquote, Mark } from '@mantine/core';
 import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
-import Jersey from '../images/Giraffe_Jersey.png';
+import Week1 from '../images/week1.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
 import WharfRatHelmet from '../images/wharf_rats_helmet.webp';
 import LamarioHelmet from '../images/lamario_helmet.webp';
@@ -30,6 +33,7 @@ export const teams: Team[] = [
         <a
           href="https://www.tiktok.com/@out.of.pocket.sports/video/7411383559883214110"
           target="_blank"
+          rel="noreferrer"
         >
           save the children
         </a>
@@ -61,6 +65,7 @@ export const teams: Team[] = [
         <a
           href="https://www.tiktok.com/@orthomurse2009/video/7412829933606685994?q=puka%20nacua%20meme&t=1726012820195"
           target="_blank"
+          rel="noreferrer"
         >
           Kara right now
         </a>
@@ -95,6 +100,7 @@ export const teams: Team[] = [
           <a
             href="https://www.tiktok.com/@coolaid121/video/7361203631913291051?q=derrick%20henry%20meme&t=1726013202219"
             target="_blank"
+            rel="noreferrer"
           >
             give it some time
           </a>
@@ -129,6 +135,7 @@ export const teams: Team[] = [
         <a
           href="https://www.reddit.com/r/GreenBayPackers/comments/1fdlgj4/with_apologies_to_matt_lafleur/"
           target="_blank"
+          rel="noreferrer"
         >
           Brainrot on Packers subreddit
         </a>
@@ -181,6 +188,7 @@ export const teams: Team[] = [
         <a
           href="https://www.tiktok.com/@nflonfox/video/7327504105121811742?q=dak%20prescott%20here%20we%20go&t=1726014231689"
           target="_blank"
+          rel="noreferrer"
         >
           yeah here we go
         </a>
@@ -241,6 +249,7 @@ export const teams: Team[] = [
         <a
           href="https://www.tiktok.com/@dirtyjsports/video/7278352880317254958?q=drake%20london&t=1726014688832"
           target="_blank"
+          rel="noreferrer"
         >
           {' '}
           I hope you're hungry
@@ -330,6 +339,7 @@ export const teams: Team[] = [
           <a
             href="https://www.google.com/search?q=uh+oh+stinkuy&oq=uh+oh+stinkuy&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQLhiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDE2ODdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:790496af,vid:FveF-we6lcE,st:0"
             target="_blank"
+            rel="noreferrer"
           >
             uh oh stinky
           </a>
@@ -351,9 +361,9 @@ export const teams: Team[] = [
     powerRankText: (
       <Text>
         Yahoo was quick to crown <b>The Wharf Rats</b> as the team to beat this season, awarding
-        them with a draft grade of <b>A+</b>, so it's no suprise Marc's team finds itself in the top
-        2 after a close win over <b>Pattibot</b>. The most impressive part of this team's win was
-        the fact that their WR's combined for 11 points. Marc's squad got contributions from the
+        them with a draft grade of <b>A+</b>, so it&apos;s no suprise Marc's team finds itself in the top
+        2 after a close win over <b>Pattibot</b>. The most impressive part of this team&apos;s win was
+        the fact that their WR&apos;s combined for 11 points. Marc&apos;s squad got contributions from the
         often forgotten positions, with their Defense and Kickers hauling in{' '}
         <b>34 combined points.</b>
         <br />
@@ -361,7 +371,7 @@ export const teams: Team[] = [
         <b>Draft Grade:</b> A+
         <br />
         <b>Panic Meter: </b>
-        <a href="https://cdn.memes.com/up/11365011627511492/i/1627769424531.jpg" target="_blank">
+        <a href="https://cdn.memes.com/up/11365011627511492/i/1627769424531.jpg" target="_blank" rel="noreferrer">
           Yahoo's golden child
         </a>
       </Text>
@@ -381,7 +391,7 @@ export const matchups: Matchup[] = [
     awayTeam: {
       name: 'Joey B & The Q-tips',
       id: '1',
-      score: 80.46,
+      score: 106.46,
     },
   },
   {
@@ -393,17 +403,17 @@ export const matchups: Matchup[] = [
     awayTeam: {
       name: 'The Replacements',
       id: '3',
-      score: 96.18,
+      score: 104.18,
     },
   },
   {
     homeTeam: {
       name: 'Candace Bergen',
       id: '6',
-      score: 102.36,
+      score: 121.06,
     },
     awayTeam: {
-      name: 'All you need is Love',
+      name: 'Kirkin it Old-School',
       id: '4',
       score: 103.5,
     },
@@ -412,24 +422,24 @@ export const matchups: Matchup[] = [
     homeTeam: {
       name: 'Purdy Good',
       id: '9',
-      score: 101.9,
+      score: 112.24,
     },
     awayTeam: {
       name: "Henry's Hustle",
       id: '7',
-      score: 73.72,
+      score: 91.72,
     },
   },
   {
     homeTeam: {
       name: 'The Wharf Rats',
       id: '12',
-      score: 99.06,
+      score: 122.16,
     },
     awayTeam: {
       name: 'Pattibot',
       id: '8',
-      score: 113.76,
+      score: 115.76,
     },
   },
   {
@@ -447,10 +457,10 @@ export const matchups: Matchup[] = [
 ];
 
 export const article: MainArticle = {
-  coverImage: Jersey,
-  title: 'TBD',
+  coverImage: Week1,
+  title: 'Making the Grade',
   summary:
-    'Catching up with new faces. Ever wanted an A+ draft grade? Marc reveals his secrets. Jaime shares woes of being a newbie. Scott confronts questionable ethics with using his child as his team logo.',
+    'Ever wanted an A+ draft grade? Marc reveals his secrets. Jaime shares woes of being a newbie. Scott confronts questionable ethics concerns by using his child as his team logo.',
   author: 'Mason White, Commissioner',
   content: (
     <>
@@ -471,8 +481,6 @@ export const article: MainArticle = {
         Lombardi Trophy complete with league branding!
       </Text>
       <br />
-      <Text>**In Dak Prescott snap count voice** HERE WE GOOOO...</Text>
-      <br />
       <Text>
         Snazzy websites and trophies aren&apos;t all that&apos;s new this year, we also added 3 new
         teams to our league! I am pleased to welcome Marc, Jaime and Scott to the league.
@@ -480,7 +488,7 @@ export const article: MainArticle = {
         have them.
       </Text>
       <br />
-      <Text>**Awkward pause a la Tom Brady&apos;s broadcat debut**</Text>
+      <Text>**Awkward Tom Brady broadcast pause**</Text>
       <br />
       <Text>
         Let&apos;s zoom in on these new faces! I got a chance to catch up with each of them this
@@ -493,10 +501,10 @@ export const article: MainArticle = {
         <Mark style={{ margin: '0 .20rem' }} color="rgb(255, 156, 90)">
           Jaiwalking to Victory
         </Mark>
-        &apos;s Jaime Sheppard. She&apos;s a brave soul for signing up for this league as it is not
-        only competitive, but also will publically shame you on a website for the whole internet to
-        see if you play poorly. Did she know that when I asked her to join? Nope. But it&apos;s too
-        late now 🤷🏼‍♂️.
+        &apos;s Jaime Sheppard. She&apos;s a brave soul for signing up for this league that is not
+        only competitive, but will also shame you on a website for the whole
+        internet to see if you play poorly. Did she know that when I asked her to join? Nope.
+        Too late now 🤷🏼‍♂️.
       </Text>
       <br />
       <Blockquote
@@ -505,19 +513,21 @@ export const article: MainArticle = {
         radius="xs"
         cite="Mason White, Commissioner"
       >
-        Lorem ipsum dolor sit amet?
+        How do you feel your first fantasy football week went?
       </Blockquote>
       <Blockquote color="white" radius="xs" cite="Jaime Sheppard, Jaiwalking to Victory">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        (Redcated)....It looked like (redacted), definitely smelt like (redacted) and I bet if
+        I were to taste it, it would be (redacted)!
+        <br />
+        <br />
+        Hey, but it&apos;s only the first week, I
+        feel confident in my ability as a coach to mess up the rest of the year and somehow
+        come out on top.
       </Blockquote>
       <br />
       <Text>
-        Well, after looking at my own squad,{' '}
-        <Mark style={{ margin: '0 .20rem' }} color="rgb(255, 156, 90)">
-          Joey B & The Q-tips
-        </Mark>
-        &apos; , Week 1 performance...we might have to battle for who will come in last this season.
+        That&apos;s a veteran move Jaime! Keeping calm when the (redacted) hits the fan. And after looking at my squad&apos;s{' '}
+        Week 1 performance, we might have to battle for who will come in last this season.
         Just be glad we&apos;re not one of those leagues that make the last place coach take the SAT
         in a Limu Emu costume.....yet.
       </Text>
@@ -539,15 +549,15 @@ export const article: MainArticle = {
         radius="xs"
         cite="Mason White, Commissioner"
       >
-        Lorem ipsum dolor sit amet?
+        With your daughter being your logo, how are you planning on using the merchandising
+        royalties? Don&apos;t you think that&apos;s a conflict of interest?
       </Blockquote>
       <Blockquote color="white" radius="xs" cite="Scott Quinn, The Replacements">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        I will probably split 50/50. Although 50/50 of 0 is still 0…
       </Blockquote>
       <br />
       <Text>
-        Finally...the main event. There can only be one golden child. One team with a target on
+        And finally...the main event. There can only be one golden child. One team with a target on
         their backs. Think the 90&apos;s Bulls, the 00s Patriots, Joey Chestnut at the hotdog
         contest or Chris Collinsworth in a worshipping Patrick Mahomes contest. This year our golden
         child is Marc Bouvier of{' '}
@@ -564,17 +574,25 @@ export const article: MainArticle = {
         radius="xs"
         cite="Mason White, Commissioner"
       >
-        Lorem ipsum dolor sit amet?
+        How did you prepare for the draft? Did you have a strategy going in or during it?
+        We&apos;re all dying to know how you got that A+!
       </Blockquote>
       <Blockquote color="white" radius="xs" cite="Marc Bouvier, The Wharf Rats">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        Honestly there was some luck- but having drafted teams in the past I had an idea of
+        the general order of picking positions.
+        <br />
+        <br />
+        I had been playing Madden with my son over the past year or so. Some of the picks were
+        from bad memories of getting smoked by my 17 year old. All came together in an algorithm
+        in my brain while I was at a Labor day party and doing the draft on my phone!
       </Blockquote>
       <br />
       <Text>
-        Priceless advice straight from a budding fantasy football mind. We&apos;re all waiting with
-        bated breath to see if his dazzling draft night performance will lead to a sizzling season
-        or he&apos;ll slip like he&apos;s returning a punt in Sao Paulo.
+        Priceless advice straight from a fascinating fantasy football fiend. I remember playing
+        Madden with my Dad. He used to threaten me if I scored another touchdown he&apos;d send
+        me to bed. Childhood trauma aside, we&apos;re all waiting with bated breath to see
+        if his dazzling draft night performance will lead to a sizzling season or he&apos;ll
+        slip like he&apos;s returning a punt in Sao Paulo.
       </Text>
       <br />
       <Text>
