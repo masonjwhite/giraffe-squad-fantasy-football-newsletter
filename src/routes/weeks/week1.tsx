@@ -25,7 +25,7 @@ export default function Week1() {
         <News article={data.article} jokeArticles={data.jokeArticles} />
         <PlayerSpotlight player={data.playerOfTheWeek} />
         <PowerRankings teams={data.teams} />
-        <MatchupOfTheWeek awayTeam={data.teams[9]} homeTeam={data.teams[1]} />
+        <MatchupOfTheWeek awayTeam={data.teams[4]} homeTeam={data.teams[11]} />
         <Standings teams={data.teams} />
 
         <WeekNav selectedWeek={1} />
