@@ -27,7 +27,10 @@ export const teams: Team[] = [
         <b>Draft Grade:</b> D
         <br />
         <b>Panic Meter: </b>
-        <a href="https://www.tiktok.com/@out.of.pocket.sports/video/7411383559883214110">
+        <a
+          href="https://www.tiktok.com/@out.of.pocket.sports/video/7411383559883214110"
+          target="_blank"
+        >
           save the children
         </a>
       </Text>
@@ -55,7 +58,10 @@ export const teams: Team[] = [
         <b>Draft Grade:</b> B-
         <br />
         <b>Panic Meter: </b>
-        <a href="https://www.tiktok.com/@orthomurse2009/video/7412829933606685994?q=puka%20nacua%20meme&t=1726012820195">
+        <a
+          href="https://www.tiktok.com/@orthomurse2009/video/7412829933606685994?q=puka%20nacua%20meme&t=1726012820195"
+          target="_blank"
+        >
           Kara right now
         </a>
       </Text>
@@ -86,7 +92,10 @@ export const teams: Team[] = [
         <br />
         <b>
           Panic Meter:{' '}
-          <a href="https://www.tiktok.com/@coolaid121/video/7361203631913291051?q=derrick%20henry%20meme&t=1726013202219">
+          <a
+            href="https://www.tiktok.com/@coolaid121/video/7361203631913291051?q=derrick%20henry%20meme&t=1726013202219"
+            target="_blank"
+          >
             give it some time
           </a>
         </b>
@@ -117,7 +126,10 @@ export const teams: Team[] = [
         <b>Draft Grade:</b> B
         <br />
         <b>Panic Meter: </b>
-        <a href="https://www.reddit.com/r/GreenBayPackers/comments/1fdlgj4/with_apologies_to_matt_lafleur/">
+        <a
+          href="https://www.reddit.com/r/GreenBayPackers/comments/1fdlgj4/with_apologies_to_matt_lafleur/"
+          target="_blank"
+        >
           Brainrot on Packers subreddit
         </a>
       </Text>
@@ -166,7 +178,10 @@ export const teams: Team[] = [
         <b>Draft Grade:</b> C+
         <br />
         <b>Panic Meter: </b>
-        <a href="https://www.tiktok.com/@nflonfox/video/7327504105121811742?q=dak%20prescott%20here%20we%20go&t=1726014231689">
+        <a
+          href="https://www.tiktok.com/@nflonfox/video/7327504105121811742?q=dak%20prescott%20here%20we%20go&t=1726014231689"
+          target="_blank"
+        >
           yeah here we go
         </a>
       </Text>
@@ -223,7 +238,10 @@ export const teams: Team[] = [
         <b>Draft Grade:</b> B-
         <br />
         <b>Panic Meter: </b>
-        <a href="https://www.tiktok.com/@dirtyjsports/video/7278352880317254958?q=drake%20london&t=1726014688832">
+        <a
+          href="https://www.tiktok.com/@dirtyjsports/video/7278352880317254958?q=drake%20london&t=1726014688832"
+          target="_blank"
+        >
           {' '}
           I hope you're hungry
         </a>
@@ -309,7 +327,10 @@ export const teams: Team[] = [
         <br />
         <b>
           Panic Meter:{' '}
-          <a href="https://www.google.com/search?q=uh+oh+stinkuy&oq=uh+oh+stinkuy&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQLhiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDE2ODdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:790496af,vid:FveF-we6lcE,st:0">
+          <a
+            href="https://www.google.com/search?q=uh+oh+stinkuy&oq=uh+oh+stinkuy&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQLhiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDE2ODdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:790496af,vid:FveF-we6lcE,st:0"
+            target="_blank"
+          >
             uh oh stinky
           </a>
         </b>
@@ -340,7 +361,7 @@ export const teams: Team[] = [
         <b>Draft Grade:</b> A+
         <br />
         <b>Panic Meter: </b>
-        <a href="https://cdn.memes.com/up/11365011627511492/i/1627769424531.jpg">
+        <a href="https://cdn.memes.com/up/11365011627511492/i/1627769424531.jpg" target="_blank">
           Yahoo's golden child
         </a>
       </Text>
