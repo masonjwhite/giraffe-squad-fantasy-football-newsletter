@@ -501,7 +501,7 @@ export const article: MainArticle = {
         <Mark style={{ margin: '0 .20rem' }} color="rgb(255, 156, 90)">
           Jaiwalking to Victory
         </Mark>
-        &apos;s Jaime Sheppard. She&apos;s a brave soul for signing up for this league that is not
+        &apos;s Coach Jaime. She&apos;s a brave soul for signing up for this league that is not
         only competitive, but will also shame you on a website for the whole
         internet to see if you play poorly. Did she know that when I asked her to join? Nope.
         Too late now 🤷🏼‍♂️.
@@ -533,7 +533,7 @@ export const article: MainArticle = {
       </Text>
       <br />
       <Text>
-        Next up we have Scott Quinn, who is leading{' '}
+        Next up we have Coach Scott, who is leading{' '}
         <Mark style={{ margin: '0 .20rem' }} color="rgb(255, 156, 90)">
           The Replacements
         </Mark>
@@ -560,7 +560,7 @@ export const article: MainArticle = {
         And finally...the main event. There can only be one golden child. One team with a target on
         their backs. Think the 90&apos;s Bulls, the 00s Patriots, Joey Chestnut at the hotdog
         contest or Chris Collinsworth in a worshipping Patrick Mahomes contest. This year our golden
-        child is Marc Bouvier of{' '}
+        child is Coach Marc of{' '}
         <Mark style={{ margin: '0 .20rem' }} color="rgb(255, 156, 90)">
           The Wharf Rats
         </Mark>
