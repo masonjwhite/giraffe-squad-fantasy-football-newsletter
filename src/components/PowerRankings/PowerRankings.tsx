@@ -26,7 +26,7 @@ function AccordionLabel({ name, logo, coach, powerRank }: AccordionLabelProps) {
       <div>
         <Title className={classes.teamName}>{name}</Title>
         <Title order={5} c="dimmed">
-          {coach}
+          {coach.split(' ')[0]}
         </Title>
       </div>
     </Group>
@@ -52,6 +52,7 @@ export default function PowerRankings({ teams }: PowerRankingsProps) {
   return (
     <>
       <Title className={globalClasses.sectionHeader}>Power Rankings</Title>
+      <Text className={classes.credit}>By Will Stone, Deputy Commissioner</Text>
       <div className={classes.listContainer}>
         <Accordion chevronPosition="right" variant="contained" className={classes.accordian}>
           {items}

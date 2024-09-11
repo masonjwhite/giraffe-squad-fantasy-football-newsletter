@@ -112,8 +112,8 @@ export const teams: Team[] = [
   },
   {
     id: '4',
-    logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/d4e9119c74190a7e41c5d1f849050cff5b25ad29c67481ed3aefb761a9e0554c.jpg',
-    name: 'All you need is Love',
+    logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s90sq/fantasy-logos/c56308dc24fb248e2b7aa0d46db5437685efbde43722ce3a687d31023e7f8d6a.jpg',
+    name: 'Kirkin it Old-School',
     coach: 'Zac Fermanis',
     record: '0-1',
     pointsFor: 103.5,
@@ -469,7 +469,7 @@ export const article: MainArticle = {
       <Text>WE ARE BACK FOR OUR 5TH ANNIVERSARY SEASON!</Text>
       <br />
       <Text>
-        We&apos;re pulling out all the stops to celebrate this milestone! Firstly, Co-Commisioner
+        We&apos;re pulling out all the stops to celebrate this milestone! Firstly, Deputy Commisioner
         Will Stone and I are proud to debut our brand-new newsletter website (if you&apos;re reading
         this you&apos;re on it). You like dat? You better... we sacrificed our Labor Day Weekend for
         this monstrosity.
@@ -515,7 +515,7 @@ export const article: MainArticle = {
       >
         How do you feel your first fantasy football week went?
       </Blockquote>
-      <Blockquote color="white" radius="xs" cite="Jaime Sheppard, Jaiwalking to Victory">
+      <Blockquote color="white" radius="xs" cite="Jaime, Jaiwalking to Victory">
         (Redcated)....It looked like (redacted), definitely smelt like (redacted) and I bet if
         I were to taste it, it would be (redacted)!
         <br />
@@ -552,7 +552,7 @@ export const article: MainArticle = {
         With your daughter being your logo, how are you planning on using the merchandising
         royalties? Don&apos;t you think that&apos;s a conflict of interest?
       </Blockquote>
-      <Blockquote color="white" radius="xs" cite="Scott Quinn, The Replacements">
+      <Blockquote color="white" radius="xs" cite="Scott, The Replacements">
         I will probably split 50/50. Although 50/50 of 0 is still 0…
       </Blockquote>
       <br />
@@ -577,7 +577,7 @@ export const article: MainArticle = {
         How did you prepare for the draft? Did you have a strategy going in or during it?
         We&apos;re all dying to know how you got that A+!
       </Blockquote>
-      <Blockquote color="white" radius="xs" cite="Marc Bouvier, The Wharf Rats">
+      <Blockquote color="white" radius="xs" cite="Marc, The Wharf Rats">
         Honestly there was some luck- but having drafted teams in the past I had an idea of
         the general order of picking positions.
         <br />
