@@ -99,7 +99,7 @@
     background-size: cover;
 
 
-    background-color: rgba(255, 156, 90, 1);
+    background-color: rgba(123, 23, 245, 1);
     background-blend-mode: darken;
   }
 
@@ -107,7 +107,7 @@
     padding-left: 5%;
     border-radius: 0 2rem 2rem 0;
     background-size: cover;
-    background-color: rgba(255, 120, 187, 1);
+    background-color: rgb(225, 28, 38);
     background-blend-mode: darken;
   }
 

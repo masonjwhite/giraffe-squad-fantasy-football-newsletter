@@ -9,7 +9,7 @@ export interface Team {
   pointsFor: number;
   pointsAgainst: number;
   powerRank: number;
-  powerRankText: string;
+  powerRankText: string | ReactNode;
   helmetImage?: string;
   draftGrade: string;
 }
@@ -27,12 +27,17 @@ export interface Matchup {
   };
 }
 
-export interface Article {
+export interface MainArticle {
   coverImage: string;
   title: string;
   summary: string;
   author: string;
   content: ReactNode;
+}
+
+export interface JokeArticle {
+  title: string;
+  link: string;
 }
 
 export interface Player {

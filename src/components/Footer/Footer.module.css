@@ -18,7 +18,6 @@
 
     @media (max-width: $mantine-breakpoint-md) {
         flex-direction: column;
-        text-align: center;
     }
 }
 
@@ -27,7 +26,7 @@
     flex-direction: column;
 
     @media (max-width: $mantine-breakpoint-md) {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
 }
 
@@ -45,6 +44,11 @@
 .link {
     color: var(--mantine-color-text);
     text-decoration: none;
+    display: flex;
+}
+
+.linkIcon {
+    margin-left: 0.2rem;
 }
 
 .link:hover {
