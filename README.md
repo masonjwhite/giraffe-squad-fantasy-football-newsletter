@@ -30,10 +30,11 @@
 
 To add a new week to the site, please follow the steps below.
 
-1. Make sure you have added an `APP_KEY` and `APP_SECRET` to your `.env`
-2. Modify the `create-weekly-file` script in the `package.json` to take the week of the file you want to create. (the number after `createDataFile.js`)
-3. Run the `create-weekly-file` script
-4. To see your page in the site, add your route component and route name in the `src/main.tsx` file.
-5. Once ready to publish, change the `CURRENT_PUBLISHED_WEEK` value to your new week in the `src/settings.ts` file.
-6. All routing and navigation should be automatically handled for you thanks to some pretty cheeky component design if I do say so myself 😜
-7. PUSH, CELEBRATE AND SHARE!
+1. Duplicate the `.env.example` and name it `.env` 
+2. Add an `APP_KEY` and `APP_SECRET` to your newly created `.env` file
+3. Modify the `create-weekly-file` script in the `package.json` to take the week of the file you want to create. (the number after `createDataFile.js`)
+4. Run the `create-weekly-file` script
+5. To see your page in the site, add your route component and route name in the `src/main.tsx` file.
+6. Once ready to publish, change the `CURRENT_PUBLISHED_WEEK` value to your new week in the `src/settings.ts` file.
+7. All routing and navigation should be automatically handled for you thanks to some pretty cheeky component design if I do say so myself 😜
+8. PUSH, CELEBRATE AND SHARE!

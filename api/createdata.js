@@ -17,8 +17,17 @@ const yf = new YahooFantasy(
   app_secret
 );
 
+const eslint = `
+  /* eslint-disable react/no-unescaped-entities */
+  /* eslint-disable max-len */
+`;
+
 const imports = `
 import { Text } from '@mantine/core';
+import Paragraph from '../components/News/MainArticle/Paragraph/Paragraph';
+import Interview from '../components/News/MainArticle/Interview/Interview';
+import TeamName from '../components/News/MainArticle/TeamName/TeamName';
+import Signature from '../components/News/MainArticle/Signature/Signature';
 import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
 import Jersey from '../images/Giraffe_Jersey.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';\n\n`;
@@ -69,18 +78,18 @@ export const playerOfTheWeek: Player = {
 };
 `
 const coaches = {
-  1: "Mason White",
-  2: "Kara Prescott",
-  3: "Scott Quinn",
-  4: "Zac Fermanis",
-  5: "Will Stone",
-  6: "Zari Bazarian",
-  7: "Adam LaCasse",
-  8: "Jackie Munger",
-  9: "Joe Pecosky",
-  10: "Nick Bradfish",
-  11: "Jaime Sheppard",
-  12: "Marc Bouvier"
+  1: "Mason",
+  2: "Kara",
+  3: "Scott",
+  4: "Zac",
+  5: "Will",
+  6: "Zari",
+  7: "Adam",
+  8: "Jackie",
+  9: "Joe",
+  10: "Nick",
+  11: "Jaime",
+  12: "Marc"
 }
 
 async function getAllFileData() {
@@ -119,7 +128,7 @@ async function getAllFileData() {
     }`;
   });
 
-  return imports + fileStart + teamData + endTeamsData + matchupsHeader + scoreData.join(',\n') + endTeamsData + articlePlaceholder;
+  return eslint + imports + fileStart + teamData + endTeamsData + matchupsHeader + scoreData.join(',\n') + endTeamsData + articlePlaceholder;
   } catch (e) {
     console.log('error:', e);
   }
