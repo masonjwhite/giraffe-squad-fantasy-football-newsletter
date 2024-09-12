@@ -1,8 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 
-import { Text, Blockquote, Mark } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
+import Paragraph from '../components/News/MainArticle/Paragraph/Paragraph';
+import Exposition from '../components/News/MainArticle/Exposition/Exposition';
+import Interview from '../components/News/MainArticle/Interview/Interview';
+import TeamName from '../components/News/MainArticle/TeamName/TeamName';
+import Signature from '../components/News/MainArticle/Signature/Signature';
 import Week1 from '../images/week1.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
 import WharfRatHelmet from '../images/wharf_rats_helmet.webp';
@@ -13,7 +18,7 @@ export const teams: Team[] = [
     id: '1',
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/64203cd3285f9f3871a185bb8c326d4dd9b6d25bea1d1118293a6043b40fd93e.png',
     name: 'Joey B & The Q-tips',
-    coach: 'Mason White',
+    coach: 'Mason',
     record: '0-1',
     pointsFor: 106.46,
     pointsAgainst: 113.48,
@@ -46,7 +51,7 @@ export const teams: Team[] = [
     id: '2',
     logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_1_k.png',
     name: 'Pukamon',
-    coach: 'Kara Prescott',
+    coach: 'Kara',
     record: '1-0',
     pointsFor: 113.48,
     pointsAgainst: 106.46,
@@ -78,7 +83,7 @@ export const teams: Team[] = [
     id: '3',
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/7de364b656ae287ccf84bb8e4f90fe3cf3c4befe3ef6dbde6c7ebfe0b2e82767.jpg',
     name: 'The Replacements',
-    coach: 'Scott Quinn',
+    coach: 'Scott',
     record: '0-1',
     pointsFor: 104.18,
     pointsAgainst: 118.52,
@@ -114,7 +119,7 @@ export const teams: Team[] = [
     id: '4',
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s90sq/fantasy-logos/c56308dc24fb248e2b7aa0d46db5437685efbde43722ce3a687d31023e7f8d6a.jpg',
     name: 'Kirkin it Old-School',
-    coach: 'Zac Fermanis',
+    coach: 'Zac',
     record: '0-1',
     pointsFor: 103.5,
     pointsAgainst: 121.06,
@@ -148,7 +153,7 @@ export const teams: Team[] = [
     id: '5',
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/46632e5f7e5ea783ff5b6916aa67cc3a1e4db1b62a34c31e88869e31fb5266a6.jpg',
     name: 'Super LaMario',
-    coach: 'Will Stone',
+    coach: 'Will',
     record: '1-0',
     pointsFor: 118.52,
     pointsAgainst: 104.18,
@@ -168,7 +173,7 @@ export const teams: Team[] = [
     id: '6',
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/e7180887533d328d002f500a6008232752eeb20ad3418d992f7f529e286eca6b.jpg',
     name: 'Candace Bergen',
-    coach: 'Zari Bazarian',
+    coach: 'Zari',
     record: '1-0',
     pointsFor: 121.06,
     pointsAgainst: 103.5,
@@ -201,7 +206,7 @@ export const teams: Team[] = [
     id: '7',
     logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_h.png',
     name: "Henry's Hustle",
-    coach: 'Adam LaCasse',
+    coach: 'Adam',
     record: '0-1',
     pointsFor: 91.72,
     pointsAgainst: 112.24,
@@ -228,7 +233,7 @@ export const teams: Team[] = [
     id: '8',
     logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_11_j.png',
     name: 'Pattibot',
-    coach: 'Jackie Munger',
+    coach: 'Jackie',
     record: '0-1',
     pointsFor: 115.76,
     pointsAgainst: 122.16,
@@ -263,7 +268,7 @@ export const teams: Team[] = [
     id: '9',
     logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_3_j.png',
     name: 'Purdy Good',
-    coach: 'Joe Pecosky',
+    coach: 'Joe',
     record: '1-0',
     pointsFor: 112.24,
     pointsAgainst: 91.72,
@@ -289,7 +294,7 @@ export const teams: Team[] = [
     id: '10',
     logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_10_n.png',
     name: 'Nacua Matata',
-    coach: 'Nick Bradfish',
+    coach: 'Nick',
     record: '1-0',
     pointsFor: 150.78,
     pointsAgainst: 88.54,
@@ -315,7 +320,7 @@ export const teams: Team[] = [
     id: '11',
     logo: 'https://s.yimg.com/ep/cx/blendr/v2/image-football-trophy-png_1721174536245.png',
     name: 'Jaiwalking to Victory',
-    coach: 'Jaime Sheppard',
+    coach: 'Jaime',
     record: '0-1',
     pointsFor: 88.54,
     pointsAgainst: 150.78,
@@ -353,7 +358,7 @@ export const teams: Team[] = [
     id: '12',
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/1b498f79c6072a597eaf052dd6d2b1af353ba76db4a0b5e3721790e4b2a9fc5f.jpg',
     name: 'The Wharf Rats',
-    coach: 'Marc Bouvier',
+    coach: 'Marc',
     record: '1-0',
     pointsFor: 122.16,
     pointsAgainst: 115.76,
@@ -464,146 +469,122 @@ export const article: MainArticle = {
   author: 'Mason White, Commissioner',
   content: (
     <>
-      <Text>Welcome back fantasy football maniacs, managers and masochsits!</Text>
-      <br />
-      <Text>WE ARE BACK FOR OUR 5TH ANNIVERSARY SEASON!</Text>
-      <br />
-      <Text>
+      <Paragraph>
+        Welcome back fantasy football maniacs, managers and masochsits!
+      </Paragraph>
+      <Paragraph>
+        WE ARE BACK FOR OUR 5TH ANNIVERSARY SEASON!
+      </Paragraph>
+      <Paragraph>
         We&apos;re pulling out all the stops to celebrate this milestone! Firstly, Deputy Commisioner
         Will Stone and I are proud to debut our brand-new newsletter website (if you&apos;re reading
         this you&apos;re on it). You like dat? You better... we sacrificed our Labor Day Weekend for
         this monstrosity.
-      </Text>
-      <br />
-      <Text>
+      </Paragraph>
+      <Paragraph>
         And if that doesn&apos;t have you as excited as Travis Kelce getting a new endorsement deal,
         we are also pleased to announce that we will be awarding this year&apos;s winner a replica
         Lombardi Trophy complete with league branding!
-      </Text>
-      <br />
-      <Text>
+      </Paragraph>
+      <Paragraph>
         Snazzy websites and trophies aren&apos;t all that&apos;s new this year, we also added 3 new
         teams to our league! I am pleased to welcome Marc, Jaime and Scott to the league.
         They&apos;ve joined our merry band of misfits for 2025 and I couldn&apos;t be happier to
         have them.
-      </Text>
-      <br />
-      <Text>**Awkward Tom Brady broadcast pause**</Text>
-      <br />
-      <Text>
+      </Paragraph>
+      <Exposition text="Awkward Tom Brady broadcast pause" />
+      <Paragraph>
         Let&apos;s zoom in on these new faces! I got a chance to catch up with each of them this
         week and ask a question or two about their first week as Giraffe Squad Fantasy Football
         League coaches.
-      </Text>
-      <br />
-      <Text>
+      </Paragraph>
+      <Paragraph>
         First up is not only a league newcomer, but also fantasy football newcomer in general,
-        <Mark style={{ margin: '0 .20rem' }} color="rgb(255, 156, 90)">
-          Jaiwalking to Victory
-        </Mark>
+        <TeamName
+          teamName="Jaiwalking to Victory"
+        />
         &apos;s Coach Jaime. She&apos;s a brave soul for signing up for this league that is not
         only competitive, but will also shame you on a website for the whole
         internet to see if you play poorly. Did she know that when I asked her to join? Nope.
         Too late now 🤷🏼‍♂️.
-      </Text>
-      <br />
-      <Blockquote
-        style={{ marginBottom: '1rem' }}
-        color="rgb(255, 156, 90)"
-        radius="xs"
-        cite="Mason White, Commissioner"
-      >
-        How do you feel your first fantasy football week went?
-      </Blockquote>
-      <Blockquote color="white" radius="xs" cite="Jaime, Jaiwalking to Victory">
-        (Redcated)....It looked like (redacted), definitely smelt like (redacted) and I bet if
-        I were to taste it, it would be (redacted)!
-        <br />
-        <br />
-        Hey, but it&apos;s only the first week, I
-        feel confident in my ability as a coach to mess up the rest of the year and somehow
-        come out on top.
-      </Blockquote>
-      <br />
-      <Text>
+      </Paragraph>
+      <Interview
+        interviewerName="Mason White, Commissioner"
+        interviewerQuote="How do you feel your first fantasy football week went?"
+        intervieweeName="Coach Jaime, Jaiwalking to Victory"
+        intervieweeQuote={`
+          (Redcated)....It looked like (redacted), definitely smelt like (redacted) and I bet if
+          I were to taste it, it would be (redacted)! Hey, but it's only the first week, I
+          feel confident in my ability as a coach to mess up the rest of the year and somehow
+          come out on top.
+        `}
+      />
+      <Paragraph>
         That&apos;s a veteran move Jaime! Keeping calm when the (redacted) hits the fan. And after looking at my squad&apos;s{' '}
         Week 1 performance, we might have to battle for who will come in last this season.
         Just be glad we&apos;re not one of those leagues that make the last place coach take the SAT
         in a Limu Emu costume.....yet.
-      </Text>
-      <br />
-      <Text>
+      </Paragraph>
+      <Paragraph>
         Next up we have Coach Scott, who is leading{' '}
-        <Mark style={{ margin: '0 .20rem' }} color="rgb(255, 156, 90)">
-          The Replacements
-        </Mark>
+        <TeamName
+          teamName="The Replacements"
+        />
         this year. I noticed something interesting about the team logo when he joined the league...
         it&apos;s his adorable daughter! There have been some questions raised by our league
         &ldquo;Logo Ethics Committee&rdquo; about using his daughter as his logo. I caught up with
         him about the matter.
-      </Text>
-      <br />
-      <Blockquote
-        style={{ marginBottom: '1rem' }}
-        color="rgb(255, 156, 90)"
-        radius="xs"
-        cite="Mason White, Commissioner"
-      >
-        With your daughter being your logo, how are you planning on using the merchandising
-        royalties? Don&apos;t you think that&apos;s a conflict of interest?
-      </Blockquote>
-      <Blockquote color="white" radius="xs" cite="Scott, The Replacements">
-        I will probably split 50/50. Although 50/50 of 0 is still 0…
-      </Blockquote>
-      <br />
-      <Text>
+      </Paragraph>
+      <Interview
+        interviewerName="Mason White, Commissioner"
+        interviewerQuote={`
+          With your daughter being your logo, how are you planning on using the merchandising
+          royalties? Don't you think that's a conflict of interest?  
+        `}
+        intervieweeName="Coach Scott, The Replacements"
+        intervieweeQuote="I will probably split 50/50. Although 50/50 of 0 is still 0…"
+      />
+      <Paragraph>
         And finally...the main event. There can only be one golden child. One team with a target on
         their backs. Think the 90&apos;s Bulls, the 00s Patriots, Joey Chestnut at the hotdog
         contest or Chris Collinsworth in a worshipping Patrick Mahomes contest. This year our golden
         child is Coach Marc of{' '}
-        <Mark style={{ margin: '0 .20rem' }} color="rgb(255, 156, 90)">
-          The Wharf Rats
-        </Mark>
+        <TeamName
+          teamName="The Wharf Rats"
+        />
         , who was blessed with the hallowed A+ draft grade by our Yahoo Fantasy Football overlords.
         I got a chance to chat with him about all the hype...
-      </Text>
-      <br />
-      <Blockquote
-        style={{ marginBottom: '1rem' }}
-        color="rgb(255, 156, 90)"
-        radius="xs"
-        cite="Mason White, Commissioner"
-      >
-        How did you prepare for the draft? Did you have a strategy going in or during it?
-        We&apos;re all dying to know how you got that A+!
-      </Blockquote>
-      <Blockquote color="white" radius="xs" cite="Marc, The Wharf Rats">
-        Honestly there was some luck- but having drafted teams in the past I had an idea of
-        the general order of picking positions.
-        <br />
-        <br />
-        I had been playing Madden with my son over the past year or so. Some of the picks were
-        from bad memories of getting smoked by my 17 year old. All came together in an algorithm
-        in my brain while I was at a Labor day party and doing the draft on my phone!
-      </Blockquote>
-      <br />
-      <Text>
+      </Paragraph>
+      <Interview
+        interviewerName="Mason White, Commissioner"
+        interviewerQuote={`
+          How did you prepare for the draft? Did you have a strategy going in or during it?
+          We're all dying to know how you got that A+!
+        `}
+        intervieweeName="Coach Marc, The Wharf Rats"
+        intervieweeQuote={`
+          Honestly there was some luck- but having drafted teams in the past I had an idea of
+          the general order of picking positions. I had been playing Madden with my son over
+          the past year or so. Some of the picks were from bad memories of getting smoked by
+          my 17 year old. All came together in an algorithm in my brain while I was at a Labor
+          day party and doing the draft on my phone!
+        `}
+      />
+      <Paragraph>
         Priceless advice straight from a fascinating fantasy football fiend. I remember playing
         Madden with my Dad. He used to threaten me if I scored another touchdown he&apos;d send
         me to bed. Childhood trauma aside, we&apos;re all waiting with bated breath to see
         if his dazzling draft night performance will lead to a sizzling season or he&apos;ll
         slip like he&apos;s returning a punt in Sao Paulo.
-      </Text>
-      <br />
-      <Text>
+      </Paragraph>
+      <Paragraph>
         Anyways, that&apos;s all he wrote folks. I have to go organize my collection of 200 sealed
         copies of Shrek on VHS!
-      </Text>
-      <br />
-      <Text>👋🏼 Stay demure, stay mindful.</Text>
-      <br />
-      <Text>- Commish</Text>
-      <br />
+      </Paragraph>
+      <Paragraph>
+        👋🏼 Stay demure, stay mindful.
+      </Paragraph>
+      <Signature />
     </>
   ),
 };
