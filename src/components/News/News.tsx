@@ -12,11 +12,21 @@ interface Props {
 export default function News({ article, jokeArticles }: Props) {
   const [opened, { toggle }] = useDisclosure(false);
 
+  const handleToggle = () => {
+    if (opened) {
+      // Scroll to top of article before collapsing
+      document.getElementById('week-title')?.scrollIntoView();
+      return toggle();
+    }
+
+    toggle();
+  }
+
   return (
     <div className={classes.container}>
       <Grid>
         <Grid.Col span={{ md: 12, lg: 8 }} className={classes.expandable}>
-          <Box onClick={toggle}>
+          <Box onClick={handleToggle}>
             <Image radius="md" src={article.coverImage} className={classes.mainImage} />
             <Title className={classes.title}>{article.title}</Title>
             <Text>{article.summary}</Text>
@@ -34,6 +44,9 @@ export default function News({ article, jokeArticles }: Props) {
             <Collapse in={opened}>
               <Divider my="sm" variant="dashed" />
               <Text>{article.content}</Text>
+              <Text className={classes.backToTop} onClick={handleToggle} c="dimmed" size="xs">
+                Back to top
+              </Text>
               <Divider my="sm" variant="dashed" />
             </Collapse>
           </Box>
@@ -49,7 +62,7 @@ export default function News({ article, jokeArticles }: Props) {
                 <a
                   className={classes.jokeArticleLink}
                   href={jokeArticle.link}
-                  target="_blank"
+                  target="_blank" 
                   rel="noreferrer"
                 >
                   <Text span>

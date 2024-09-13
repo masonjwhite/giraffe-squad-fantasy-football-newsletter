@@ -7,7 +7,7 @@ import Paragraph from '../components/News/MainArticle/Paragraph/Paragraph';
 import Exposition from '../components/News/MainArticle/Exposition/Exposition';
 import Interview from '../components/News/MainArticle/Interview/Interview';
 import TeamName from '../components/News/MainArticle/TeamName/TeamName';
-import Signature from '../components/News/MainArticle/Signature/Signature';
+import commissionerImg from '../images/Commissioner.jpg'
 import Week1 from '../images/week1.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
 import WharfRatHelmet from '../images/wharf_rats_helmet.webp';
@@ -511,6 +511,7 @@ export const article: MainArticle = {
       <Interview
         interviewerName="Mason White, Commissioner"
         interviewerQuote="How do you feel your first fantasy football week went?"
+        interviewerImage={commissionerImg}
         intervieweeName="Coach Jaime, Jaiwalking to Victory"
         intervieweeQuote={`
           (Redcated)....It looked like (redacted), definitely smelt like (redacted) and I bet if
@@ -518,6 +519,7 @@ export const article: MainArticle = {
           feel confident in my ability as a coach to mess up the rest of the year and somehow
           come out on top.
         `}
+        intervieweeImage={teams[10].logo}
       />
       <Paragraph>
         That&apos;s a veteran move Jaime! Keeping calm when the (redacted) hits the fan. And after looking at my squad&apos;s{' '}
@@ -541,8 +543,10 @@ export const article: MainArticle = {
           With your daughter being your logo, how are you planning on using the merchandising
           royalties? Don't you think that's a conflict of interest?  
         `}
+        interviewerImage={commissionerImg}
         intervieweeName="Coach Scott, The Replacements"
         intervieweeQuote="I will probably split 50/50. Although 50/50 of 0 is still 0…"
+        intervieweeImage={teams[2].logo}
       />
       <Paragraph>
         And finally...the main event. There can only be one golden child. One team with a target on
@@ -561,6 +565,7 @@ export const article: MainArticle = {
           How did you prepare for the draft? Did you have a strategy going in or during it?
           We're all dying to know how you got that A+!
         `}
+        interviewerImage={commissionerImg}
         intervieweeName="Coach Marc, The Wharf Rats"
         intervieweeQuote={`
           Honestly there was some luck- but having drafted teams in the past I had an idea of
@@ -569,6 +574,7 @@ export const article: MainArticle = {
           my 17 year old. All came together in an algorithm in my brain while I was at a Labor
           day party and doing the draft on my phone!
         `}
+        intervieweeImage={teams[11].logo}
       />
       <Paragraph>
         Priceless advice straight from a fascinating fantasy football fiend. I remember playing
@@ -584,7 +590,6 @@ export const article: MainArticle = {
       <Paragraph>
         👋🏼 Stay demure, stay mindful.
       </Paragraph>
-      <Signature />
     </>
   ),
 };

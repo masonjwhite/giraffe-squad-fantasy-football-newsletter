@@ -1,3 +1,9 @@
 .quote {
     margin-bottom: 1rem;
+    width: 95%;
+    margin: 0 auto;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 90%;
+    }
 }

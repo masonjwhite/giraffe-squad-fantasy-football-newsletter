@@ -27,8 +27,8 @@ import { Text } from '@mantine/core';
 import Paragraph from '../components/News/MainArticle/Paragraph/Paragraph';
 import Interview from '../components/News/MainArticle/Interview/Interview';
 import TeamName from '../components/News/MainArticle/TeamName/TeamName';
-import Signature from '../components/News/MainArticle/Signature/Signature';
 import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
+import commissionerImg from '../images/Commissioner.jpg'
 import Jersey from '../images/Giraffe_Jersey.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';\n\n`;
 

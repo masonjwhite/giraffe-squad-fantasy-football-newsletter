@@ -1,0 +1,15 @@
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.image {
+    height: 300px;
+    width: auto;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        height: 200px;
+    }
+}
