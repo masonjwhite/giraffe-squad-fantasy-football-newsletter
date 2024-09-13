@@ -27,6 +27,16 @@
     max-height: 70vh;
 }
 
+.backToTop {
+    text-align: center;
+}
+
+.backToTop:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(255, 156, 90) !important;
+}
+
 .newsSubHeader {
     font-family: 'Molot', sans-serif;
 

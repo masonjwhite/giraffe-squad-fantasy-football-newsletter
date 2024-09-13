@@ -1,19 +1,26 @@
-import { Blockquote } from '@mantine/core';
+import { Blockquote, Avatar } from '@mantine/core';
 import classes from './Interview.module.css';
 
 interface Props {
     interviewerName: string;
     interviewerQuote: string;
+    interviewerImage: string;
     intervieweeName: string;
     intervieweeQuote: string;
+    intervieweeImage: string;
 }
 
 export default function Interview({
-    interviewerQuote,
     interviewerName,
-    intervieweeQuote,
+    interviewerQuote,
+    interviewerImage,
     intervieweeName,
+    intervieweeQuote,
+    intervieweeImage
 }: Props) {
+    const interviewerAvatar = <Avatar src={interviewerImage} />;
+    const intervieweeAvatar = <Avatar src={intervieweeImage} />;
+
     return (
         <>
             <Blockquote
@@ -21,15 +28,18 @@ export default function Interview({
               color="rgb(255, 156, 90)"
               radius="xs"
               cite={interviewerName}
+              icon={interviewerAvatar}
             >
                 {interviewerQuote}
             </Blockquote>
+            <br />
             <br />
             <Blockquote
               className={classes.quote}
               color="white"
               radius="xs"
               cite={intervieweeName}
+              icon={intervieweeAvatar}
             >
                 {intervieweeQuote}
             </Blockquote>
