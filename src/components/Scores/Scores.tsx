@@ -16,12 +16,10 @@ function Score({ homeTeam, homeTeamScore, awayTeam, awayTeamScore }: ScoreProps)
   const homeTeamClassname = !isTie && homeTeamWon ? classes.winner : '';
   const awayTeamClassname = !isTie && awayTeamWon ? classes.winner : '';
 
-  const getCoachFistName = (coach: String | undefined) => coach?.split(' ')[0] || '';
-
   return (
     <Card withBorder className={classes.scoreTile}>
       <div className={classes.scoreTileTeam}>
-        <div>{getCoachFistName(awayTeam?.coach)}</div>
+        <div>{awayTeam?.coach}</div>
         <Avatar src={awayTeam?.logo} radius="xl" size="s" className={classes.pic} />
       </div>
       <div className={classes.scoreTileScore}>
@@ -30,7 +28,7 @@ function Score({ homeTeam, homeTeamScore, awayTeam, awayTeamScore }: ScoreProps)
         <span className={homeTeamClassname}>{homeTeamScore}</span>
       </div>
       <div className={classes.scoreTileTeam}>
-        <div>{getCoachFistName(homeTeam?.coach)}</div>
+        <div>{homeTeam?.coach}</div>
         <Avatar src={homeTeam?.logo} radius="xl" size="s" className={classes.pic} />
       </div>
     </Card>
