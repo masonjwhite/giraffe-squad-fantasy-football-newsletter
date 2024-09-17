@@ -5,9 +5,11 @@ import { Text } from '@mantine/core';
 import Paragraph from '../components/News/MainArticle/Paragraph/Paragraph';
 import Interview from '../components/News/MainArticle/Interview/Interview';
 import TeamName from '../components/News/MainArticle/TeamName/TeamName';
+import Image from '../components/News/MainArticle/Image/Image';
+import Exposition from '../components/News/MainArticle/Exposition/Exposition';
 import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
 import commissionerImg from '../images/Commissioner.jpg';
-import Jersey from '../images/Giraffe_Jersey.png';
+import Week2 from '../images/week2.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
 
 export const teams: Team[] = [
@@ -245,37 +247,157 @@ export const matchups: Matchup[] = [
 ];
 
 export const article: MainArticle = {
-  coverImage: Jersey,
-  title: 'TBD',
-  summary: 'Some summary',
-  author: 'Some author',
-  content: <Text>PLACEHOLDER</Text>,
+  coverImage: Week2,
+  title: 'Oops, he did it again!',
+  summary: "Christian McCaffrey played with Zac's heart, got lost in the game. Kara talks losing her team's namesake. Joe and Nick discuss Green Bay's hottest new dating show.",
+  author: 'Mason White, Commissioner',
+  content: (
+    <>
+      <Paragraph>
+        Welcome to the Week 2 Fantasy Newsletter, Britney Army!
+      </Paragraph>
+      <Paragraph>
+        Am I going to cram every lyric to "Oops I did it Again" into one article?
+      </Paragraph>
+      <Paragraph>
+        Let's just say...
+      </Paragraph>
+      <Image
+        src="https://media.giphy.com/media/JoVB2SzGWJojVtIZQs/giphy.gif?cid=790b7611cwsa3yx04vd6v1385vy9insamw0cggehgw79z9e0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+      />
+      <Paragraph>
+        This week we're talking injuries. And dang have there been a lot of them!
+        Actually, come to think of it, there might be more notable players hurt than "Dynamic Kickoff" returns so far.
+      </Paragraph>
+      <Paragraph>
+        First, we saw Jordan Love hit the "grass" in Sao Paulo.
+        Puka Nacua's knee said "football is death".
+        Kenneth Walker III's injury status became "oh...bleek".
+        Keenan Allen learned the "heel" command.
+        Evan Engram didn't want to be associated with the Jaguars this season (who can blame him?).
+        Tee Higgins still hasn't "tee'd" off yet.
+        Raheem Mostert decided that De'Von Achane would handle "most ert" the carries for the first part of the season.
+      </Paragraph>
+      <Paragraph>
+        Week 2 made me lose all my senses. We saw Tua Tagovailoa have yet another vicious concussion on Thursday night (no jokes for this one folks, too serious).
+        Marquise "Hollywood" Brown decided that he would go on a writer's strike.
+        Isiah Pacheco took the pregame "break a leg" well wishes a little TOO seriously.
+        Cooper Kupp's ankle decided that it had been shown up enough by Marvin Harrison Jr for one day.
+      </Paragraph>
+      <Paragraph>
+        I had a chance to interview our resident Packers fanboys, Nick and Joe, about the devastating loss of Jordan Love.
+      </Paragraph>
+      <Interview
+        interviewerName="Mason White, Commissioner"
+        interviewerQuote="Lorem ipsum dolor sit amet"
+        interviewerImage={commissionerImg}
+        intervieweeName="Coach Nick, Nacua Matata"
+        intervieweeQuote="Lorem ipsum dolor sit amet"
+        intervieweeImage={teams[0].logo}
+      />
+      <Interview
+        interviewerName="Mason White, Commissioner"
+        interviewerQuote="Lorem ipsum dolor sit amet"
+        interviewerImage={commissionerImg}
+        intervieweeName="Coach Joe, Purdy Good"
+        intervieweeQuote="Lorem ipsum dolor sit amet"
+        intervieweeImage={teams[5].logo}
+      />
+      <Paragraph>
+        Coach Kara of{' '}
+        <TeamName teamName="Pukamon" />,
+        is also dealing with a key player being hurt, her namesake: Puka Nacua.
+      </Paragraph>
+      <Paragraph>
+        I asked her how she's been dealing with the situation and if she'll change her team's name.
+      </Paragraph>
+      <Interview
+        interviewerName="Mason White, Commissioner"
+        interviewerQuote="Lorem ipsum dolor sit amet"
+        interviewerImage={commissionerImg}
+        intervieweeName="Coach Zac, Highly Questionable"
+        intervieweeQuote="Lorem ipsum dolor sit amet"
+        intervieweeImage={teams[4].logo}
+      />
+      <Paragraph>
+        But perhaps most dramatically, Christian McCaffrey is on the IR AGAIN after he made us all believe him and the 49ers were more than just friends.
+      </Paragraph>
+      <Paragraph>
+        When I heard the news the first thought that went through my head was the chorus of Britney Spears' 2000 mega hit "Oops I did it Again".
+      </Paragraph>
+      <Paragraph>
+        TBD....
+      </Paragraph>
+      <Paragraph>
+        Now what if I told you ONE single team had Christian McCaffrey AND 3 other key injured players?
+      </Paragraph>
+      <Paragraph>
+        That is the unfortunate fate of Zac Fermanis, coach of the aptly named{' '}
+        <TeamName teamName="Highly Questionable" />
+      </Paragraph>
+      <Paragraph>
+        I was able to snag him for a second when he wasn't busy trawling the waiver wire.
+      </Paragraph>
+      <Interview
+        interviewerName="Mason White, Commissioner"
+        interviewerQuote="Lorem ipsum dolor sit amet"
+        interviewerImage={commissionerImg}
+        intervieweeName="Coach Zac, Highly Questionable"
+        intervieweeQuote="Lorem ipsum dolor sit amet"
+        intervieweeImage={teams[9].logo}
+      />
+      <Interview
+        interviewerName="Mason White, Commissioner"
+        interviewerQuote="Lorem ipsum dolor sit amet"
+        interviewerImage={commissionerImg}
+        intervieweeName="Coach Zac, Highly Questionable"
+        intervieweeQuote="Lorem ipsum dolor sit amet"
+        intervieweeImage={teams[9].logo}
+      />
+      <Image
+        src="https://media.giphy.com/media/d5kD2Paz7YFD1zfmVe/giphy.gif?cid=ecf05e471t0jmura4sdbcthf8g1nt512ff94dvbtxu4u4i7u&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+        caption="Me seeing Zac continue to battle it out despite the injuries"
+      />
+      <Paragraph>
+        So there you have it folks! Let's hope Week 3 cools down on the injury front because I'm not sure my karma can do another article poking fun of people's injuries.
+      </Paragraph>
+      <Paragraph>
+        Anyways, I'm off do some random acts of kindness!
+      </Paragraph>
+      <Exposition
+        text="Puts headphones blaring Brittney Spears back on"
+      />
+      <Image
+        src="https://media.giphy.com/media/RhGjuQok9Bc01sagms/giphy.gif?cid=790b7611cwsa3yx04vd6v1385vy9insamw0cggehgw79z9e0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+      />
+    </>
+  ),
 };
 
 export const jokeArticles: JokeArticle[] = [
   {
-    title: 'TBD',
+    title: 'WILL TBD',
     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
-    title: 'TBD',
+    title: 'ENTERTAINMENT: "The Bear" wins Emmy for best comedy series despite close race with the Dallas Cowboys 2024 season',
+    link: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXM5Mjhwc3dqYnFldTM0ejF5NmYxM2F2YmZnb2F1bHZnd2xmYzh6OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/I1Yt13Z4JW1yWIRCVd/giphy.gif',
+  },
+  {
+    title: 'WILL TBD',
     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
-    title: 'TBD',
+    title: "MUSIC: Jane's Addiction to record soundtrack for Fight Club 2",
+    link: 'https://youtube.com/shorts/1oL0IaylEkY?si=RVJSD-znbzzL9ZnY',
+  },
+  {
+    title: 'WILL TBD',
     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
-    title: 'TBD',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-  },
-  {
-    title: 'TBD',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-  },
-  {
-    title: 'TBD',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    title: 'CRIME WATCH: Marvin Harrison Jr. Stolen from Will Stone for next to nothing',
+    link: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGhjOHlienh0c290NWYwcDBwcmw3cGp3YzU0MXpnbnB5NWtnbmpyMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fUqSeJqC5M4oS94SVn/giphy.gif',
   },
 ];
 

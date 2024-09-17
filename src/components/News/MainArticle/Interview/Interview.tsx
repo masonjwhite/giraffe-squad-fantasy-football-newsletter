@@ -16,13 +16,14 @@ export default function Interview({
     interviewerImage,
     intervieweeName,
     intervieweeQuote,
-    intervieweeImage
+    intervieweeImage,
 }: Props) {
     const interviewerAvatar = <Avatar src={interviewerImage} />;
     const intervieweeAvatar = <Avatar src={intervieweeImage} />;
 
     return (
         <>
+            <br />
             <Blockquote
               className={classes.quote}
               color="rgb(255, 156, 90)"
@@ -32,7 +33,6 @@ export default function Interview({
             >
                 {interviewerQuote}
             </Blockquote>
-            <br />
             <br />
             <Blockquote
               className={classes.quote}
