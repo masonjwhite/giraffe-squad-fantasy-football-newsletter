@@ -279,10 +279,10 @@ export const article: MainArticle = {
         Raheem Mostert decided that De'Von Achane would handle "most ert" the carries for the first part of the season.
       </Paragraph>
       <Paragraph>
-        Week 2 made me lose all my senses. We saw Tua Tagovailoa have yet another vicious concussion on Thursday night (no jokes for this one folks, too serious).
+        Then Week 2 made me lose all my senses. We saw Tua Tagovailoa have yet another vicious concussion on Thursday night (no jokes for this one folks, too serious).
         Marquise "Hollywood" Brown decided that he would go on a writer's strike.
         Isiah Pacheco took the pregame "break a leg" well wishes a little TOO seriously.
-        Cooper Kupp's ankle decided that it had been shown up enough by Marvin Harrison Jr for one day.
+        And Cooper Kupp's ankle decided that it had been shown up enough by Marvin Harrison Jr for one day.
       </Paragraph>
       <Paragraph>
         I had a chance to interview our resident Packers fanboys, Nick and Joe, about the devastating loss of Jordan Love.
@@ -306,7 +306,7 @@ export const article: MainArticle = {
       <Paragraph>
         Coach Kara of{' '}
         <TeamName teamName="Pukamon" />,
-        is also dealing with a key player being hurt, her namesake: Puka Nacua.
+        is also dealing with a key player being hurt, her team's namesake: Puka Nacua.
       </Paragraph>
       <Paragraph>
         I asked her how she's been dealing with the situation and if she'll change her team's name.
@@ -359,13 +359,13 @@ export const article: MainArticle = {
         caption="Me seeing Zac continue to battle it out despite the injuries"
       />
       <Paragraph>
-        So there you have it folks! Let's hope Week 3 cools down on the injury front because I'm not sure my karma can do another article poking fun of people's injuries.
+        So there you have it folks! Let's hope Week 3 cools down on the injury front because I'm not sure my karma can handle another article poking fun of people's injuries.
       </Paragraph>
       <Paragraph>
         Anyways, I'm off do some random acts of kindness!
       </Paragraph>
       <Exposition
-        text="Puts headphones blaring Brittney Spears back on"
+        text="Puts headphones blaring Britney Spears back on"
       />
       <Image
         src="https://media.giphy.com/media/RhGjuQok9Bc01sagms/giphy.gif?cid=790b7611cwsa3yx04vd6v1385vy9insamw0cggehgw79z9e0&ep=v1_gifs_search&rid=giphy.gif&ct=g"
