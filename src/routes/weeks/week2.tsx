@@ -19,7 +19,7 @@ export default function Week2() {
       <Scores teams={data.teams} matchups={data.matchups} />
       <div className={globalClasses.contentContainer}>
         <div className={globalClasses.pageHeaderContainer}>
-          <Title id="page-title" className={globalClasses.pageHeader}>
+          <Title id="week-title" className={globalClasses.pageHeader}>
             Week 2
           </Title>
           <WeekSelector />
