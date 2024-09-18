@@ -602,7 +602,7 @@ export const article: MainArticle = {
       <Exposition text="Oops, I did it again, I played with your heart, got lost in the game" />
       <Paragraph>Dang. That pretty much sums it up.</Paragraph>
       <Paragraph>
-        Each year, millions of Fantasy Coaches are faced with the same difficult choice: "To draft
+        Each year, millions of fantasy coaches are faced with the same difficult choice: "To draft
         McCaffrey or not to draft McCaffrey?". And each year they're either treated to an absolute
         wrecking ball of a running back or they "cry watching the days" until the season is over.
       </Paragraph>
@@ -647,7 +647,7 @@ export const article: MainArticle = {
       />
       <Paragraph>
         So there you have it folks! Let's hope Week 3 cools down on the injury front because I'm not
-        sure my karma can handle another article poking fun of people's injuries.
+        sure my karma can handle another article poking fun at people's injuries.
       </Paragraph>
       <Paragraph>Anyways, I'm off do some random acts of kindness!</Paragraph>
       <Exposition text="Puts headphones blaring Britney Spears back on" />
