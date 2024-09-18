@@ -23,9 +23,9 @@ function Score({ homeTeam, homeTeamScore, awayTeam, awayTeamScore }: ScoreProps)
         <Avatar src={awayTeam?.logo} radius="xl" size="s" className={classes.pic} />
       </div>
       <div className={classes.scoreTileScore}>
-        <span className={awayTeamClassname}>{awayTeamScore}</span>
+        <span className={awayTeamClassname}>{awayTeamScore.toFixed(2)}</span>
         <span>-</span>
-        <span className={homeTeamClassname}>{homeTeamScore}</span>
+        <span className={homeTeamClassname}>{homeTeamScore.toFixed(2)}</span>
       </div>
       <div className={classes.scoreTileTeam}>
         <div>{homeTeam?.coach}</div>

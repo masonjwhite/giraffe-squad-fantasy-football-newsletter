@@ -27,8 +27,7 @@ const StudsAndScrubs = ({
   scrubName: string;
   scrubImg: string;
   scrubPts: number;
-}) => {
-  return (
+}) => (
     <Grid>
       <GridCol span={{ md: 6, sm: 12, xs: 12 }}>
         <Paper radius="md" withBorder p="sm" bg="var(--mantine-color-body)">
@@ -74,7 +73,6 @@ const StudsAndScrubs = ({
       </GridCol>
     </Grid>
   );
-};
 
 export const teams: Team[] = [
   {
@@ -428,12 +426,12 @@ export const teams: Team[] = [
     powerRankText: (
       <>
         <Title order={3} style={{ textAlign: 'center' }}>
-          Oh Uh Stinky™️ Team of the Week
+          Uh Oh Stinky™️ Team of the Week
         </Title>
         <Text style={{ marginBottom: '1rem' }}>
           <b>Henry's Hustle</b> is off to a rough start. In fact, nearly the entire roster
           underperformed this week relative to projections, if I could crown each of them as the{' '}
-          {''}
+
           <b>Uh Oh Stinky™️ Certified Scrub of the Week</b> I would. But alas, without a dedicated
           UX team I can't figure out how to do that in a way that won't take all night so I can only
           choose one. And that honor goes to <b>Colby Parkinson</b> - a man who embodied the spirit
@@ -574,7 +572,7 @@ export const article: MainArticle = {
         interviewerImage={commissionerImg}
         intervieweeName="Coach Joe, Purdy Good"
         intervieweeQuote="When it first happened last week, I thought our season was over. We lost the game and Love looked to be done for the year. Then things started turning around - It was only a sprain and then Josh Jacobs ran over the Colts. Just have to keep it close until Love gets back and Superbowl here we come!"
-        intervieweeImage={teams[5].logo}
+        intervieweeImage={teams[2].logo}
       />
       <Paragraph>
         Great attitude Joe! Let's hope that "Lost Love" is only a limited series, and not a
@@ -592,9 +590,9 @@ export const article: MainArticle = {
         interviewerName="Mason White, Commissioner"
         interviewerQuote="With your namesake Puka Nacua being injured long term, are you considering re-branding your team?"
         interviewerImage={commissionerImg}
-        intervieweeName="Coach Zac, Highly Questionable"
+        intervieweeName="Coach Kara, Pukamon"
         intervieweeQuote="No, not at all. He's spending a few weeks healing up at the Pukacenter and will be back in action later this season. Pukachu, I choose you! I'm out of pokemon puns now..."
-        intervieweeImage={teams[4].logo}
+        intervieweeImage={teams[5].logo}
       />
       <Paragraph>
         Finally, when I heard the news that Christian McCaffrey was going on the IR yet again, the
@@ -629,7 +627,7 @@ export const article: MainArticle = {
         intervieweeQuote={
           "Yeah, we're being very cautious with him. We're letting his body tell us when he's ready. Don't get me wrong, we all want to see him out there to \"hit you (baby) one more time\"."
         }
-        intervieweeImage={teams[9].logo}
+        intervieweeImage={teams[6].logo}
       />
       <Interview
         interviewerName="Mason White, Commissioner"
@@ -641,7 +639,7 @@ export const article: MainArticle = {
         intervieweeQuote={
           "'Don’t let me be the last to know,' but honestly, 'don’t get me started!'"
         }
-        intervieweeImage={teams[9].logo}
+        intervieweeImage={teams[6].logo}
       />
       <Image
         src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXB1Njc4NjIybnJxNHB6bGEwczh1d2M2NmVvdHA2a2UxdDFvMndrdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dXRflFIZTTtpqFKdrq/giphy.gif"

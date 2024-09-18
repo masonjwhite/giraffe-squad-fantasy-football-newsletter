@@ -30,8 +30,8 @@ export default function Standings({ teams }: { teams: Team[] }) {
         {team.name} ({team.coach.split(' ')[0]})
       </Table.Td>
       <Table.Td align="right">{team.record}</Table.Td>
-      <Table.Td align="right">{team.pointsFor}</Table.Td>
-      <Table.Td align="right">{team.pointsAgainst}</Table.Td>
+      <Table.Td align="right">{team.pointsFor.toFixed(2)}</Table.Td>
+      <Table.Td align="right">{team.pointsAgainst.toFixed(2)}</Table.Td>
     </Table.Tr>
   ));
 
