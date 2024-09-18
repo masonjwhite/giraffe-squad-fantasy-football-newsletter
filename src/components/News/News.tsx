@@ -20,7 +20,7 @@ export default function News({ article, jokeArticles }: Props) {
     }
 
     toggle();
-  }
+  };
 
   return (
     <div className={classes.container}>
@@ -62,7 +62,7 @@ export default function News({ article, jokeArticles }: Props) {
                 <a
                   className={classes.jokeArticleLink}
                   href={jokeArticle.link}
-                  target="_blank" 
+                  target="_blank"
                   rel="noreferrer"
                 >
                   <Text span>
