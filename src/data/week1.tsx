@@ -7,7 +7,7 @@ import Paragraph from '../components/News/MainArticle/Paragraph/Paragraph';
 import Exposition from '../components/News/MainArticle/Exposition/Exposition';
 import Interview from '../components/News/MainArticle/Interview/Interview';
 import TeamName from '../components/News/MainArticle/TeamName/TeamName';
-import commissionerImg from '../images/Commissioner.jpg'
+import commissionerImg from '../images/Commissioner.jpg';
 import Week1 from '../images/week1.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
 import WharfRatHelmet from '../images/wharf_rats_helmet.webp';
@@ -366,17 +366,21 @@ export const teams: Team[] = [
     powerRankText: (
       <Text>
         Yahoo was quick to crown <b>The Wharf Rats</b> as the team to beat this season, awarding
-        them with a draft grade of <b>A+</b>, so it&apos;s no suprise Marc's team finds itself in the top
-        2 after a close win over <b>Pattibot</b>. The most impressive part of this team&apos;s win was
-        the fact that their WR&apos;s combined for 11 points. Marc&apos;s squad got contributions from the
-        often forgotten positions, with their Defense and Kickers hauling in{' '}
-        <b>34 combined points.</b>
+        them with a draft grade of <b>A+</b>, so it&apos;s no suprise Marc's team finds itself in
+        the top 2 after a close win over <b>Pattibot</b>. The most impressive part of this
+        team&apos;s win was the fact that their WR&apos;s combined for 11 points. Marc&apos;s squad
+        got contributions from the often forgotten positions, with their Defense and Kickers hauling
+        in <b>34 combined points.</b>
         <br />
         <br />
         <b>Draft Grade:</b> A+
         <br />
         <b>Panic Meter: </b>
-        <a href="https://cdn.memes.com/up/11365011627511492/i/1627769424531.jpg" target="_blank" rel="noreferrer">
+        <a
+          href="https://cdn.memes.com/up/11365011627511492/i/1627769424531.jpg"
+          target="_blank"
+          rel="noreferrer"
+        >
           Yahoo's golden child
         </a>
       </Text>
@@ -469,17 +473,13 @@ export const article: MainArticle = {
   author: 'Mason White, Commissioner',
   content: (
     <>
+      <Paragraph>Welcome back fantasy football maniacs, managers and masochsits!</Paragraph>
+      <Paragraph>WE ARE BACK FOR OUR 5TH ANNIVERSARY SEASON!</Paragraph>
       <Paragraph>
-        Welcome back fantasy football maniacs, managers and masochsits!
-      </Paragraph>
-      <Paragraph>
-        WE ARE BACK FOR OUR 5TH ANNIVERSARY SEASON!
-      </Paragraph>
-      <Paragraph>
-        We&apos;re pulling out all the stops to celebrate this milestone! Firstly, Deputy Commisioner
-        Will Stone and I are proud to debut our brand-new newsletter website (if you&apos;re reading
-        this you&apos;re on it). You like dat? You better... we sacrificed our Labor Day Weekend for
-        this monstrosity.
+        We&apos;re pulling out all the stops to celebrate this milestone! Firstly, Deputy
+        Commisioner Will Stone and I are proud to debut our brand-new newsletter website (if
+        you&apos;re reading this you&apos;re on it). You like dat? You better... we sacrificed our
+        Labor Day Weekend for this monstrosity.
       </Paragraph>
       <Paragraph>
         And if that doesn&apos;t have you as excited as Travis Kelce getting a new endorsement deal,
@@ -500,13 +500,10 @@ export const article: MainArticle = {
       </Paragraph>
       <Paragraph>
         First up is not only a league newcomer, but also fantasy football newcomer in general,
-        <TeamName
-          teamName="Jaiwalking to Victory"
-        />
-        &apos;s Coach Jaime. She&apos;s a brave soul for signing up for this league that is not
-        only competitive, but will also shame you on a website for the whole
-        internet to see if you play poorly. Did she know that when I asked her to join? Nope.
-        Too late now 🤷🏼‍♂️.
+        <TeamName teamName="Jaiwalking to Victory" />
+        &apos;s Coach Jaime. She&apos;s a brave soul for signing up for this league that is not only
+        competitive, but will also shame you on a website for the whole internet to see if you play
+        poorly. Did she know that when I asked her to join? Nope. Too late now 🤷🏼‍♂️.
       </Paragraph>
       <Interview
         interviewerName="Mason White, Commissioner"
@@ -522,16 +519,13 @@ export const article: MainArticle = {
         intervieweeImage={teams[10].logo}
       />
       <Paragraph>
-        That&apos;s a veteran move Jaime! Keeping calm when the (redacted) hits the fan. And after looking at my squad&apos;s{' '}
-        Week 1 performance, we might have to battle for who will come in last this season.
-        Just be glad we&apos;re not one of those leagues that make the last place coach take the SAT
-        in a Limu Emu costume.....yet.
+        That&apos;s a veteran move Jaime! Keeping calm when the (redacted) hits the fan. And after
+        looking at my squad&apos;s Week 1 performance, we might have to battle for who will come in
+        last this season. Just be glad we&apos;re not one of those leagues that make the last place
+        coach take the SAT in a Limu Emu costume.....yet.
       </Paragraph>
       <Paragraph>
-        Next up we have Coach Scott, who is leading{' '}
-        <TeamName
-          teamName="The Replacements"
-        />
+        Next up we have Coach Scott, who is leading <TeamName teamName="The Replacements" />
         this year. I noticed something interesting about the team logo when he joined the league...
         it&apos;s his adorable daughter! There have been some questions raised by our league
         &ldquo;Logo Ethics Committee&rdquo; about using his daughter as his logo. I caught up with
@@ -552,12 +546,9 @@ export const article: MainArticle = {
         And finally...the main event. There can only be one golden child. One team with a target on
         their backs. Think the 90&apos;s Bulls, the 00s Patriots, Joey Chestnut at the hotdog
         contest or Chris Collinsworth in a worshipping Patrick Mahomes contest. This year our golden
-        child is Coach Marc of{' '}
-        <TeamName
-          teamName="The Wharf Rats"
-        />
-        , who was blessed with the hallowed A+ draft grade by our Yahoo Fantasy Football overlords.
-        I got a chance to chat with him about all the hype...
+        child is Coach Marc of <TeamName teamName="The Wharf Rats" />, who was blessed with the
+        hallowed A+ draft grade by our Yahoo Fantasy Football overlords. I got a chance to chat with
+        him about all the hype...
       </Paragraph>
       <Interview
         interviewerName="Mason White, Commissioner"
@@ -578,18 +569,16 @@ export const article: MainArticle = {
       />
       <Paragraph>
         Priceless advice straight from a fascinating fantasy football fiend. I remember playing
-        Madden with my Dad. He used to threaten me if I scored another touchdown he&apos;d send
-        me to bed. Childhood trauma aside, we&apos;re all waiting with bated breath to see
-        if his dazzling draft night performance will lead to a sizzling season or he&apos;ll
-        slip like he&apos;s returning a punt in Sao Paulo.
+        Madden with my Dad. He used to threaten me if I scored another touchdown he&apos;d send me
+        to bed. Childhood trauma aside, we&apos;re all waiting with bated breath to see if his
+        dazzling draft night performance will lead to a sizzling season or he&apos;ll slip like
+        he&apos;s returning a punt in Sao Paulo.
       </Paragraph>
       <Paragraph>
         Anyways, that&apos;s all he wrote folks. I have to go organize my collection of 200 sealed
         copies of Shrek on VHS!
       </Paragraph>
-      <Paragraph>
-        👋🏼 Stay demure, stay mindful.
-      </Paragraph>
+      <Paragraph>👋🏼 Stay demure, stay mindful.</Paragraph>
     </>
   ),
 };
