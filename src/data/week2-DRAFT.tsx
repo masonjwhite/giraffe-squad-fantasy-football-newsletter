@@ -532,10 +532,11 @@ export const article: MainArticle = {
   coverImage: Week2,
   title: 'Oops, he did it again!',
   summary:
-    "Christian McCaffrey played with Zac's heart, got lost in the game. Kara talks losing her team's namesake. Joe and Nick discuss Green Bay's hottest new dating show.",
+    "Christian McCaffrey played with Zac's heart, got lost in the game. Kara talks losing her team's namesake. Joe discusses Green Bay's hottest new dating show.",
   author: 'Mason White, Commissioner',
   content: (
     <>
+      <Paragraph>Welcome to the Week 2 Fantasy Newsletter, Britney Army!</Paragraph>
       <Paragraph>Welcome to the Week 2 Fantasy Newsletter, Britney Army!</Paragraph>
       <Paragraph>
         Am I going to cram every lyric to "Oops I did it Again" into one article?
@@ -551,62 +552,66 @@ export const article: MainArticle = {
         death". Kenneth Walker III's injury status became "oh...bleek". Keenan Allen learned the
         "heel" command. Evan Engram didn't want to be associated with the Jaguars this season (who
         can blame him?). Tee Higgins still hasn't "tee'd" off yet. Raheem Mostert decided that
-        De'Von Achane would handle "most ert" the carries for the first part of the season.
+        De'Von Achane would handle "most ert" the carries for the first part of the season. And AJ
+        Brown's hamstring didn't want to go up against primetime Kirk Cousins.
       </Paragraph>
       <Paragraph>
-        Then Week 2 made me lose all my senses. We saw Tua Tagovailoa have yet another vicious
-        concussion on Thursday night (no jokes for this one folks, too serious). Marquise
-        "Hollywood" Brown decided that he would go on a writer's strike. Isiah Pacheco took the
-        pregame "break a leg" well wishes a little TOO seriously. And Cooper Kupp's ankle decided
-        that it had been shown up enough by Marvin Harrison Jr for one day.
+        Then Week 2 "made me lose all my senses". We saw Tua Tagovailoa have yet another vicious
+        concussion on Thursday night (no joke for this one folks, too serious). Marquise "Hollywood"
+        Brown decided that he would go on a writer's strike. Isiah Pacheco took the pregame "break a
+        leg" well wishes a little TOO seriously. And Cooper Kupp's ankle decided that it had been
+        shown up enough by Marvin Harrison Jr for one day.
       </Paragraph>
       <Paragraph>
-        I had a chance to interview our resident Packers fanboys, Nick and Joe, about the
-        devastating loss of Jordan Love.
+        With all these injuries abound, its affected just about everyone. I had a chance to
+        interview one of our resident cheeseheads, Joe, about the devastating loss of Jordan Love.
       </Paragraph>
       <Interview
         interviewerName="Mason White, Commissioner"
-        interviewerQuote="Lorem ipsum dolor sit amet"
-        interviewerImage={commissionerImg}
-        intervieweeName="Coach Nick, Nacua Matata"
-        intervieweeQuote="Lorem ipsum dolor sit amet"
-        intervieweeImage={teams[0].logo}
-      />
-      <Interview
-        interviewerName="Mason White, Commissioner"
-        interviewerQuote="Lorem ipsum dolor sit amet"
+        interviewerQuote={
+          "Have you hear about Green Bay's newest dating show \"Lost Love\"? What're your thoughts on Jordan Love's injury as one of our resident Green Bay fans?"
+        }
         interviewerImage={commissionerImg}
         intervieweeName="Coach Joe, Purdy Good"
-        intervieweeQuote="Lorem ipsum dolor sit amet"
+        intervieweeQuote="When it first happened last week, I thought our season was over. We lost the game and Love looked to be done for the year. Then things started turning around - It was only a sprain and then Josh Jacobs ran over the Colts. Just have to keep it close until Love gets back and Superbowl here we come!"
         intervieweeImage={teams[5].logo}
       />
+      <Paragraph>
+        Great attitude Joe! Let's hope that "Lost Love" is only a limited series, and not a
+        multi-season affair.
+      </Paragraph>
       <Paragraph>
         Coach Kara of <TeamName teamName="Pukamon" />, is also dealing with a key player being hurt,
         her team's namesake: Puka Nacua.
       </Paragraph>
       <Paragraph>
-        I asked her how she's been dealing with the situation and if she'll change her team's name.
+        I asked her how she's been dealing with the situation and whether or not she'll change her
+        team's name.
       </Paragraph>
       <Interview
         interviewerName="Mason White, Commissioner"
-        interviewerQuote="Lorem ipsum dolor sit amet"
+        interviewerQuote="With your namesake Puka Nacua being injured long term, are you considering re-branding your team?"
         interviewerImage={commissionerImg}
         intervieweeName="Coach Zac, Highly Questionable"
-        intervieweeQuote="Lorem ipsum dolor sit amet"
+        intervieweeQuote="No, not at all. He's spending a few weeks healing up at the Pukacenter and will be back in action later this season. Pukachu, I choose you! I'm out of pokemon puns now..."
         intervieweeImage={teams[4].logo}
       />
       <Paragraph>
-        But perhaps most dramatically, Christian McCaffrey is on the IR AGAIN after he made us all
-        believe him and the 49ers were more than just friends.
+        Finally, when I heard the news that Christian McCaffrey was going on the IR yet again, the
+        first thing I thought of was the chorus of Britney Spears' 2000 mega hit "Oops I did it
+        Again".
       </Paragraph>
+      <Exposition text="Oops, I did it again, I played with your heart, got lost in the game" />
+      <Paragraph>Dang. That pretty much sums it up.</Paragraph>
       <Paragraph>
-        When I heard the news the first thought that went through my head was the chorus of Britney
-        Spears' 2000 mega hit "Oops I did it Again".
+        Each year, millions of Fantasy Coaches are faced with the same difficult choice: "To draft
+        McCaffrey or not to draft McCaffrey?". And each year they're either treated to an absolute
+        wrecking ball of a running back or they "cry watching the days" until the season is over.
       </Paragraph>
       <Paragraph>TBD....</Paragraph>
       <Paragraph>
-        Now what if I told you ONE single team had Christian McCaffrey AND 3 other key injured
-        players?
+        Now what if I told you the coach who had to make that decision this year ALSO has 3 other
+        injured starting players?
       </Paragraph>
       <Paragraph>
         That is the unfortunate fate of Zac Fermanis, coach of the aptly named{' '}
@@ -617,23 +622,31 @@ export const article: MainArticle = {
       </Paragraph>
       <Interview
         interviewerName="Mason White, Commissioner"
-        interviewerQuote="Lorem ipsum dolor sit amet"
+        interviewerQuote={
+          'This week\'s main article theme is "oops he did it again" regarding Christian McCaffrey\'s injury. Did you know that he would "play with your heart" when you drafted him?'
+        }
         interviewerImage={commissionerImg}
         intervieweeName="Coach Zac, Highly Questionable"
-        intervieweeQuote="Lorem ipsum dolor sit amet"
+        intervieweeQuote={
+          "Yeah, we're being very cautious with him. We're letting his body tell us when he's ready. Don't get me wrong, we all want to see him out there to \"hit you (baby) one more time\"."
+        }
         intervieweeImage={teams[9].logo}
       />
       <Interview
         interviewerName="Mason White, Commissioner"
-        interviewerQuote="Lorem ipsum dolor sit amet"
+        interviewerQuote={
+          'How have you been handling all the other critical injuries you\'ve "acquired"?'
+        }
         interviewerImage={commissionerImg}
         intervieweeName="Coach Zac, Highly Questionable"
-        intervieweeQuote="Lorem ipsum dolor sit amet"
+        intervieweeQuote={
+          "'Don’t let me be the last to know,' but honestly, 'don’t get me started!'"
+        }
         intervieweeImage={teams[9].logo}
       />
       <Image
-        src="https://media.giphy.com/media/d5kD2Paz7YFD1zfmVe/giphy.gif?cid=ecf05e471t0jmura4sdbcthf8g1nt512ff94dvbtxu4u4i7u&ep=v1_gifs_search&rid=giphy.gif&ct=g"
-        caption="Me seeing Zac continue to battle it out despite the injuries"
+        src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXB1Njc4NjIybnJxNHB6bGEwczh1d2M2NmVvdHA2a2UxdDFvMndrdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dXRflFIZTTtpqFKdrq/giphy.gif"
+        caption="Me seeing Kara and Zac fight through injuries"
       />
       <Paragraph>
         So there you have it folks! Let's hope Week 3 cools down on the injury front because I'm not
