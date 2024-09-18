@@ -6,7 +6,7 @@ import PowerRankings from '../../components/PowerRankings/PowerRankings';
 import Standings from '../../components/Standings/Standings';
 import WeekNav from '../../components/WeekNav/WeekNav';
 import useScrollToTop from '../../hooks/useScrollToTop';
-import * as data from '../../data/week2-DRAFT';
+import * as data from '../../data/week2';
 import * as lastWeekData from '../../data/week1';
 import globalClasses from '../../global.module.css';
 import MatchupOfTheWeek from '../../components/MatchupOfTheWeek/MatchupOfTheWeek';
@@ -28,7 +28,7 @@ export default function Week2() {
         <News article={data.article} jokeArticles={data.jokeArticles} />
         <PlayerSpotlight player={data.playerOfTheWeek} />
         <PowerRankings teams={data.teams} lastWeekTeams={lastWeekData.teams} />
-        <MatchupOfTheWeek awayTeam={data.teams[4]} homeTeam={data.teams[11]} />
+        <MatchupOfTheWeek awayTeam={data.teams[1]} homeTeam={data.teams[8]} />
         <Standings teams={data.teams} />
 
         <WeekNav selectedWeek={2} />
