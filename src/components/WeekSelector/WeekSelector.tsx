@@ -6,7 +6,7 @@ import classes from './WeekSelector.module.css';
 export default function WeekSelector() {
   const { pathname } = useLocation();
 
-  const selectedWeekNumber = parseInt(pathname.split('/')[3], 10);
+  const selectedWeekNumber = parseInt(pathname.split('/')[2], 10);
 
   // Creates an array of selections based on CURRENT_PUBLISHED_WEEK
   // Example: CURRENT_PUBLISHED_WEEK = 3 -> [1, 2, 3]

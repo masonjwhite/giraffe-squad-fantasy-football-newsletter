@@ -26,10 +26,12 @@ function sortTeams(teamA: Team, teamB: Team) {
 export default function Standings({ teams }: { teams: Team[] }) {
   const rows = teams.sort(sortTeams).map((team) => (
     <Table.Tr key={team.name}>
-      <Table.Td>{team.name} ({team.coach.split(' ')[0]})</Table.Td>
+      <Table.Td>
+        {team.name} ({team.coach.split(' ')[0]})
+      </Table.Td>
       <Table.Td align="right">{team.record}</Table.Td>
-      <Table.Td align="right">{team.pointsFor}</Table.Td>
-      <Table.Td align="right">{team.pointsAgainst}</Table.Td>
+      <Table.Td align="right">{team.pointsFor.toFixed(2)}</Table.Td>
+      <Table.Td align="right">{team.pointsAgainst.toFixed(2)}</Table.Td>
     </Table.Tr>
   ));
 

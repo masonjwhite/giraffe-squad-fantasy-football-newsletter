@@ -6,12 +6,13 @@ import PowerRankings from '../../components/PowerRankings/PowerRankings';
 import Standings from '../../components/Standings/Standings';
 import WeekNav from '../../components/WeekNav/WeekNav';
 import useScrollToTop from '../../hooks/useScrollToTop';
-import * as data from '../../data/week1';
+import * as data from '../../data/week2';
+import * as lastWeekData from '../../data/week1';
 import globalClasses from '../../global.module.css';
 import MatchupOfTheWeek from '../../components/MatchupOfTheWeek/MatchupOfTheWeek';
 import PlayerSpotlight from '../../components/PlayerSpotlight/PlayerSpotlight';
 
-export default function Week1() {
+export default function Week2() {
   useScrollToTop();
 
   return (
@@ -20,17 +21,17 @@ export default function Week1() {
       <div className={globalClasses.contentContainer}>
         <div className={globalClasses.pageHeaderContainer}>
           <Title id="week-title" className={globalClasses.pageHeader}>
-            Week 1
+            Week 2
           </Title>
           <WeekSelector />
         </div>
         <News article={data.article} jokeArticles={data.jokeArticles} />
         <PlayerSpotlight player={data.playerOfTheWeek} />
-        <PowerRankings teams={data.teams} />
-        <MatchupOfTheWeek awayTeam={data.teams[4]} homeTeam={data.teams[11]} />
+        <PowerRankings teams={data.teams} lastWeekTeams={lastWeekData.teams} />
+        <MatchupOfTheWeek awayTeam={data.teams[1]} homeTeam={data.teams[8]} />
         <Standings teams={data.teams} />
 
-        <WeekNav selectedWeek={1} />
+        <WeekNav selectedWeek={2} />
       </div>
     </div>
   );
