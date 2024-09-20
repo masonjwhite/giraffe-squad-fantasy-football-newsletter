@@ -1,0 +1,16 @@
+
+.timelineGrid {
+    margin-top: 2rem;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        padding: 0 2rem;
+    }
+}
+
+.timelineGridColumn {
+    margin-bottom: 5rem;
+}
+
+.timelineBullet {
+    padding-bottom: 3rem;
+}

@@ -6,7 +6,7 @@
 
 .spotlightImageContainer {
     background-color:  #ff9c5a;
-    background-image: url(./text_only.webp);
+    background-image: url(../../images/text_only.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
