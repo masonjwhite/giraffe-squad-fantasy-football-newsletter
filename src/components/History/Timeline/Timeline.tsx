@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Timeline as MantineTimeline, Text, Grid, Avatar, Anchor } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { IconNews, IconTrophy, IconMedal, IconQuestionMark } from '@tabler/icons-react';
+import { IconTrophy } from '@tabler/icons-react';
 import Navigation from './Navigation/Navigation';
 import commissionerImage from '../../../images/Commissioner.jpg';
 import oldLogo from '../../../images/Logo_OLD.png';
@@ -57,7 +57,7 @@ export default function Timeline() {
                                   size={avatarSize}
                                 />
                             )}
-                          title="Mason joins the I'm a Giraffe Squad"
+                          title="Mason joins the Giraffe Squad"
                         >
                             <Text c="dimmed" size="sm">
                                 The future Commissioner brings with him
@@ -72,13 +72,13 @@ export default function Timeline() {
                                   src={oldLogo}
                                   size={avatarSize}
                                 />
-                            )}
-                          title="Innagural Season"
+                          )}
+                          title="Innagural season"
                         >
                             <Text c="dimmed" size="sm">
                                 Our league's first season featured only 8 teams,{' '}
-                                many of which are still in the league today. The OGs include:
-                                Adam, Kara, Mason, Zac and Zari.
+                                most of which are still in the league today. The OGs included:
+                                Adam, Kara, Mason, Mike, Zac and Zari.
 
                             </Text>
                             <Text size="xs" mt={4}>September 5, 2019 | 26 AD</Text>
@@ -86,12 +86,12 @@ export default function Timeline() {
                         <MantineTimeline.Item
                           className={classes.timelineBullet}
                           bullet={<IconTrophy size={iconSize} />}
-                          title="2019 Champion: Coach James, Giraffe Whisperer (1)"
+                          title="2019 Champion: Coach James (1), Giraffe Whisperer"
                         >
                             <Text c="dimmed" size="sm">
                                 Despite autodrafting and barely touching his lineup all{' '}
                                 season, Coach James pulled out the victory against{' '}
-                                the formidable Managerless Team to become the league's{' '}
+                                the formidable AI-controlled Managerless Team to become the league's{' '}
                                 first champion. Humble beginnings.
                             </Text>
                             <Text size="xs" mt={4}>January, 2020 | 26 AD</Text>
@@ -99,14 +99,19 @@ export default function Timeline() {
                         <MantineTimeline.Item
                           id="2020"
                           className={classes.timelineBullet}
-                          bullet={<IconNews size={iconSize} />}
-                          title="Expansion to 10 teams, the newsletter begins"
+                          bullet={(
+                            <Avatar
+                              src="https://as2.ftcdn.net/v2/jpg/02/50/35/31/1000_F_250353164_nsaIe1znGNR7hfVbwgAT1P0Y6AEdg9GJ.jpg"
+                              size={avatarSize}
+                            />
+                          )}
+                          title="2020: Expansion to 10 teams, the newsletter begins"
                         >
                             <Text c="dimmed" size="sm">
-                                With the shadow of COVID over the World, we started our{' '}
+                                With the shadow of COVID cast upon the World, we started our{' '}
                                 second season with two new teams added to the bunch.{' '}
-                                Commissioner Mason published the first issue of the{' '}
-                                Giraffe Squad Fantasy Newsletter as a simple Slack post{' '}
+                                Mason published the first issue of the{' '}
+                                Giraffe Squad Fantasy Newsletter as a simple text-based post{' '}
                                 in an effort to bring some laughs and lightheartedness{' '}
                                 to an otherwise challenging time.
                             </Text>
@@ -115,7 +120,7 @@ export default function Timeline() {
                         <MantineTimeline.Item
                           className={classes.timelineBullet}
                           bullet={<IconTrophy size={iconSize} />}
-                          title="2020 Champion: Coach Will Stone, The Empire Strikes Dak (1)"
+                          title="2020 Champion: Coach Will Stone (1), The Empire Strikes Dak"
                         >
                             <Text c="dimmed" size="sm">
                                 Future Deputy Commissioner, Will Stone, won his first{' '}
@@ -139,7 +144,7 @@ export default function Timeline() {
                         >
                             <Text c="dimmed" size="sm">
                                 Realizing his hands were way too full with the newsletter,{' '}
-                                Commissioner Mason appointed long-time league veteran, Mike Bettencourt{' '}
+                                Mason appointed long-time league veteran, Mike Bettencourt,{' '}
                                 as the league's first Deputy Commissioner.
                             </Text>
                             <Text size="xs" mt={4}>September 8, 2021 | 28 AD</Text>
@@ -155,11 +160,11 @@ export default function Timeline() {
                           title="The newsletter gets a facelift"
                         >
                             <Text c="dimmed" size="sm">
-                                Utilizing his penchant for design, Deputy Commissioner Mike Bettencourt{' '}
+                                Utilizing his penchant for design, Mike{' '}
                                 elevated the newsletter to the stratosphere by creating{' '}
-                                an actual newsletter document in Figma. This early version laid the{' '}
+                                an actual newsletter document in the design tool Figma. This early version laid the{' '}
                                 foundation for many of the hallmarks we've come to know and love in{' '}
-                                our modern version and even had a trade advertisement space!
+                                our modern newsletter. It even had a trade advertisement space!
                             </Text>
                             <Text size="xs" mt={4}>September 22, 2021 | 28 AD</Text>
                         </MantineTimeline.Item>
@@ -167,7 +172,7 @@ export default function Timeline() {
                           className={classes.timelineBullet}
                           bullet={(
                                 <Avatar
-                                  src="https://media.istockphoto.com/id/168259334/photo/human-hand.jpg?s=612x612&w=0&k=20&c=xcZvXt4EfPgWxCbGsVdGetBWGsubgv75LQCpKabmpb4="
+                                  src="https://t3.ftcdn.net/jpg/08/57/81/12/360_F_857811202_6cFrWsMgFSV4IV4l2PA7EkI3fgArOZB7.jpg"
                                   size={avatarSize}
                                 />
                             )}
@@ -183,38 +188,43 @@ export default function Timeline() {
                         <MantineTimeline.Item
                           className={classes.timelineBullet}
                           bullet={<IconTrophy size={iconSize} />}
-                          title="2021 Champion: Coach Mason White, undefined (1)"
+                          title="2021 Champion: Coach Mason White (1), undefined"
                         >
                             <Text c="dimmed" size="sm">
-                                Commissioner Mason White won his first fantasy championship{' '}
+                                Mason won his first fantasy championship{' '}
                                 ever in 2021 with his team, undefined. And no that's not a{' '}
-                                JavaScript error folks, he just thought he was being funny.
+                                JavaScript error, he just thought he was being funny.
                             </Text>
                             <Text size="xs" mt={4}>January 3rd, 2022 | 28 AD</Text>
                         </MantineTimeline.Item>
                         <MantineTimeline.Item
                           id="2022"
                           className={classes.timelineBullet}
-                          bullet={<IconMedal size={iconSize} />}
-                          title="A record breaking season"
+                          bullet={(
+                            <Avatar
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7kAnbsoA947IfZPzZAcuRTZGQdFtAp0H1g&s"
+                              size={avatarSize}
+                            />
+                          )}
+                          title="2022: A record breaking season"
                         >
                             <Text c="dimmed" size="sm">
                                 This season was one for the record books, literally! The{' '}
-                                {' '}league set records for 6 different categories in 2022{' '}
-                                including: most wins in a season (13), most losses in a season (15),{' '}
+                                league set records for 6 different categories. Among{' '}
+                                them were: most wins in a season (13), most losses in a season (15),{' '}
                                 longest win streak (9), longest losing streak (15), largest margin of{' '}
                                 victory/defeat (113.58), and easiest strength of schedule{' '}
-                                (96.28 avg points against). All of which are still standing today.{' '}
+                                (96.28 avg points against). All of which are still standing today.
                             </Text>
                             <Text size="xs" mt={4}>September 8, 2022 | 29 AD</Text>
                         </MantineTimeline.Item>
                         <MantineTimeline.Item
                           className={classes.timelineBullet}
                           bullet={<IconTrophy size={iconSize} />}
-                          title="2022 Champion: Coach Will Stone, DAK TO DAK TO DAK (2)"
+                          title="2022 Champion: Coach Will Stone (2), DAK TO DAK TO DAK"
                         >
                             <Text c="dimmed" size="sm">
-                                Future Deputy Commissioner, Will Stone, claimed his second title{' '}
+                                Will claimed his second title{' '}
                                 in 3 years with a commanding season. He tallied a league record 13 wins,{' '}
                                 a feat that has not been repeated since. He was led by his favorite{' '}
                                 player and team namesake, Dak Prescott with a supporting cast that{' '}
@@ -231,14 +241,13 @@ export default function Timeline() {
                                   size={avatarSize}
                                 />
                             )}
-                          title="Mike Bettencourt retires and steps down as Deputy Commissioner, succeeded by Will Stone"
+                          title="Mike retires and steps down as Deputy Commissioner, succeeded by Will Stone"
                         >
                             <Text c="dimmed" size="sm">
-                                Mike Bettencourt retired from the league before the beginning{' '}
+                                Mike retired from the league before the beginning{' '}
                                 of the 2023 season, leaving a Polar Seltzer can-sized hole in{' '}
-                                our hearts. League juggernaut and fantasy football guru, Will Stone was{' '}
-                                immediately appointed to Deputy Commissioner to assist with newsletter{' '}
-                                and administrative duties.
+                                our hearts. League juggernaut and fantasy football guru, Will, was{' '}
+                                appointed as the next Deputy Commissioner.
                             </Text>
                             <Text size="xs" mt={4}>September 6, 2023 | 30 AD</Text>
                         </MantineTimeline.Item>
@@ -250,7 +259,7 @@ export default function Timeline() {
                                   size={avatarSize}
                                 />
                             )}
-                          title="Season 4 Begins: 'Dak Attack'"
+                          title="2023: 'Dak Attack'"
                         >
                             <Text c="dimmed" size="sm">
                                 The league's obsession with Dak Prescott peaked in 2023, with two{' '}
@@ -270,13 +279,13 @@ export default function Timeline() {
                                   size={avatarSize}
                                 />
                             )}
-                          title="Glipmse of Greatness: The newsletter website prototype is built"
+                          title="Glimpse of greatness: The newsletter website prototype is built"
                         >
                             <Text c="dimmed" size="sm">
-                                With Commissioner Mason on his honeymoon, Deputy Commissioner{' '}
-                                Will Stone took it upon himself to code a prototype of the{' '}
-                                newsletter website. Little did he know his little experiment{' '}
-                                would soon become the website you're currently on!
+                                With Mason on his honeymoon, Will took it upon himself{' '}
+                                to take things up a notch and code an epic prototype of a{' '}
+                                newsletter website. Little did he know his little experiment would{' '}
+                                soon become the website you're currently on!
                             </Text>
                             <Text size="xs" mt={4}>October 12, 2023 | 30 AD</Text>
                         </MantineTimeline.Item>
@@ -291,10 +300,10 @@ export default function Timeline() {
                           title="Coach Adam has the hardest season to date"
                         >
                             <Text c="dimmed" size="sm">
-                                Coach Adam, OG and longtime Coach of Henry's Hustle, saw{' '}
+                                Coach Adam, OG and longtime Coach of Henry's Hustle, traversed{' '}
                                 the most difficult schedule in league history in 2023.{' '}
                                 His opponents averaged a whopping 133.41 points per week against him.{' '}
-                                Despite the onslaught, Coach Adam navigated deftly to a 5th place finish with a{' '}
+                                Despite the onslaught, Coach Adam deftly navigated to a 5th place finish and a{' '}
                                 record of 7-8.
                             </Text>
                             <Text size="xs" mt={4}>January 1, 2024 | 30 AD</Text>
@@ -302,10 +311,10 @@ export default function Timeline() {
                         <MantineTimeline.Item
                           className={classes.timelineBullet}
                           bullet={<IconTrophy size={iconSize} />}
-                          title="2023 Champion: Coach Will Stone, CeeDee Phone Home (3)"
+                          title="2023 Champion: Coach Will Stone (3), CeeDee Phone Home"
                         >
                             <Text c="dimmed" size="sm">
-                                Deputy Commissioner Will Stone cemented his dynasty by{' '}
+                                Will cemented his dynasty by{' '}
                                 winning a third, yes third, championship in 2023. He's literally{' '}
                                 won every year he's played except 2021. His championship campaign{' '}
                                 was led by his team's namesake CeeDee Lamb and supported by{' '}
@@ -322,24 +331,28 @@ export default function Timeline() {
                                   size={avatarSize}
                                 />
                             )}
-                          title="New brand who dis?"
+                          title="2024: 5th Anniversary season and new branding!"
                         >
                             <Text c="dimmed" size="sm">
                                 Before the start of our 5th Anniversary Season,
-                                Deputy Commissioner Will Stone debuted the league's
-                                new brand identity to rave reviews.
+                                Will debuted the league's new brand identity to rave reviews.
                             </Text>
                             <Text size="xs" mt={4}>September 4, 2024 | 31 AD</Text>
                         </MantineTimeline.Item>
                         <MantineTimeline.Item
                           className={classes.timelineBullet}
-                          bullet={<IconTrophy size={iconSize} />}
-                          title="Championship Trophy Unveiled"
+                          bullet={(
+                            <Avatar
+                              src="https://i.etsystatic.com/13394439/r/il/c43f4f/1022290492/il_1588xN.1022290492_7nff.jpg"
+                              size={avatarSize}
+                            />
+                          )}
+                          title="Championship trophy unveiled"
                         >
                             <Text c="dimmed" size="sm">
-                                To further amplify the 5th anniversary festivities, Commissioner
-                                Mason White also announced the inagural Giraffe Squad Fantasy
-                                Football trophy, which will be awarded for the first time to
+                                To further amplify the 5th anniversary festivities, Mason also{' '}
+                                announced the inagural Giraffe Squad Fantasy{' '}
+                                Football trophy, which will be awarded for the first time to{' '}
                                 the 2024 Champion!
                             </Text>
                             <Text size="xs" mt={4}>September 4, 2024 | 31 AD</Text>
@@ -352,27 +365,26 @@ export default function Timeline() {
                                   size={avatarSize}
                                 />
                             )}
-                          title="Newsletter Website Debuts"
+                          title="Newsletter website debuts"
                         >
                             <Text c="dimmed" size="sm">
-                                After a labor-intensive Labor Day Weekend, Commissioner
-                                Mason White and Deputy Commissioner Will Stone debuted
-                                the official Giraffe Squad Fantasy Football Newsletter.
-                                Complete with "multiple weeks" feature that allows everyone
-                                to follow the action throughout the whole year!
+                                After a labor-intensive Labor Day Weekend, Mason{' '}
+                                and Will debuted the official Giraffe Squad Fantasy{' '}
+                                Football Newsletter. It even included support for multiple weeks{' '}
+                                allowing everyone to follow the action all season in one place.{' '}
                                 If you're reading this, you're on it!
                             </Text>
                             <Text size="xs" mt={4}>September 11, 2024 | 31 AD</Text>
                         </MantineTimeline.Item>
                         <MantineTimeline.Item
                           className={classes.timelineBullet}
-                          bullet={<IconQuestionMark size={iconSize} />}
-                          title="Who will be the 2024 Champion?"
+                          bullet={<IconTrophy size={iconSize} />}
+                          title="2024 Champion: TBD"
                         >
                             <Text c="dimmed" size="sm">
                                 Stay tuned to find out!
                             </Text>
-                            <Text size="xs" mt={4}>TBD | 31 AD</Text>
+                            <Text size="xs" mt={4}>January 2025 | 31 AD</Text>
                         </MantineTimeline.Item>
                     </MantineTimeline>
                     <div className={classes.timelineBackToTop}>
