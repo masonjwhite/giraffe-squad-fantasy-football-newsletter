@@ -4,7 +4,7 @@
     padding: 1rem 0;
 
     @media (max-width: $mantine-breakpoint-md) {
-        padding: 0 2rem;
+        padding: 1rem 2rem;
     }
 }
 

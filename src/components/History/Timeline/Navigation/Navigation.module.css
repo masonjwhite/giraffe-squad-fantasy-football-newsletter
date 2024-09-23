@@ -18,7 +18,8 @@
     }
 
     @media (max-width: $mantine-breakpoint-sm) {
-        width: 95%;
+        width: 100%;
+        padding: 1rem 1rem;
     }
 }
 
