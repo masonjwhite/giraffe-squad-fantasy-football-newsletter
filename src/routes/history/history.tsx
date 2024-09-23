@@ -7,8 +7,8 @@ export default function History() {
   useScrollToTop();
 
   return (
-    <div id="start" className={globalClasses.contentContainer}>
-        <Title className={globalClasses.pageHeaderCenter}>League History</Title>
+    <div className={globalClasses.contentContainer}>
+        <Title id="page-title" className={globalClasses.pageHeaderCenter}>League History</Title>
         <Timeline />
     </div>
   );

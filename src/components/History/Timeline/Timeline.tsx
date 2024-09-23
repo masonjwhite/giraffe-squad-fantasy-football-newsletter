@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Timeline as MantineTimeline, Text, Grid, Avatar } from '@mantine/core';
+import { Timeline as MantineTimeline, Text, Grid, Avatar, Anchor } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconNews, IconTrophy, IconMedal, IconQuestionMark } from '@tabler/icons-react';
 import Navigation from './Navigation/Navigation';
@@ -16,6 +16,10 @@ export default function Timeline() {
     const bulletSize = isMedium ? 72 : 96;
     const avatarSize = isMedium ? 72 : 96;
     const iconSize = isMedium ? 40 : 56;
+
+    const handleBackToTop = () => {
+      document.getElementById('page-title')?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
         <>
@@ -371,6 +375,11 @@ export default function Timeline() {
                             <Text size="xs" mt={4}>TBD | 31 AD</Text>
                         </MantineTimeline.Item>
                     </MantineTimeline>
+                    <div className={classes.timelineBackToTop}>
+                      <Anchor onClick={handleBackToTop} className={classes.timelineBackToTopLink}>
+                        Back to top
+                      </Anchor>
+                    </div>
                 </Grid.Col>
             </Grid>
         </>

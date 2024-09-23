@@ -10,9 +10,9 @@ export default function Navigation() {
         <div className={classes.navigationContainer}>
             <Anchor
               className={classes.navigationLink}
-              onClick={() => handleLinkClick('start')}
+              onClick={() => handleLinkClick('page-title')}
             >
-                Beginning
+                1993
             </Anchor>
             <Anchor
               className={classes.navigationLink}
