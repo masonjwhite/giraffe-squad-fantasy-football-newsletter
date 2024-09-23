@@ -1,0 +1,31 @@
+
+.navigationContainer {
+    position: sticky;
+    top: 0;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #25262b;
+    color: var(--mantine-color-text) !important;
+    padding: 1rem 2rem;
+    z-index: 9999;
+    opacity: 0.95;
+    border-radius: 4px;
+    width: 60%;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        width: 80%;
+    }
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        width: 95%;
+    }
+}
+
+.navigationLink {
+    color: #c1c2c5 !important;
+}
+
+.navigationLink:hover {
+    color: rgb(255, 156, 90) !important;
+}

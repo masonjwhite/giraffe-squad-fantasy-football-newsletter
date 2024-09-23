@@ -1,5 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/espn');
 
+.bannerLink {
+    text-decoration: none !important;
+}
+
 .banner {
     width: 100%;
     margin-top: 0 !important;
@@ -7,7 +11,7 @@
     background-color: #fbd089;
     padding: 0 1rem;
 
-    display: flex;
+    display: flex; 
 }
 
 .espnFont {
