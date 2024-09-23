@@ -1,0 +1,30 @@
+
+.timelineGrid {
+    margin-top: 2rem;
+    padding: 1rem 0;
+
+    @media (max-width: $mantine-breakpoint-md) {
+        padding: 1rem 2rem;
+    }
+}
+
+.timelineGridColumn {
+    margin-bottom: 5rem;
+}
+
+.timelineBullet {
+    padding-bottom: 3rem;
+    scroll-margin-top: 90px;
+}
+
+.timelineBackToTop {
+    margin-top: 4rem;
+    text-align: center;
+}
+.timelineBackToTopLink {
+    color: #c1c2c5 !important;
+}
+
+.timelineBackToTopLink:hover {
+    color: rgb(255, 156, 90) !important;
+}

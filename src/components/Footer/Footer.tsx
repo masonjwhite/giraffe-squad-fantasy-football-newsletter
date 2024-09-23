@@ -18,7 +18,9 @@ export default function Footer() {
         </div>
         <div className={classes.footerList}>
           <Text fw={700}>League</Text>
-          <Text className={classes.link}>History - Coming soon!</Text>
+          <Link to="/history">
+            <Text className={classes.link}>History</Text>
+          </Link>
           <Text className={classes.link}>Administration - Coming soon!</Text>
           <Text className={classes.link}>Careers - Coming soon!</Text>
         </div>
