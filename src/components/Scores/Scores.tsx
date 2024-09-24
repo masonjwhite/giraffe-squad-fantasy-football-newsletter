@@ -20,7 +20,7 @@ function Score({ homeTeam, homeTeamScore, awayTeam, awayTeamScore }: ScoreProps)
     <Card withBorder className={classes.scoreTile}>
       <div className={classes.scoreTileTeam}>
         <div>{awayTeam?.coach}</div>
-        <Avatar src={awayTeam?.logo} radius="xl" size="s" className={classes.pic} />
+        <Avatar src={awayTeam?.logo} radius="xl" size="2rem" className={classes.pic} />
       </div>
       <div className={classes.scoreTileScore}>
         <span className={awayTeamClassname}>{awayTeamScore.toFixed(2)}</span>
@@ -29,7 +29,7 @@ function Score({ homeTeam, homeTeamScore, awayTeam, awayTeamScore }: ScoreProps)
       </div>
       <div className={classes.scoreTileTeam}>
         <div>{homeTeam?.coach}</div>
-        <Avatar src={homeTeam?.logo} radius="xl" size="s" className={classes.pic} />
+        <Avatar src={homeTeam?.logo} radius="xl" size="2rem" className={classes.pic} />
       </div>
     </Card>
   );
