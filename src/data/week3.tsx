@@ -291,7 +291,7 @@ export const article: MainArticle = {
         ends.
       </Paragraph>
       <Image src="https://media.giphy.com/media/tT11BeHhm9RLi/giphy.gif?cid=790b7611ac0fg79c8dj69cecw6c7aywbe4heq707ryfip7f7&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
-      <Paragraph>I caught up with some of the Coaches navigating this tricky landscape.</Paragraph>
+      <Paragraph>I caught up with some of the Coaches navigating this tricky post-apocalyptic landscape.</Paragraph>
       <Paragraph>
         First up is Coach Mason of <TeamName teamName="Joey B & The Q-Tips" />, who is dealing with
         a ghost. Specifically, the ghost of Mark Andrews.
@@ -311,7 +311,7 @@ export const article: MainArticle = {
         interviewerQuote="How are you dealing with Mark Andrews' lackluster season so far?"
         intervieweeImage={teams[6].logo}
         intervieweeName="Coach Mason, Joey B & The Q-Tips"
-        intervieweeQuote="It's been really frustrating. The man is a ghost. He's let me down more than I let down my parents when I went through that long hair phase. Our kicker, Jake Moody, has almost 30 points more than he does. We're calling in The Ghost Busters (not the crappy reboot ones, the real ones from 1984) this week for an intervention."
+        intervieweeQuote="It's been really frustrating. The man is a ghost. He's let me down more than I let down my parents when I went through that long hair phase. We're calling in The Ghost Busters (not the crappy reboot ones, the real ones from 1984) this week for an intervention."
       />
       <Paragraph>
         Folks, we almost had a blockbuster trade early this season. I heard through the rumor mill
@@ -322,30 +322,34 @@ export const article: MainArticle = {
       <Interview
         interviewerImage={commissionerImg}
         interviewerName="Mason White, Commissioner"
-        interviewerQuote="TBD"
+        interviewerQuote="A little birdie told me you were attempting to acquire star tight end Travis Kelce at the beginning of the season. Given his subpar performance so far, do you feel like you dodged a bullet?"
         intervieweeImage={teams[10].logo}
         intervieweeName="Coach Jackie, Pattibot"
-        intervieweeQuote="TBD"
+        intervieweeQuote="That is true, as a swiftie I figured I'd be watching Chiefs games and it would make sense to acquire Kelce, but I don't know what's going on with him and Mahomes, definitely something off. I'm not losing faith yet though, Jaime may see a trade request for him yet!"
       />
       <Paragraph>
-        Next up, we head down to the farm with Coach Adam of <TeamName teamName="Henry's Hustle" />.
+        Next up, I headed down to the farm with Coach Adam of <TeamName teamName="Henry's Hustle" />.
         His tight end, Jake Ferguson, recently laid an egg in Week 2.
       </Paragraph>
       <Interview
         interviewerImage={commissionerImg}
         interviewerName="Mason White, Commissioner"
-        interviewerQuote="TBD"
+        interviewerQuote="You've been experiencing lackluster performance from your tight end, Jake Ferguson lately. To what degree is he responsible for your current last place position?"
         intervieweeImage={teams[11].logo}
         intervieweeName="Coach Adam, Henry's Hustle"
-        intervieweeQuote="TBD"
+        intervieweeQuote="Tight end Jake Ferguson started weak, then was injured, but thankfully came back strong this week with 15.5 points - the second highest haul on the squad. Makes me question why on Earth I traded Jonathan Taylor to Will for Isaiah Likely. Must’ve been the champ’s Jedi mind tricks. He is powerful."
+      />
+      <Image 
+        src="https://media.giphy.com/media/P8IYQr9xZFjPO/giphy.gif?cid=ecf05e476a8s93p35k3r94mvv2b71izxt5q0205gtsvqca84&ep=v1_gifs_search&rid=giphy.gif&ct=g" 
+        caption={`"This is not the RB you're looking for" - Coach Will, probably`}
       />
       <Paragraph>
         So there you have it folks. Is the tight end position no longer relevant? Should I spend
         more energy drafting my kicker than my tight end? Are fantasy leagues going to add
         fullbacks? Is it weird that I don't eat my cereal with milk?
       </Paragraph>
-      <Paragraph>🤷🏼‍♂️</Paragraph>
-      <Paragraph>For all those out there in the Was(TE)land, stay safe!</Paragraph>
+      <Paragraph>🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️</Paragraph>
+      <Paragraph>And for all those out there in the Was(TE)land, stay safe!</Paragraph>
     </>
   ),
 };
