@@ -8,8 +8,10 @@ export default function History() {
 
   return (
     <div className={globalClasses.contentContainer}>
-        <Title id="page-title" className={globalClasses.pageHeaderCenter}>League History</Title>
-        <Timeline />
+      <Title id="page-title" className={globalClasses.pageHeaderCenter}>
+        League History
+      </Title>
+      <Timeline />
     </div>
   );
 }
