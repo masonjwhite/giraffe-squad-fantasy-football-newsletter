@@ -715,7 +715,7 @@ export const article: MainArticle = {
         interviewerQuote="A little birdie told me you were attempting to acquire star tight end Travis Kelce at the beginning of the season. Given his subpar performance so far, do you feel like you dodged a bullet?"
         intervieweeImage={teams[10].logo}
         intervieweeName="Coach Jackie, Pattibot"
-        intervieweeQuote="That is true, as a swiftie I figured I'd be watching Chiefs games and it would make sense to acquire Kelce, but I don't know what's going on with him and Mahomes, definitely something off. I'm not losing faith yet though, Jaime may see a trade request for him yet!"
+        intervieweeQuote="That is true, as a Swiftie I figured I'd be watching Chiefs games and it would make sense to acquire Kelce, but I don't know what's going on with him and Mahomes, definitely something off. I'm not losing faith yet though, Jaime may see a trade request for him yet!"
       />
       <Paragraph>
         Next up, I headed down to the farm with Coach Adam of <TeamName teamName="Henry's Hustle" />
