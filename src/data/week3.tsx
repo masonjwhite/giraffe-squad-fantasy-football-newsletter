@@ -1,7 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable max-len */
 
-import { Text } from '@mantine/core';
+import {
+  Text,
+  Paper,
+  Title,
+  Grid,
+  GridCol,
+  Progress,
+  Group,
+  RingProgress,
+  Center,
+  Image as MantineImg,
+} from '@mantine/core';
+import { RadarChart } from '@mantine/charts';
+import { IconArrowUpRight, IconArrowDownRight } from '@tabler/icons-react';
 import Paragraph from '../components/News/MainArticle/Paragraph/Paragraph';
 import Image from '../components/News/MainArticle/Image/Image';
 import Interview from '../components/News/MainArticle/Interview/Interview';
@@ -12,6 +25,213 @@ import commissionerImg from '../images/Commissioner.jpg';
 import Week3 from '../images/week3.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
 
+interface powerRankingsMarkupProps {
+  awardTitle: string;
+  awardDescription: string;
+  qbRank: number;
+  rbRank: number;
+  wrRank: number;
+  teRank: number;
+  flexRank: number;
+  dstRank: number;
+  kRank: number;
+  playoffPercent: number;
+  championPercent: number;
+}
+
+const PowerRankingsMarkup = (props: powerRankingsMarkupProps) => {
+  const {
+    awardTitle,
+    awardDescription,
+    qbRank,
+    rbRank,
+    wrRank,
+    teRank,
+    flexRank,
+    dstRank,
+    kRank,
+    playoffPercent,
+    championPercent,
+  } = props;
+  const getRank = (rank: number) => 12 - rank + 1;
+  const getColor = (rank: number) => (rank < 7 ? '#ff9c5a' : '#fbd089');
+  const data = [
+    {
+      position: 'QB',
+      rank: getRank(qbRank),
+    },
+    {
+      position: 'RB',
+      rank: getRank(rbRank),
+    },
+    {
+      position: 'WR',
+      rank: getRank(wrRank),
+    },
+    {
+      position: 'TE',
+      rank: getRank(teRank),
+    },
+    {
+      position: 'FLEX',
+      rank: getRank(flexRank),
+    },
+    {
+      position: 'DST',
+      rank: getRank(dstRank),
+    },
+    {
+      position: 'K',
+      rank: getRank(kRank),
+    },
+  ];
+
+  return (
+    <>
+      <Paper
+        radius="md"
+        withBorder
+        p="sm"
+        bg="var(--mantine-color-body)"
+        style={{ marginBottom: '1rem' }}
+      >
+        <Title order={3} style={{ textAlign: 'center' }}>
+          {awardTitle}
+        </Title>
+        {awardDescription === 'CONGRATS' ? (
+          <MantineImg radius="md" src="https://i.imgflip.com/94klei.jpg" />
+        ) : (
+          <Text style={{ textAlign: 'center' }}>{awardDescription}</Text>
+        )}
+      </Paper>
+      <Grid>
+        <GridCol span={{ md: 6, sm: 12 }}>
+          <Title order={3} style={{ textAlign: 'center' }}>
+            Position Rankings
+          </Title>
+          <Paper radius="md" withBorder p="sm" bg="var(--mantine-color-body)">
+            <Progress.Root size="2rem" style={{ marginBottom: '.5rem' }}>
+              <Progress.Section value={(getRank(qbRank) / 12) * 100} color={getColor(qbRank)}>
+                <Progress.Label>QB</Progress.Label>
+              </Progress.Section>
+            </Progress.Root>
+            <Progress.Root size="2rem" style={{ marginBottom: '.5rem' }}>
+              <Progress.Section value={(getRank(rbRank) / 12) * 100} color={getColor(rbRank)}>
+                <Progress.Label>RB</Progress.Label>
+              </Progress.Section>
+            </Progress.Root>
+            <Progress.Root size="2rem" style={{ marginBottom: '.5rem' }}>
+              <Progress.Section value={(getRank(wrRank) / 12) * 100} color={getColor(wrRank)}>
+                <Progress.Label>WR</Progress.Label>
+              </Progress.Section>
+            </Progress.Root>
+            <Progress.Root size="2rem" style={{ marginBottom: '.5rem' }}>
+              <Progress.Section value={(getRank(teRank) / 12) * 100} color={getColor(teRank)}>
+                <Progress.Label>TE</Progress.Label>
+              </Progress.Section>
+            </Progress.Root>
+            <Progress.Root size="2rem" style={{ marginBottom: '.5rem' }}>
+              <Progress.Section value={(getRank(flexRank) / 12) * 100} color={getColor(flexRank)}>
+                <Progress.Label>FLEX</Progress.Label>
+              </Progress.Section>
+            </Progress.Root>
+            <Progress.Root size="2rem" style={{ marginBottom: '.5rem' }}>
+              <Progress.Section value={(getRank(dstRank) / 12) * 100} color={getColor(dstRank)}>
+                <Progress.Label>DST</Progress.Label>
+              </Progress.Section>
+            </Progress.Root>
+            <Progress.Root size="2rem" style={{ marginBottom: '.5rem' }}>
+              <Progress.Section value={(getRank(kRank) / 12) * 100} color={getColor(kRank)}>
+                <Progress.Label>K</Progress.Label>
+              </Progress.Section>
+            </Progress.Root>
+          </Paper>
+        </GridCol>
+        <GridCol span={{ md: 6, sm: 12 }}>
+          <Title order={3} style={{ textAlign: 'center' }}>
+            Position Strengths
+          </Title>
+          <Paper radius="md" withBorder p="sm" bg="var(--mantine-color-body)">
+            <RadarChart
+              h={300}
+              data={data}
+              dataKey="position"
+              series={[{ name: 'rank', color: '#fbd089', strokeColor: '#ff9c5a' }]}
+              withPolarGrid
+            />
+          </Paper>
+        </GridCol>
+      </Grid>
+      <Grid>
+        <GridCol span={{ md: 6, sm: 12 }}>
+          <Paper radius="md" withBorder p="sm" bg="var(--mantine-color-body)">
+            <Group>
+              <RingProgress
+                size={80}
+                roundCaps
+                thickness={8}
+                sections={[
+                  { value: playoffPercent * 100, color: playoffPercent > 0.5 ? 'teal' : 'red' },
+                ]}
+                label={
+                  <Center>
+                    {playoffPercent && playoffPercent > 0.5 ? (
+                      <IconArrowUpRight size={20} />
+                    ) : (
+                      <IconArrowDownRight size={20} />
+                    )}
+                  </Center>
+                }
+              />
+
+              <div>
+                <Text c="dimmed" size="xs" tt="uppercase" fw={700}>
+                  Playoff Odds
+                </Text>
+                <Text fw={700} size="xl">
+                  {(playoffPercent * 100).toFixed(0) + '%'}{' '}
+                </Text>
+              </div>
+            </Group>
+          </Paper>
+        </GridCol>
+        <GridCol span={{ md: 6, sm: 12 }}>
+          <Paper radius="md" withBorder p="sm" bg="var(--mantine-color-body)">
+            <Group>
+              <RingProgress
+                size={80}
+                roundCaps
+                thickness={8}
+                sections={[
+                  { value: championPercent * 100, color: championPercent > 0.2 ? 'teal' : 'red' },
+                ]}
+                label={
+                  <Center>
+                    {championPercent && championPercent > 0.2 ? (
+                      <IconArrowUpRight size={20} />
+                    ) : (
+                      <IconArrowDownRight size={20} />
+                    )}
+                  </Center>
+                }
+              />
+
+              <div>
+                <Text c="dimmed" size="xs" tt="uppercase" fw={700}>
+                  Chamption Odds
+                </Text>
+                <Text fw={700} size="xl">
+                  {(championPercent * 100).toFixed(0) + '%'}
+                </Text>
+              </div>
+            </Group>
+          </Paper>
+        </GridCol>
+      </Grid>
+    </>
+  );
+};
+
 export const teams: Team[] = [
   {
     id: '5',
@@ -21,8 +241,22 @@ export const teams: Team[] = [
     record: '3-0',
     pointsFor: 423.58,
     pointsAgainst: 316.22,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 1,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="TOP CHUNGUS 🏆"
+        awardDescription="Super LaMario leads the league in total points through 3 weeks with 423"
+        qbRank={1}
+        rbRank={3}
+        wrRank={3}
+        teRank={9}
+        flexRank={3}
+        dstRank={11}
+        kRank={7}
+        playoffPercent={0.99}
+        championPercent={0.41}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'C',
   },
@@ -34,8 +268,22 @@ export const teams: Team[] = [
     record: '3-0',
     pointsFor: 403.86,
     pointsAgainst: 328.38,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 2,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="BRAGGING RIGHTS💪"
+        awardDescription="Candace Bergen blew out The Wharf Rats by 52.08pts (152.28pts to 100.2pts)"
+        qbRank={9}
+        rbRank={5}
+        wrRank={11}
+        teRank={12}
+        flexRank={9}
+        dstRank={10}
+        kRank={10}
+        playoffPercent={0.55}
+        championPercent={0.3}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'C+',
   },
@@ -47,8 +295,22 @@ export const teams: Team[] = [
     record: '3-0',
     pointsFor: 320.58,
     pointsAgainst: 280.04,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 5,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="CLOSE CALL 🤏"
+        awardDescription="Purdy Good narrowly beat Joey B & The Q-tips by just over a touchdown, despite nearly the entire team falling short of expecations. Brock Purdy and Kyren Williams accounted for nearly half of the team's points and carried the squad to a W."
+        qbRank={11}
+        rbRank={6}
+        wrRank={9}
+        teRank={6}
+        flexRank={7}
+        dstRank={6}
+        kRank={11}
+        playoffPercent={0.7}
+        championPercent={0.07}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'A-',
   },
@@ -60,8 +322,22 @@ export const teams: Team[] = [
     record: '2-1',
     pointsFor: 405.18,
     pointsAgainst: 351.72,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 3,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="HIGH SCORE🏆"
+        awardDescription="The Replacements dominated the league this week with an impressive 180pts. That's the highest score of the season so far 🔥"
+        qbRank={2}
+        rbRank={9}
+        wrRank={6}
+        teRank={4}
+        flexRank={12}
+        dstRank={8}
+        kRank={9}
+        playoffPercent={0.56}
+        championPercent={0.05}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'D-',
   },
@@ -73,8 +349,22 @@ export const teams: Team[] = [
     record: '2-1',
     pointsFor: 335.4,
     pointsAgainst: 330.76,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 6,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="LUCKY BREAK🍀"
+        awardDescription="A touchdown could have made all the difference, as Pukamon beat Pattibot by a razor thin 5.32pts 😓"
+        qbRank={3}
+        rbRank={10}
+        wrRank={1}
+        teRank={3}
+        flexRank={8}
+        dstRank={2}
+        kRank={6}
+        playoffPercent={0.48}
+        championPercent={0.04}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'B-',
   },
@@ -86,8 +376,22 @@ export const teams: Team[] = [
     record: '1-2',
     pointsFor: 371.82,
     pointsAgainst: 367.24,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 4,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="NOT SO LUCKY...😡"
+        awardDescription="Nacua Matata would have beat 8 out of 11 teams this week, but still ended up taking the L"
+        qbRank={8}
+        rbRank={4}
+        wrRank={5}
+        teRank={2}
+        flexRank={11}
+        dstRank={9}
+        kRank={8}
+        playoffPercent={0.64}
+        championPercent={0.09}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'A-',
   },
@@ -99,8 +403,22 @@ export const teams: Team[] = [
     record: '1-2',
     pointsFor: 356.92,
     pointsAgainst: 337.1,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 8,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="KARMA ¯\_(ツ)_/¯"
+        awardDescription="The fantasy gods are fair and just. They have evaluated the Marvin Harrison Jr. heist and promptly smited Mark Andrews ability to play football. Andrews has been a total ghost on offense, he's literally just running around out there doing cardio. Mason is stacked at RB, but could use an extra body at WR to sure up the FLEX spot and account for bye weeks... maybe a deal with Henry's Hustle is in the cards?"
+        qbRank={10}
+        rbRank={1}
+        wrRank={7}
+        teRank={7}
+        flexRank={10}
+        dstRank={12}
+        kRank={5}
+        playoffPercent={0.53}
+        championPercent={0.06}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'D',
   },
@@ -112,8 +430,22 @@ export const teams: Team[] = [
     record: '1-2',
     pointsFor: 333.44,
     pointsAgainst: 352.58000000000004,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 10,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="MADDEN CURSED 🎮"
+        awardDescription="Zac's prized league-winning RB, and the Madden 25 cover athlete, CMC has missed every game this year and has landed on IR. Reports have him visiting a doctor in Germany and getting stem-cell treatment for his achilles tendonitis. His return, and the return of Jordan Love from injury will be crucial for Zac's playoff hopes."
+        qbRank={12}
+        rbRank={8}
+        wrRank={4}
+        teRank={8}
+        flexRank={1}
+        dstRank={4}
+        kRank={2}
+        playoffPercent={0.15}
+        championPercent={0.01}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'B',
   },
@@ -125,8 +457,22 @@ export const teams: Team[] = [
     record: '1-2',
     pointsFor: 324.66,
     pointsAgainst: 426.52,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 9,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="Draft Grade Tax 💰"
+        awardDescription="Wharf Rats has had the toughest strength of schedule so far of any team in the league. Opponents have dropped a cumulative 426 points on Marc's team. Better times ahead?"
+        qbRank={7}
+        rbRank={2}
+        wrRank={12}
+        teRank={11}
+        flexRank={5}
+        dstRank={7}
+        kRank={3}
+        playoffPercent={0.56}
+        championPercent={0.08}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'A+',
   },
@@ -138,8 +484,22 @@ export const teams: Team[] = [
     record: '1-2',
     pointsFor: 315.96,
     pointsAgainst: 403.98,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 11,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="CONGRATULATIONS"
+        awardDescription="CONGRATS"
+        qbRank={5}
+        rbRank={12}
+        wrRank={10}
+        teRank={5}
+        flexRank={6}
+        dstRank={3}
+        kRank={1}
+        playoffPercent={0.06}
+        championPercent={0.01}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'F',
   },
@@ -151,8 +511,22 @@ export const teams: Team[] = [
     record: '0-3',
     pointsFor: 338.8,
     pointsAgainst: 356.36,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 7,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="BOTTOM OF THE PILE😬"
+        awardDescription="It wasn't the finest week for Pattibot, who was left in the dust with a lowly 98pts. Despite all evidence to the contrary though, PattiBot has a very strong team according to Yahoo ADP in the upcoming weeks, and despite being wholly winless, clings onto the 7th spot in our Power Rankings."
+        qbRank={6}
+        rbRank={7}
+        wrRank={2}
+        teRank={1}
+        flexRank={2}
+        dstRank={1}
+        kRank={4}
+        playoffPercent={0.71}
+        championPercent={0.16}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'B-',
   },
@@ -164,8 +538,22 @@ export const teams: Team[] = [
     record: '0-3',
     pointsFor: 300.68,
     pointsAgainst: 379.98,
-    powerRank: 0,
-    powerRankText: '',
+    powerRank: 12,
+    powerRankText: (
+      <PowerRankingsMarkup
+        awardTitle="UH OH STINKY 🦧"
+        awardDescription="Henry's Hustle has the lowest points scored in the league with 300, but they also have been unlucky, with opponents scoring the 3rd most points against the team cumulatively. Adam is #1 in the waiver wire priority, and is in the trade market for a RB. Better times ahead?"
+        qbRank={4}
+        rbRank={11}
+        wrRank={8}
+        teRank={10}
+        flexRank={4}
+        dstRank={5}
+        kRank={12}
+        playoffPercent={0.07}
+        championPercent={0.01}
+      />
+    ),
     helmetImage: GiraffeHelmet,
     draftGrade: 'D+',
   },
@@ -291,7 +679,9 @@ export const article: MainArticle = {
         ends.
       </Paragraph>
       <Image src="https://media.giphy.com/media/tT11BeHhm9RLi/giphy.gif?cid=790b7611ac0fg79c8dj69cecw6c7aywbe4heq707ryfip7f7&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
-      <Paragraph>I caught up with some of the Coaches navigating this tricky post-apocalyptic landscape.</Paragraph>
+      <Paragraph>
+        I caught up with some of the Coaches navigating this tricky post-apocalyptic landscape.
+      </Paragraph>
       <Paragraph>
         First up is Coach Mason of <TeamName teamName="Joey B & The Q-Tips" />, who is dealing with
         a ghost. Specifically, the ghost of Mark Andrews.
@@ -328,8 +718,8 @@ export const article: MainArticle = {
         intervieweeQuote="That is true, as a swiftie I figured I'd be watching Chiefs games and it would make sense to acquire Kelce, but I don't know what's going on with him and Mahomes, definitely something off. I'm not losing faith yet though, Jaime may see a trade request for him yet!"
       />
       <Paragraph>
-        Next up, I headed down to the farm with Coach Adam of <TeamName teamName="Henry's Hustle" />.
-        His tight end, Jake Ferguson, recently laid an egg in Week 2.
+        Next up, I headed down to the farm with Coach Adam of <TeamName teamName="Henry's Hustle" />
+        . His tight end, Jake Ferguson, recently laid an egg in Week 2.
       </Paragraph>
       <Interview
         interviewerImage={commissionerImg}
@@ -339,8 +729,8 @@ export const article: MainArticle = {
         intervieweeName="Coach Adam, Henry's Hustle"
         intervieweeQuote="Tight end Jake Ferguson started weak, then was injured, but thankfully came back strong this week with 15.5 points - the second highest haul on the squad. Makes me question why on Earth I traded Jonathan Taylor to Will for Isaiah Likely. Must’ve been the champ’s Jedi mind tricks. He is powerful."
       />
-      <Image 
-        src="https://media.giphy.com/media/P8IYQr9xZFjPO/giphy.gif?cid=ecf05e476a8s93p35k3r94mvv2b71izxt5q0205gtsvqca84&ep=v1_gifs_search&rid=giphy.gif&ct=g" 
+      <Image
+        src="https://media.giphy.com/media/P8IYQr9xZFjPO/giphy.gif?cid=ecf05e476a8s93p35k3r94mvv2b71izxt5q0205gtsvqca84&ep=v1_gifs_search&rid=giphy.gif&ct=g"
         caption={`"This is not the RB you're looking for" - Coach Will, probably`}
       />
       <Paragraph>
@@ -360,16 +750,17 @@ export const jokeArticles: JokeArticle[] = [
     link: 'https://pbs.twimg.com/media/EW9WyrIUwAAk5Yy.jpg',
   },
   {
-    title: 'TBD Will',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    title: 'Panthers find new position for struggling QB Bryce Young',
+    link: 'https://i.redd.it/sjejyyb9ygqd1.jpeg',
   },
   {
     title: 'Taylor Swift endorses Chick-Fil-A opening on Sundays, change imminent',
     link: 'https://www.youtube.com/shorts/1lFLk5QmDyY',
   },
   {
-    title: 'TBD Will',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    title:
+      'REPORT: Row-level-security to blame for Cowboys tough day on defense team representative says',
+    link: 'https://preview.redd.it/cowboys-fandom-in-one-picture-v0-wwmm4ygktfqd1.jpeg?width=1080&crop=smart&auto=webp&s=f65fe73996751b8fd85e0740c3239be48d1d3b04',
   },
   {
     title:
@@ -377,12 +768,12 @@ export const jokeArticles: JokeArticle[] = [
     link: 'https://www.si.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTY4MTkxMjA2MDAyNjY1Mzcz/carrot-top-scott-thompsonjpg.webp',
   },
   {
-    title: 'TBD Will',
+    title: 'Secrets Revealed: How to score a perfect performance review',
     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
 ];
 
 export const playerOfTheWeek: Player = {
-  name: 'Dak Prescott',
-  points: 31,
+  name: 'Jauan Jennings',
+  points: 46.5,
 };
