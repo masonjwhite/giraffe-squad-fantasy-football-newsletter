@@ -78,7 +78,7 @@ export default function Timeline() {
                             <Text c="dimmed" size="sm">
                                 Our league's first season featured only 8 teams,{' '}
                                 most of which are still in the league today. The OGs included:
-                                Adam, Kara, Mason, Mike, Zac and Zari.
+                                Adam, James, Kara, Mason, Mike, Zac and Zari.
 
                             </Text>
                             <Text size="xs" mt={4}>September 5, 2019 | 26 AD</Text>
