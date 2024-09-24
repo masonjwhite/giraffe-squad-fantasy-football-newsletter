@@ -28,51 +28,51 @@ const StudsAndScrubs = ({
   scrubImg: string;
   scrubPts: number;
 }) => (
-    <Grid>
-      <GridCol span={{ md: 6, sm: 12, xs: 12 }}>
-        <Paper radius="md" withBorder p="sm" bg="var(--mantine-color-body)">
-          <Title order={3} style={{ textAlign: 'center' }}>
-            Stud{' '}
-            <img
-              src="https://emojis.slackmojis.com/emojis/images/1643514721/7264/big-chungus.png?1643514721"
-              style={{ verticalAlign: 'middle', height: '1.375rem' }}
-            />
-          </Title>
-          <Avatar src={studImg} size={120} radius={120} mx="auto" />
-          <Text ta="center" fz="sm" fw={500} mt="sm">
-            {studName}
-          </Text>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <Badge color="#ff9c5a">{studPts} points</Badge>
-          </div>
-          <Text ta="center" c="dimmed" fz="sm">
-            Chungus™️ Stud of the Week
-          </Text>
-        </Paper>
-      </GridCol>
-      <GridCol span={{ md: 6, sm: 12, xs: 12 }}>
-        <Paper radius="md" withBorder p="sm" bg="var(--mantine-color-body)">
-          <Title order={3} style={{ textAlign: 'center' }}>
-            Scrub{' '}
-            <img
-              src="https://i.kym-cdn.com/photos/images/original/001/598/772/918.png"
-              style={{ verticalAlign: 'middle', height: '1.375rem' }}
-            />
-          </Title>
-          <Avatar src={scrubImg} size={120} radius={120} mx="auto" />
-          <Text ta="center" fz="sm" fw={500} mt="sm">
-            {scrubName}
-          </Text>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <Badge color="#ff9c5a">{scrubPts} points</Badge>
-          </div>
-          <Text ta="center" c="dimmed" fz="sm">
-            Uh Oh Stinky™️ Certified Scrub of the Week
-          </Text>
-        </Paper>
-      </GridCol>
-    </Grid>
-  );
+  <Grid>
+    <GridCol span={{ md: 6, sm: 12, xs: 12 }}>
+      <Paper radius="md" withBorder p="sm" bg="var(--mantine-color-body)">
+        <Title order={3} style={{ textAlign: 'center' }}>
+          Stud{' '}
+          <img
+            src="https://emojis.slackmojis.com/emojis/images/1643514721/7264/big-chungus.png?1643514721"
+            style={{ verticalAlign: 'middle', height: '1.375rem' }}
+          />
+        </Title>
+        <Avatar src={studImg} size={120} radius={120} mx="auto" />
+        <Text ta="center" fz="sm" fw={500} mt="sm">
+          {studName}
+        </Text>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Badge color="#ff9c5a">{studPts} points</Badge>
+        </div>
+        <Text ta="center" c="dimmed" fz="sm">
+          Chungus™️ Stud of the Week
+        </Text>
+      </Paper>
+    </GridCol>
+    <GridCol span={{ md: 6, sm: 12, xs: 12 }}>
+      <Paper radius="md" withBorder p="sm" bg="var(--mantine-color-body)">
+        <Title order={3} style={{ textAlign: 'center' }}>
+          Scrub{' '}
+          <img
+            src="https://i.kym-cdn.com/photos/images/original/001/598/772/918.png"
+            style={{ verticalAlign: 'middle', height: '1.375rem' }}
+          />
+        </Title>
+        <Avatar src={scrubImg} size={120} radius={120} mx="auto" />
+        <Text ta="center" fz="sm" fw={500} mt="sm">
+          {scrubName}
+        </Text>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <Badge color="#ff9c5a">{scrubPts} points</Badge>
+        </div>
+        <Text ta="center" c="dimmed" fz="sm">
+          Uh Oh Stinky™️ Certified Scrub of the Week
+        </Text>
+      </Paper>
+    </GridCol>
+  </Grid>
+);
 
 export const teams: Team[] = [
   {
@@ -431,7 +431,6 @@ export const teams: Team[] = [
         <Text style={{ marginBottom: '1rem' }}>
           <b>Henry's Hustle</b> is off to a rough start. In fact, nearly the entire roster
           underperformed this week relative to projections, if I could crown each of them as the{' '}
-
           <b>Uh Oh Stinky™️ Certified Scrub of the Week</b> I would. But alas, without a dedicated
           UX team I can't figure out how to do that in a way that won't take all night so I can only
           choose one. And that honor goes to <b>Colby Parkinson</b> - a man who embodied the spirit

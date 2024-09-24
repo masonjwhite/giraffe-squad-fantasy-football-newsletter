@@ -11,15 +11,15 @@ import sitePreview from '../../../images/SitePreview.png';
 import classes from './Timeline.module.css';
 
 export default function Timeline() {
-    const isMedium = useMediaQuery('(max-width: 62em)');
+  const isMedium = useMediaQuery('(max-width: 62em)');
 
-    const bulletSize = isMedium ? 72 : 96;
-    const avatarSize = isMedium ? 72 : 96;
-    const iconSize = isMedium ? 40 : 56;
+  const bulletSize = isMedium ? 72 : 96;
+  const avatarSize = isMedium ? 72 : 96;
+  const iconSize = isMedium ? 40 : 56;
 
-    const handleBackToTop = () => {
-      document.getElementById('page-title')?.scrollIntoView({ behavior: 'smooth' });
-    };
+  const handleBackToTop = () => {
+    document.getElementById('page-title')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
     return (
         <>
