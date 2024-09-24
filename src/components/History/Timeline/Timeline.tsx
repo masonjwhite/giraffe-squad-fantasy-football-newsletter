@@ -73,7 +73,7 @@ export default function Timeline() {
                                   size={avatarSize}
                                 />
                           )}
-                          title="Innagural season"
+                          title="Inaugural season"
                         >
                             <Text c="dimmed" size="sm">
                                 Our league's first season featured only 8 teams,{' '}
@@ -351,7 +351,7 @@ export default function Timeline() {
                         >
                             <Text c="dimmed" size="sm">
                                 To further amplify the 5th anniversary festivities, Mason also{' '}
-                                announced the inagural Giraffe Squad Fantasy{' '}
+                                announced the Giraffe Squad Fantasy{' '}
                                 Football trophy, which will be awarded for the first time to{' '}
                                 the 2024 Champion!
                             </Text>
