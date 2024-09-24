@@ -218,7 +218,7 @@ const PowerRankingsMarkup = (props: powerRankingsMarkupProps) => {
 
               <div>
                 <Text c="dimmed" size="xs" tt="uppercase" fw={700}>
-                  Chamption Odds
+                  Champion Odds
                 </Text>
                 <Text fw={700} size="xl">
                   {(championPercent * 100).toFixed(0) + '%'}
