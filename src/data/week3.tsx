@@ -189,7 +189,7 @@ const PowerRankingsMarkup = (props: powerRankingsMarkupProps) => {
                   Playoff Odds
                 </Text>
                 <Text fw={700} size="xl">
-                  {(playoffPercent * 100).toFixed(0) + '%'}{' '}
+                  {`${(playoffPercent * 100).toFixed(0)}%`}{' '}
                 </Text>
               </div>
             </Group>
@@ -221,7 +221,7 @@ const PowerRankingsMarkup = (props: powerRankingsMarkupProps) => {
                   Champion Odds
                 </Text>
                 <Text fw={700} size="xl">
-                  {(championPercent * 100).toFixed(0) + '%'}
+                  {`${(championPercent * 100).toFixed(0)}%`}
                 </Text>
               </div>
             </Group>
@@ -638,13 +638,13 @@ export const article: MainArticle = {
   coverImage: Week3,
   title: 'Enter the Was(TE)land',
   summary:
-    'Is the tight end position still relevant? Mason and Adam struggle with ghosts. Jackie TBD',
+    'Is the tight end position still relevant? Mason and Adam struggle with ghosts. Jackie has a "Blank Space" on her roster reserved for Travis Kecle.',
   author: 'Mason White, Commissioner',
   content: (
     <>
       <Paragraph>It's the end of the tight end position as we know it.</Paragraph>
       <Paragraph>
-        Let me know if this rings a bell. You're hyped for another week of fantasy football. You and
+        Let's see if this rings a bell. You're hyped for another week of fantasy football. You and
         your opponent are projected within 10 points of eachother. It's going to be close. You turn
         on NFL Red Zone and obsessively refresh your app with Cheeto-stained fingers. Your team is
         flamin hot, but then you notice something...your tight end has a score of 0. You think "well
@@ -678,7 +678,7 @@ export const article: MainArticle = {
         One more. Kyle Juszczyk, a FULLBACK, has more points than a few of the "high profile" tight
         ends.
       </Paragraph>
-      <Image src="https://media.giphy.com/media/tT11BeHhm9RLi/giphy.gif?cid=790b7611ac0fg79c8dj69cecw6c7aywbe4heq707ryfip7f7&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+      <Image src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTZ6a251cDlzbm1oOW4yMGd2ZTAzMDRtbzNodGQxcmdvOWJoeDJuMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QYencIEnoffFOrPCyX/giphy.gif" />
       <Paragraph>
         I caught up with some of the Coaches navigating this tricky post-apocalyptic landscape.
       </Paragraph>
@@ -730,15 +730,14 @@ export const article: MainArticle = {
         intervieweeQuote="Tight end Jake Ferguson started weak, then was injured, but thankfully came back strong this week with 15.5 points - the second highest haul on the squad. Makes me question why on Earth I traded Jonathan Taylor to Will for Isaiah Likely. Must’ve been the champ’s Jedi mind tricks. He is powerful."
       />
       <Image
-        src="https://media.giphy.com/media/P8IYQr9xZFjPO/giphy.gif?cid=ecf05e476a8s93p35k3r94mvv2b71izxt5q0205gtsvqca84&ep=v1_gifs_search&rid=giphy.gif&ct=g"
-        caption={`"This is not the RB you're looking for" - Coach Will, probably`}
+        src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTc1NmtkeHdlcnRiMWVoNzAyZzFrYXNjdDQyem1xZG1hcXh1ZWxydyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4560Nv2656Gv0Lvp9F/giphy.gif"
       />
       <Paragraph>
-        So there you have it folks. Is the tight end position no longer relevant? Should I spend
-        more energy drafting my kicker than my tight end? Are fantasy leagues going to add
+        So there you have it folks. Is the tight end position no longer relevant? Should you spend
+        more energy drafting your kicker than tight end? Are fantasy leagues going to add
         fullbacks? Is it weird that I don't eat my cereal with milk?
       </Paragraph>
-      <Paragraph>🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️</Paragraph>
+      <Paragraph>🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️</Paragraph>
       <Paragraph>And for all those out there in the Was(TE)land, stay safe!</Paragraph>
     </>
   ),

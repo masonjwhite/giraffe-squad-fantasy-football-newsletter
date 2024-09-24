@@ -73,7 +73,7 @@ export default function Timeline() {
                                   size={avatarSize}
                                 />
                           )}
-                          title="Inaugural season"
+                          title="2019: Inaugural season"
                         >
                             <Text c="dimmed" size="sm">
                                 Our league's first season featured only 8 teams,{' '}
@@ -111,7 +111,7 @@ export default function Timeline() {
                                 With the shadow of COVID cast upon the World, we started our{' '}
                                 second season with two new teams added to the bunch.{' '}
                                 Mason published the first issue of the{' '}
-                                Giraffe Squad Fantasy Newsletter as a simple text-based post{' '}
+                                Giraffe Squad Fantasy Football League newsletter as a simple text-based post{' '}
                                 in an effort to bring some laughs and lightheartedness{' '}
                                 to an otherwise challenging time.
                             </Text>
@@ -157,12 +157,12 @@ export default function Timeline() {
                                   size={avatarSize}
                                 />
                             )}
-                          title="The newsletter gets a facelift"
+                          title="2021: The newsletter gets a facelift"
                         >
                             <Text c="dimmed" size="sm">
                                 Utilizing his penchant for design, Mike{' '}
                                 elevated the newsletter to the stratosphere by creating{' '}
-                                an actual newsletter document in the design tool Figma. This early version laid the{' '}
+                                an actual newsletter document in the design tool, Figma. This early version laid the{' '}
                                 foundation for many of the hallmarks we've come to know and love in{' '}
                                 our modern newsletter. It even had a trade advertisement space!
                             </Text>
@@ -352,7 +352,7 @@ export default function Timeline() {
                             <Text c="dimmed" size="sm">
                                 To further amplify the 5th anniversary festivities, Mason also{' '}
                                 announced the Giraffe Squad Fantasy{' '}
-                                Football trophy, which will be awarded for the first time to{' '}
+                                Football League trophy, which will be awarded for the first time to{' '}
                                 the 2024 Champion!
                             </Text>
                             <Text size="xs" mt={4}>September 4, 2024 | 31 AD</Text>
@@ -370,8 +370,8 @@ export default function Timeline() {
                             <Text c="dimmed" size="sm">
                                 After a labor-intensive Labor Day Weekend, Mason{' '}
                                 and Will debuted the official Giraffe Squad Fantasy{' '}
-                                Football Newsletter. It even included support for multiple weeks{' '}
-                                allowing everyone to follow the action all season in one place.{' '}
+                                Football League newsletter website. It now supported multiple weeks{' '}
+                                so everyone could follow the whole season in one place.{' '}
                                 If you're reading this, you're on it!
                             </Text>
                             <Text size="xs" mt={4}>September 11, 2024 | 31 AD</Text>

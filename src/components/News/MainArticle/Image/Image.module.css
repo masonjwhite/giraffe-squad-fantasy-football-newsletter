@@ -11,5 +11,6 @@
 
     @media (max-width: $mantine-breakpoint-md) {
         height: 200px;
+        width: 100%;
     }
 }
