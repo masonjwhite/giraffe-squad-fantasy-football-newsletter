@@ -18,7 +18,10 @@ export const teams: Team[] = [
     pointsAgainst: 420.06000000000006,
     powerRank: 1,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2JxaXRzcXl5OXk0dWZpYXJlZGFoa2IzaWNobjFvcm82Zno1NjdocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aw9vw51zjTa8g/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2JxaXRzcXl5OXk0dWZpYXJlZGFoa2IzaWNobjFvcm82Zno1NjdocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aw9vw51zjTa8g/giphy.gif"
+        target="_blank"
+      >
         Heavy is the head that wears the crown
       </Anchor>
     ),
@@ -35,7 +38,10 @@ export const teams: Team[] = [
     pointsAgainst: 377.06,
     powerRank: 2,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc21wdW9wanlhOHBkNngwMTE0dGZjNnppdGN0eXoycXJlNzQ0MmljYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WrJ8x0niiblWEoo7hE/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc21wdW9wanlhOHBkNngwMTE0dGZjNnppdGN0eXoycXJlNzQ0MmljYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WrJ8x0niiblWEoo7hE/giphy.gif"
+        target="_blank"
+      >
         Hey Joe, how's it feel to be 4-0?
       </Anchor>
     ),
@@ -52,7 +58,10 @@ export const teams: Team[] = [
     pointsAgainst: 451.9,
     powerRank: 4,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2xld3A0ZWl0cmdibW4xN2IzOWZzc2U5MDkzbng5cmNrcjdoZ2hxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oFyCVxsQn6RBa0r5u/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2xld3A0ZWl0cmdibW4xN2IzOWZzc2U5MDkzbng5cmNrcjdoZ2hxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oFyCVxsQn6RBa0r5u/giphy.gif"
+        target="_blank"
+      >
         One Dak to rule them all
       </Anchor>
     ),
@@ -69,7 +78,10 @@ export const teams: Team[] = [
     pointsAgainst: 427.26,
     powerRank: 3,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDUyMXY4bXV3MHFkOGJkb2JnMDluaG5uenBjbDF0eDF5NjVmYnh0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/slVWEctHZKvWU/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDUyMXY4bXV3MHFkOGJkb2JnMDluaG5uenBjbDF0eDF5NjVmYnh0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/slVWEctHZKvWU/giphy.gif"
+        target="_blank"
+      >
         Cruisin' without Puka
       </Anchor>
     ),
@@ -86,7 +98,10 @@ export const teams: Team[] = [
     pointsAgainst: 465.3,
     powerRank: 6,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTh6cnl0b251OG9keTJpaGt1eDJ0OXB4NWR2YXBua2tucmI1dnJpYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3nFbFBjBDiYg2rK0/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTh6cnl0b251OG9keTJpaGt1eDJ0OXB4NWR2YXBua2tucmI1dnJpYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3nFbFBjBDiYg2rK0/giphy.gif"
+        target="_blank"
+      >
         So long, Rashee Rice 👋🏼
       </Anchor>
     ),
@@ -103,7 +118,10 @@ export const teams: Team[] = [
     pointsAgainst: 448.90000000000003,
     powerRank: 5,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmo3aGhkcWlha2N6c2N1cWxqdGVxbWh1a3Zkem5tcGZsZW9reDQydSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6Zt4B0tZYVO7DTkk/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmo3aGhkcWlha2N6c2N1cWxqdGVxbWh1a3Zkem5tcGZsZW9reDQydSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6Zt4B0tZYVO7DTkk/giphy.gif"
+        target="_blank"
+      >
         Live look at me watching Mark Andrews every week
       </Anchor>
     ),
@@ -120,7 +138,10 @@ export const teams: Team[] = [
     pointsAgainst: 504.1,
     powerRank: 7,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTRnNDh6cHJ3MGIzeDE3azQzZGZ6d2VqYWkybG5qMjM5aGRhem5xcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AE7Qa6j57XuRzeMkgh/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTRnNDh6cHJ3MGIzeDE3azQzZGZ6d2VqYWkybG5qMjM5aGRhem5xcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AE7Qa6j57XuRzeMkgh/giphy.gif"
+        target="_blank"
+      >
         Jaime, how many wins do you have in your first season?
       </Anchor>
     ),
@@ -137,7 +158,10 @@ export const teams: Team[] = [
     pointsAgainst: 490.26,
     powerRank: 9,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHdmNmVyaDg2bjMwamp3M284cnNyOTkzdjhzeHpoOHFrbnRhOGRtOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XzkGfRsUweB9ouLEsE/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHdmNmVyaDg2bjMwamp3M284cnNyOTkzdjhzeHpoOHFrbnRhOGRtOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XzkGfRsUweB9ouLEsE/giphy.gif"
+        target="_blank"
+      >
         "Coch Nick, I don't feel so good" - Anthony Richardson
       </Anchor>
     ),
@@ -154,7 +178,10 @@ export const teams: Team[] = [
     pointsAgainst: 462.00000000000006,
     powerRank: 8,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Rsc3UwNjl4dWU5NmpoZTBtOXA4b2hwa242MmVwdzZqNmU3ZGprbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JejHs0YIAUpcAWQ/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Rsc3UwNjl4dWU5NmpoZTBtOXA4b2hwa242MmVwdzZqNmU3ZGprbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JejHs0YIAUpcAWQ/giphy.gif"
+        target="_blank"
+      >
         Christian McCaffrey in Germany
       </Anchor>
     ),
@@ -171,7 +198,10 @@ export const teams: Team[] = [
     pointsAgainst: 493.92,
     powerRank: 10,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTU1eGViYjU3aWNyZ2J6Mjdlem9rc3hva2I4dTVtdW9zNG1nZGtraCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1VRSg6CslKVZoxWBu/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTU1eGViYjU3aWNyZ2J6Mjdlem9rc3hva2I4dTVtdW9zNG1nZGtraCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1VRSg6CslKVZoxWBu/giphy.gif"
+        target="_blank"
+      >
         Adam's starting RBs this week
       </Anchor>
     ),
@@ -188,7 +218,10 @@ export const teams: Team[] = [
     pointsAgainst: 540.1,
     powerRank: 11,
     powerRankText: (
-      <Anchor href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQxMzBtZTZ0eTBtc2FhY2tkMzZzc25qZDNrenR6Z3U1dWdnaXoyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iH1rdIKYvNhOu5Z8RY/giphy.gif" target="_blank">
+      <Anchor
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQxMzBtZTZ0eTBtc2FhY2tkMzZzc25qZDNrenR6Z3U1dWdnaXoyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iH1rdIKYvNhOu5Z8RY/giphy.gif"
+        target="_blank"
+      >
         Mark adjusting his weekly Yahoo grades
       </Anchor>
     ),
@@ -294,19 +327,17 @@ export const powerRankingsAuthor = 'Mason White, Commissioner';
 export const article: MainArticle = {
   coverImage: Week4,
   title: "Takin' Goff",
-  summary: "Jared Goff reached the stratosphere with an absolutely dominant Week 4 performance. Too bad he was on Pattibot's bench. 📉",
+  summary:
+    "Jared Goff reached the stratosphere with an absolutely dominant Week 4 performance. Too bad he was on Pattibot's bench. 📉",
   author: 'Mason White, Commmissioner',
   content: (
     <>
+      <Paragraph>Hey friends 👋🏼!</Paragraph>
       <Paragraph>
-        Hey friends 👋🏼!
+        Both Will and I have been on vacation this week. As a result, there will be no main article
+        content this week.
       </Paragraph>
-      <Paragraph>
-        Both Will and I have been on vacation this week. As a result, there will be no main article content this week.
-      </Paragraph>
-      <Paragraph>
-        The article will be back in all it's glory next week!
-      </Paragraph>
+      <Paragraph>The article will be back in all it's glory next week!</Paragraph>
     </>
   ),
 };
@@ -321,7 +352,8 @@ export const jokeArticles: JokeArticle[] = [
     link: 'https://preview.redd.it/who-does-bald-trevor-lawrence-look-like-best-answer-gets-a-v0-tkyhhifkvceb1.jpeg?width=2532&format=pjpg&auto=webp&s=e75596c0fc31d60f7e2a938ea1ce5075e955d337',
   },
   {
-    title: 'TV: Anna Delvey replaced with a brick wall on "Dancing with the Stars" -- showrunners claim the wall has vastly superior emotional range',
+    title:
+      'TV: Anna Delvey replaced with a brick wall on "Dancing with the Stars" -- showrunners claim the wall has vastly superior emotional range',
     link: 'https://www.youtube.com/shorts/2S6mA0jOBKU',
   },
   {
