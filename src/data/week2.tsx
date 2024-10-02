@@ -526,6 +526,8 @@ export const matchups: Matchup[] = [
   },
 ];
 
+export const powerRankingsAuthor = 'Will Stone, Deputy Commissioner';
+
 export const article: MainArticle = {
   coverImage: Week2,
   title: 'Oops, he did it again!',

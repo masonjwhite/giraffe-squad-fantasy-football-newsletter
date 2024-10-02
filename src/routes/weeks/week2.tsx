@@ -27,7 +27,11 @@ export default function Week2() {
         </div>
         <News article={data.article} jokeArticles={data.jokeArticles} />
         <PlayerSpotlight player={data.playerOfTheWeek} />
-        <PowerRankings teams={data.teams} lastWeekTeams={lastWeekData.teams} />
+        <PowerRankings
+          author={data.powerRankingsAuthor}
+          teams={data.teams}
+          lastWeekTeams={lastWeekData.teams}
+        />
         <MatchupOfTheWeek awayTeam={data.teams[1]} homeTeam={data.teams[8]} />
         <Standings teams={data.teams} />
 

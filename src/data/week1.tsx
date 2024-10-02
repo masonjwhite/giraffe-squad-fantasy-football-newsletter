@@ -465,6 +465,8 @@ export const matchups: Matchup[] = [
   },
 ];
 
+export const powerRankingsAuthor = 'Will Stone, Deputy Commissioner';
+
 export const article: MainArticle = {
   coverImage: Week1,
   title: 'Making the Grade',

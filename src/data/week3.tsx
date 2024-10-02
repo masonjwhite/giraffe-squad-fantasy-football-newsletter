@@ -634,6 +634,8 @@ export const matchups: Matchup[] = [
   },
 ];
 
+export const powerRankingsAuthor = 'Will Stone, Deputy Commissioner';
+
 export const article: MainArticle = {
   coverImage: Week3,
   title: 'Enter the Was(TE)land',
@@ -729,13 +731,11 @@ export const article: MainArticle = {
         intervieweeName="Coach Adam, Henry's Hustle"
         intervieweeQuote="Tight end Jake Ferguson started weak, then was injured, but thankfully came back strong this week with 15.5 points - the second highest haul on the squad. Makes me question why on Earth I traded Jonathan Taylor to Will for Isaiah Likely. Must’ve been the champ’s Jedi mind tricks. He is powerful."
       />
-      <Image
-        src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTc1NmtkeHdlcnRiMWVoNzAyZzFrYXNjdDQyem1xZG1hcXh1ZWxydyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4560Nv2656Gv0Lvp9F/giphy.gif"
-      />
+      <Image src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTc1NmtkeHdlcnRiMWVoNzAyZzFrYXNjdDQyem1xZG1hcXh1ZWxydyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4560Nv2656Gv0Lvp9F/giphy.gif" />
       <Paragraph>
         So there you have it folks. Is the tight end position no longer relevant? Should you spend
-        more energy drafting your kicker than tight end? Are fantasy leagues going to add
-        fullbacks? Is it weird that I don't eat my cereal with milk?
+        more energy drafting your kicker than tight end? Are fantasy leagues going to add fullbacks?
+        Is it weird that I don't eat my cereal with milk?
       </Paragraph>
       <Paragraph>🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️🤷🏼‍♂️</Paragraph>
       <Paragraph>And for all those out there in the Was(TE)land, stay safe!</Paragraph>
