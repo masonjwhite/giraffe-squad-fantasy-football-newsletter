@@ -19,7 +19,7 @@ export const teams: Team[] = [
     powerRank: 1,
     powerRankText: (
       <Anchor
-        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2JxaXRzcXl5OXk0dWZpYXJlZGFoa2IzaWNobjFvcm82Zno1NjdocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aw9vw51zjTa8g/giphy.gif"
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmo2cnZrNGNteG9zcDB2azdxc3ZjYmlwcTVvNGNvODYzanVwd3Y4NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/okLCopqw6ElCDnIhuS/giphy.gif"
         target="_blank"
       >
         Heavy is the head that wears the crown
@@ -59,10 +59,10 @@ export const teams: Team[] = [
     powerRank: 4,
     powerRankText: (
       <Anchor
-        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2xld3A0ZWl0cmdibW4xN2IzOWZzc2U5MDkzbng5cmNrcjdoZ2hxaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oFyCVxsQn6RBa0r5u/giphy.gif"
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjB6OWcweTZtamdzNm4yejRudjA0bjM4NHpxc3N6amF6cWF6OTlpaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZDst1zdFKc5WTAr991/giphy.gif"
         target="_blank"
       >
-        One Dak to rule them all
+        Hey Zari, catch!
       </Anchor>
     ),
     helmetImage: GiraffeHelmet,
@@ -82,7 +82,7 @@ export const teams: Team[] = [
         href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDUyMXY4bXV3MHFkOGJkb2JnMDluaG5uenBjbDF0eDF5NjVmYnh0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/slVWEctHZKvWU/giphy.gif"
         target="_blank"
       >
-        Cruisin' without Puka
+        Cruisin' sans Puka
       </Anchor>
     ),
     helmetImage: GiraffeHelmet,
@@ -119,7 +119,7 @@ export const teams: Team[] = [
     powerRank: 5,
     powerRankText: (
       <Anchor
-        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmo3aGhkcWlha2N6c2N1cWxqdGVxbWh1a3Zkem5tcGZsZW9reDQydSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6Zt4B0tZYVO7DTkk/giphy.gif"
+        href="https://media1.tenor.com/m/u9xwbztZH4UAAAAd/jump-it.gif"
         target="_blank"
       >
         Live look at me watching Mark Andrews every week
@@ -139,10 +139,10 @@ export const teams: Team[] = [
     powerRank: 7,
     powerRankText: (
       <Anchor
-        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTRnNDh6cHJ3MGIzeDE3azQzZGZ6d2VqYWkybG5qMjM5aGRhem5xcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AE7Qa6j57XuRzeMkgh/giphy.gif"
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExazRybndva3d3dGxnODVrZXJnbmI5d2F3dXJxNjl5aDZ2NXg1NTV6NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5OWLUbuMq4YXEl2ECg/giphy.gif"
         target="_blank"
       >
-        Jaime, how many wins do you have in your first season?
+        Two in a row!!
       </Anchor>
     ),
     helmetImage: GiraffeHelmet,
@@ -179,10 +179,10 @@ export const teams: Team[] = [
     powerRank: 8,
     powerRankText: (
       <Anchor
-        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3Rsc3UwNjl4dWU5NmpoZTBtOXA4b2hwa242MmVwdzZqNmU3ZGprbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JejHs0YIAUpcAWQ/giphy.gif"
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGJjNzV5MzZ5Z3p4NjBvcHQwYW5ibG44aTg0aTExdnF3NDEybGhiZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/PPEmM68bHy2zEZUcs7/giphy.gif"
         target="_blank"
       >
-        Christian McCaffrey in Germany
+        Re: the players on Zac's bench
       </Anchor>
     ),
     helmetImage: GiraffeHelmet,
@@ -199,10 +199,10 @@ export const teams: Team[] = [
     powerRank: 10,
     powerRankText: (
       <Anchor
-        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTU1eGViYjU3aWNyZ2J6Mjdlem9rc3hva2I4dTVtdW9zNG1nZGtraCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1VRSg6CslKVZoxWBu/giphy.gif"
+        href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW15b2QwcnRqaTZpeWh0dzNnb3U1ZDhwa2JwMjI3a2dsMnI1MW5xMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3otPoS81loriI9sO8o/giphy.gif"
         target="_blank"
       >
-        Adam's starting RBs this week
+        Ayyyy!
       </Anchor>
     ),
     helmetImage: GiraffeHelmet,
@@ -337,7 +337,7 @@ export const article: MainArticle = {
         Both Will and I have been on vacation this week. As a result, there will be no main article
         content this week.
       </Paragraph>
-      <Paragraph>The article will be back in all it's glory next week!</Paragraph>
+      <Paragraph>The article will be back in all its glory next week!</Paragraph>
     </>
   ),
 };
@@ -357,11 +357,11 @@ export const jokeArticles: JokeArticle[] = [
     link: 'https://www.youtube.com/shorts/2S6mA0jOBKU',
   },
   {
-    title: 'PHOTO: Young man from Brentwood, NH disappoints parents with long hair phase',
+    title: 'PHOTO: Young man from New Hampshire disappoints his parents with long hair phase',
     link: 'https://ibb.co/R2fGYWZ',
   },
   {
-    title: 'SNL embarks on 50th season, which ironically is how many people still watch the show',
+    title: 'SNL embarks on 50th season, which is ironically how many people still watch the show',
     link: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGdoZm1wNGN0MXBocTFrODhydjNhYjdzZ3Q1aWJvZnU2NGQzOTRoeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AIltIx8QtZRksvcH8l/giphy.gif',
   },
 ];
