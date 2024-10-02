@@ -222,7 +222,7 @@ export const teams: Team[] = [
         href="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQxMzBtZTZ0eTBtc2FhY2tkMzZzc25qZDNrenR6Z3U1dWdnaXoyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iH1rdIKYvNhOu5Z8RY/giphy.gif"
         target="_blank"
       >
-        Mark adjusting his weekly Yahoo grades
+        Marc adjusting his weekly Yahoo grades
       </Anchor>
     ),
     helmetImage: GiraffeHelmet,
