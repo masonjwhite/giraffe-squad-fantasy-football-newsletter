@@ -17,7 +17,7 @@
     "test": "npm run typecheck && npm run prettier && npm run lint && npm run jest && npm run build",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
-    "create-weekly-file": "node api/createdata.js 3 && npm run prettier:write"
+    "create-weekly-file": "node api/createdata.js 5 && npm run prettier:write"
   },
   "dependencies": {
     "@mantine/charts": "^7.12.2",

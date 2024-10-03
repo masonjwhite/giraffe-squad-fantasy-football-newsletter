@@ -36,6 +36,8 @@ const fileStart = "export const teams: Team[] = [\n";
 const endTeamsData = "];\n";
 let matchupsHeader = `\nexport const matchups: Matchup[] = [\n`;
 
+const powerRankingsAuthorPlaceholder = `\nexport const powerRankingsAuthor = 'Will Stone, Deputy Commissioner';\n`;
+
 const articlePlaceholder = `
 export const article: MainArticle = {
   coverImage: Jersey,
@@ -128,7 +130,7 @@ async function getAllFileData() {
     }`;
   });
 
-  return eslint + imports + fileStart + teamData + endTeamsData + matchupsHeader + scoreData.join(',\n') + endTeamsData + articlePlaceholder;
+  return eslint + imports + fileStart + teamData + endTeamsData + matchupsHeader + scoreData.join(',\n') + endTeamsData + powerRankingsAuthorPlaceholder + articlePlaceholder;
   } catch (e) {
     console.log('error:', e);
   }
