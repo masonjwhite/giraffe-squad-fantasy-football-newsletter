@@ -408,11 +408,14 @@ export const article: MainArticle = {
         intervieweeQuote="Honestly, they couldn't get any worse; they were literally at the bottom! Blessing or curse.....neither. I threatened I'd cut each and every single one of my players and now they're performing. On our way to the top!"
       />
       <Paragraph>
-        So there you have it. What do you think? Blessing? Curse? Coincidence? Divine monke mojo?
+        So there you have it! What do you think? Blessing? Curse? Coincidence? A stretch because I couldn't think of an article idea this week?
       </Paragraph>
       <Paragraph>
-        All I know is that with Will on vacation and me in charge of the power rankings, you better believe I'll be putting myself at number 12
-        this week to get a share of this orangutan-tastic divine power! Amen!
+        All I know is that with Will still on vacation and me in charge of the power rankings, you better believe I'll be putting myself at number 12
+        this week to get my share of this orangutan-tastic divine power!
+      </Paragraph>
+      <Paragraph>
+        Amen!
       </Paragraph>
     </>
   ),
