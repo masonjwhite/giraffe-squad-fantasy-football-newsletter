@@ -118,10 +118,7 @@ export const teams: Team[] = [
     pointsAgainst: 448.90000000000003,
     powerRank: 5,
     powerRankText: (
-      <Anchor
-        href="https://media1.tenor.com/m/u9xwbztZH4UAAAAd/jump-it.gif"
-        target="_blank"
-      >
+      <Anchor href="https://media1.tenor.com/m/u9xwbztZH4UAAAAd/jump-it.gif" target="_blank">
         Live look at me watching Mark Andrews every week
       </Anchor>
     ),

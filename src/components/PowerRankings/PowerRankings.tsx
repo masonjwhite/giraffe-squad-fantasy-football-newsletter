@@ -14,6 +14,7 @@ interface AccordionLabelProps {
 }
 
 interface PowerRankingsProps {
+  title?: string;
   author: string;
   teams: Team[];
   lastWeekTeams?: Team[];
@@ -48,7 +49,12 @@ function AccordionLabel({ id, name, logo, coach, powerRank, lastWeekTeams }: Acc
   );
 }
 
-export default function PowerRankings({ author, teams, lastWeekTeams = [] }: PowerRankingsProps) {
+export default function PowerRankings({
+  title = 'Power Rankings',
+  author,
+  teams,
+  lastWeekTeams = [],
+}: PowerRankingsProps) {
   const items = teams
     .sort((a, b) => a.powerRank - b.powerRank)
     .map((team) => (
@@ -66,7 +72,7 @@ export default function PowerRankings({ author, teams, lastWeekTeams = [] }: Pow
 
   return (
     <>
-      <Title className={globalClasses.sectionHeader}>Power Rankings</Title>
+      <Title className={globalClasses.sectionHeader}>{title}</Title>
       <Text className={classes.credit}>By {author}</Text>
       <div className={classes.listContainer}>
         <Accordion chevronPosition="right" variant="contained" className={classes.accordian}>
