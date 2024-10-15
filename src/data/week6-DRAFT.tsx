@@ -3,11 +3,12 @@
 
 import { Text } from '@mantine/core';
 import Paragraph from '../components/News/MainArticle/Paragraph/Paragraph';
+import Image from '../components/News/MainArticle/Image/Image';
 import Interview from '../components/News/MainArticle/Interview/Interview';
 import TeamName from '../components/News/MainArticle/TeamName/TeamName';
 import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
 import commissionerImg from '../images/Commissioner.jpg';
-import Jersey from '../images/Giraffe_Jersey.png';
+import Week6 from '../images/Week6.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
 
 export const teams: Team[] = [
@@ -247,37 +248,130 @@ export const matchups: Matchup[] = [
 export const powerRankingsAuthor = 'Will Stone, Deputy Commissioner';
 
 export const article: MainArticle = {
-  coverImage: Jersey,
-  title: 'TBD',
-  summary: 'Some summary',
-  author: 'Some author',
-  content: <Text>PLACEHOLDER</Text>,
+  coverImage: Week6,
+  title: 'Scrum Master Showdown',
+  summary: 'We recap the highly anticipated matchup between two coaches who literally manage things for a living.',
+  author: 'Mason White, Commissioner',
+  content: (
+    <>
+      <Paragraph>
+        Whether it's Luke Skywalker vs. Darth Vader, Rocky vs. Creed, Harry Potter vs. Voldemort or Me vs. Ikea furniture assembly,
+        nothing beats a good showdown.
+      </Paragraph>
+      <Paragraph>
+        Week 6 featured an epic clash between our two favorite scrum masters, Coach Zari of <TeamName teamName="Candace Bergen" /> and Coach Jaime of <TeamName teamName="Jaiwalking to Victory" />.
+      </Paragraph>
+      <Paragraph>
+        Before we go further though, let's define "Scrum Master" for the non-technical folks out there (hi Erin, Mom, Dad, Bro-in-law, Auntie Sharon, Josh and Courtney!)
+      </Paragraph>
+      <Paragraph>
+        A Scrum Master is someone who has mastered "scrum", which is the ancient art of herding nerdy, disorganized and non-communicative cats.
+      </Paragraph>
+      <Paragraph>
+        Only joking. A Scrum Master is essentially a project manager for a software development team. Kinda the same thing though, right?
+      </Paragraph>
+      <Image
+        src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXZoMm1saXc0anBsamdkMXN4aTQxdTdwenh6dGJhdGRjZXlxMmI5aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6Mb5DA2wbqBBkwTu/giphy.gif"
+        caption="Jaime and Zari everytime software engineers start talking about coding"
+      />
+      <Paragraph>
+        So let's answer the question on everyone's mind. Does managing software projects actually translate to managing a fictious sports team?
+      </Paragraph>
+      <Interview
+        interviewerImage={commissionerImg}
+        interviewerName="Mason White, Commissioner"
+        intervieweeQuote="TBD"
+        intervieweeImage="TBD"
+        intervieweeName="Coach Zari, Candace Bergen"
+        interviewerQuote="TBD"
+      />
+      <Interview
+        interviewerImage={commissionerImg}
+        interviewerName="Mason White, Commissioner"
+        intervieweeQuote="TBD"
+        intervieweeImage="TBD"
+        intervieweeName="Coach Jaime, Jaiwalking to Victory"
+        interviewerQuote="TBD"
+      />
+      <Paragraph>
+        TBD
+      </Paragraph>
+      <Paragraph>
+        But there's another storyline brewing here like an overly-pretentious, overly-expensive craft beer made by some guy named Clyde at one of your 3,000 local micro breweries...
+      </Paragraph>
+      <Paragraph>
+        Coach Zari has been a mainstay in the league since our inaugural season in 2019. Coach Jaime is a rookie embarking on her first fantasy football season ever.
+      </Paragraph>
+      <Paragraph>
+        It's a classic matchup between new blood and the wily veteran.
+      </Paragraph>
+      <Paragraph>
+        Before we get to the results, I got a chance to follow up with both of them about the showdown.
+      </Paragraph>
+      <Interview
+        interviewerImage={commissionerImg}
+        interviewerName="Mason White, Commissioner"
+        intervieweeQuote="TBD"
+        intervieweeImage="TBD"
+        intervieweeName="Coach Zari, Candace Bergen"
+        interviewerQuote="TBD"
+      />
+      <Interview
+        interviewerImage={commissionerImg}
+        interviewerName="Mason White, Commissioner"
+        intervieweeQuote="TBD"
+        intervieweeImage="TBD"
+        intervieweeName="Coach Jaime, Jaiwalking to Victory"
+        interviewerQuote="TBD"
+      />
+      <Paragraph>
+        So who come away with the dubya?
+      </Paragraph>
+      <Image
+        src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2plYmNyb2sxeXA5Z2tpcHd4NnJsbDFieHFzcXVldjk2MWkweG5pcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/v4aN9JGFL62dO/giphy.gif"
+        caption="Get it?! Dubya? Please don't make me explain it further..."
+      />
+      <Paragraph>
+        Well, you can call it beginner's luck, a blessing from "Uh Oh Stinky" himself or new age coaching, but the fact remains that Coach Jaime
+        emphatically claimed a Week 6 victory in a blowout 144.9 - 98.1
+      </Paragraph>
+      <Paragraph>
+        If you've been following along, you know that's 4 wins IN A ROW for <TeamName teamName="Jaiwalking to Victory" />.
+      </Paragraph>
+      <Paragraph>
+        Yes, after receiving an actual "F" draft grade and getting smoked like a brisket in the first two weeks, Coach Jaime is quite literally...jay walking to victory.
+      </Paragraph>
+      <Paragraph>
+        Now go hug your friendly neighborhood Scrum Master! But make sure you ask first because that could be an HR violation.
+      </Paragraph>
+    </>
+  ),
 };
 
 export const jokeArticles: JokeArticle[] = [
   {
-    title: 'TBD',
+    title: 'Will TBD',
     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
-    title: 'TBD',
+    title: "Fortune 100 companies announce new '8 Days a Week' RTO policy using Beatles hit tune",
+    link: 'https://www.youtube.com/watch?v=kle2xHhRHg4',
+  },
+  {
+    title: 'Will TBD',
     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
-    title: 'TBD',
+    title: 'TV: Netflix claims "Nobody Wants This" was original title of "The Secret Lives of Mormon Wives"',
+    link: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExemJyNGpjNWNrbWlubTVzZmJmMzMyaTF4YnYyd2cxcnpyYWlkNHBwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QeRmsCZNIOtOedq0ot/giphy.gif',
+  },
+  {
+    title: 'Will TBD',
     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
-    title: 'TBD',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-  },
-  {
-    title: 'TBD',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-  },
-  {
-    title: 'TBD',
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    title: 'Several Patriots fans hospitalized with hope-ium overdose following Drake Maye debut',
+    link: 'https://imgflip.com/i/96p4we',
   },
 ];
 
