@@ -17,9 +17,9 @@ export const teams: Team[] = [
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/46632e5f7e5ea783ff5b6916aa67cc3a1e4db1b62a34c31e88869e31fb5266a6.jpg',
     name: 'Super LaMario',
     coach: 'Will',
-    record: '5-0',
-    pointsFor: 669.32,
-    pointsAgainst: 535.5600000000001,
+    record: '6-0',
+    pointsFor: 777.24,
+    pointsAgainst: 635.5200000000001,
     powerRank: 0,
     powerRankText: '',
     helmetImage: GiraffeHelmet,
@@ -30,61 +30,48 @@ export const teams: Team[] = [
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/e7180887533d328d002f500a6008232752eeb20ad3418d992f7f529e286eca6b.jpg',
     name: 'Candace Bergen',
     coach: 'Zari',
-    record: '4-1',
-    pointsFor: 605.48,
-    pointsAgainst: 537.5,
+    record: '4-2',
+    pointsFor: 703.6,
+    pointsAgainst: 682.4,
     powerRank: 0,
     powerRankText: '',
     helmetImage: GiraffeHelmet,
     draftGrade: 'C+',
   },
   {
-    id: '9',
-    logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_3_j.png',
-    name: 'Purdy Good',
-    coach: 'Joe',
-    record: '4-1',
-    pointsFor: 550.26,
-    pointsAgainst: 504.08,
-    powerRank: 0,
-    powerRankText: '',
-    helmetImage: GiraffeHelmet,
-    draftGrade: 'A-',
-  },
-  {
     id: '11',
     logo: 'https://s.yimg.com/ep/cx/blendr/v2/image-football-trophy-png_1721174536245.png',
     name: 'Jaiwalking to Victory',
     coach: 'Jaime',
-    record: '3-2',
-    pointsFor: 548.9,
-    pointsAgainst: 606.54,
+    record: '4-2',
+    pointsFor: 693.8,
+    pointsAgainst: 704.66,
     powerRank: 0,
     powerRankText: '',
     helmetImage: GiraffeHelmet,
     draftGrade: 'F',
   },
   {
-    id: '2',
-    logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_1_k.png',
-    name: 'Pukamon',
-    coach: 'Kara',
-    record: '3-2',
-    pointsFor: 534.58,
-    pointsAgainst: 525.04,
+    id: '9',
+    logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_3_j.png',
+    name: 'Purdy Good',
+    coach: 'Joe',
+    record: '4-2',
+    pointsFor: 672.86,
+    pointsAgainst: 627.96,
     powerRank: 0,
     powerRankText: '',
     helmetImage: GiraffeHelmet,
-    draftGrade: 'B-',
+    draftGrade: 'A-',
   },
   {
     id: '3',
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/7de364b656ae287ccf84bb8e4f90fe3cf3c4befe3ef6dbde6c7ebfe0b2e82767.jpg',
     name: 'The Replacements',
     coach: 'Scott',
-    record: '2-3',
-    pointsFor: 636.42,
-    pointsAgainst: 586.76,
+    record: '3-3',
+    pointsFor: 770.72,
+    pointsAgainst: 720.02,
     powerRank: 0,
     powerRankText: '',
     helmetImage: GiraffeHelmet,
@@ -95,9 +82,9 @@ export const teams: Team[] = [
     logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_4_h.png',
     name: "Henry's Hustle",
     coach: 'Adam',
-    record: '2-3',
-    pointsFor: 589.26,
-    pointsAgainst: 598.72,
+    record: '3-3',
+    pointsFor: 726.42,
+    pointsAgainst: 723.34,
     powerRank: 0,
     powerRankText: '',
     helmetImage: GiraffeHelmet,
@@ -108,65 +95,78 @@ export const teams: Team[] = [
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/64203cd3285f9f3871a185bb8c326d4dd9b6d25bea1d1118293a6043b40fd93e.png',
     name: 'Joey B & The Q-tips',
     coach: 'Mason',
-    record: '2-3',
-    pointsFor: 575.3,
-    pointsAgainst: 614.46,
+    record: '3-3',
+    pointsFor: 683.42,
+    pointsAgainst: 708.0600000000001,
     powerRank: 0,
     powerRankText: '',
     helmetImage: GiraffeHelmet,
     draftGrade: 'D',
   },
   {
-    id: '4',
-    logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/4fecee0eff529cd27243f5a74b1730153aafee3a3a1adf65e4e090c617d2ddaf.jpg',
-    name: 'Highly Questionable',
-    coach: 'Zac',
-    record: '2-3',
-    pointsFor: 551.92,
-    pointsAgainst: 581.44,
-    powerRank: 0,
-    powerRankText: '',
-    helmetImage: GiraffeHelmet,
-    draftGrade: 'B',
-  },
-  {
-    id: '10',
-    logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_10_n.png',
-    name: 'Nacua Matata',
-    coach: 'Nick',
-    record: '1-4',
-    pointsFor: 601.26,
-    pointsAgainst: 612.48,
-    powerRank: 0,
-    powerRankText: '',
-    helmetImage: GiraffeHelmet,
-    draftGrade: 'A-',
-  },
-  {
-    id: '8',
-    logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_11_j.png',
-    name: 'Pattibot',
-    coach: 'Jackie',
-    record: '1-4',
-    pointsFor: 565.94,
-    pointsAgainst: 578.72,
+    id: '2',
+    logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_1_k.png',
+    name: 'Pukamon',
+    coach: 'Kara',
+    record: '3-3',
+    pointsFor: 634.54,
+    pointsAgainst: 632.9599999999999,
     powerRank: 0,
     powerRankText: '',
     helmetImage: GiraffeHelmet,
     draftGrade: 'B-',
   },
   {
+    id: '4',
+    logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/4fecee0eff529cd27243f5a74b1730153aafee3a3a1adf65e4e090c617d2ddaf.jpg',
+    name: 'Highly Questionable',
+    coach: 'Zac',
+    record: '2-4',
+    pointsFor: 676.54,
+    pointsAgainst: 718.6,
+    powerRank: 0,
+    powerRankText: '',
+    helmetImage: GiraffeHelmet,
+    draftGrade: 'B',
+  },
+  {
     id: '12',
     logo: 'https://yahoofantasysports-res.cloudinary.com/image/upload/t_s192sq/fantasy-logos/1b498f79c6072a597eaf052dd6d2b1af353ba76db4a0b5e3721790e4b2a9fc5f.jpg',
     name: 'The Wharf Rats',
     coach: 'Marc',
-    record: '1-4',
-    pointsFor: 523.6,
-    pointsAgainst: 670.94,
+    record: '2-4',
+    pointsFor: 647.48,
+    pointsAgainst: 793.5400000000001,
     powerRank: 0,
     powerRankText: '',
     helmetImage: GiraffeHelmet,
     draftGrade: 'A+',
+  },
+  {
+    id: '8',
+    logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_11_j.png',
+    name: 'Pattibot',
+    coach: 'Jackie',
+    record: '1-5',
+    pointsFor: 699.2,
+    pointsAgainst: 713.02,
+    powerRank: 0,
+    powerRankText: '',
+    helmetImage: GiraffeHelmet,
+    draftGrade: 'B-',
+  },
+  {
+    id: '10',
+    logo: 'https://s.yimg.com/cv/apiv2/default/nfl/nfl_10_n.png',
+    name: 'Nacua Matata',
+    coach: 'Nick',
+    record: '1-5',
+    pointsFor: 694.86,
+    pointsAgainst: 720.6,
+    powerRank: 0,
+    powerRankText: '',
+    helmetImage: GiraffeHelmet,
+    draftGrade: 'A-',
   },
 ];
 
@@ -187,12 +187,12 @@ export const matchups: Matchup[] = [
     homeTeam: {
       name: 'Super LaMario',
       id: '5',
-      score: 102.92,
+      score: 107.92,
     },
     awayTeam: {
       name: 'Pukamon',
       id: '2',
-      score: 99.16,
+      score: 99.96,
     },
   },
   {
@@ -204,14 +204,14 @@ export const matchups: Matchup[] = [
     awayTeam: {
       name: 'The Replacements',
       id: '3',
-      score: 110.46,
+      score: 134.3,
     },
   },
   {
     homeTeam: {
       name: "Henry's Hustle",
       id: '7',
-      score: 117.26,
+      score: 137.16,
     },
     awayTeam: {
       name: 'Highly Questionable',
@@ -235,12 +235,12 @@ export const matchups: Matchup[] = [
     homeTeam: {
       name: 'The Wharf Rats',
       id: '12',
-      score: 111.58,
+      score: 123.88,
     },
     awayTeam: {
       name: 'Purdy Good',
       id: '9',
-      score: 113.9,
+      score: 122.6,
     },
   },
 ];
@@ -280,22 +280,19 @@ export const article: MainArticle = {
       <Interview
         interviewerImage={commissionerImg}
         interviewerName="Mason White, Commissioner"
-        intervieweeQuote="TBD"
-        intervieweeImage="TBD"
+        interviewerQuote="Are there any similarities between being a scrum master and coaching an imaginary football team?"
+        intervieweeImage={teams[1].logo}
         intervieweeName="Coach Zari, Candace Bergen"
-        interviewerQuote="TBD"
+        intervieweeQuote="The only difference is one of them you can drink on the job."
       />
       <Interview
         interviewerImage={commissionerImg}
         interviewerName="Mason White, Commissioner"
-        intervieweeQuote="TBD"
-        intervieweeImage="TBD"
+        interviewerQuote="Are there any similarities between being a scrum master and coaching an imaginary football team?"
+        intervieweeImage={teams[2].logo}
         intervieweeName="Coach Jaime, Jaiwalking to Victory"
-        interviewerQuote="TBD"
+        intervieweeQuote="It's all about motivation, focus and being able to adapt to what's happening in the sprint (work) or on the field; encouragement goes a long way. 'Winners always want the ball when the game's on the line'."
       />
-      <Paragraph>
-        TBD
-      </Paragraph>
       <Paragraph>
         But there's another storyline brewing here like an overly-pretentious, overly-expensive craft beer made by some guy named Clyde at one of your 3,000 local micro breweries...
       </Paragraph>
@@ -311,28 +308,28 @@ export const article: MainArticle = {
       <Interview
         interviewerImage={commissionerImg}
         interviewerName="Mason White, Commissioner"
-        intervieweeQuote="TBD"
-        intervieweeImage="TBD"
-        intervieweeName="Coach Zari, Candace Bergen"
-        interviewerQuote="TBD"
+        interviewerQuote="How do you feel your matchup against Zari went? Were you intimidated by facing a 5-year giraffe fantasy football league veteran?"
+        intervieweeImage={teams[2].logo}
+        intervieweeName="Coach Jaime, Jaiwalking to Victory"
+        intervieweeQuote="Intimidated...not at all; I was more concerned I was going to be beat by a team named after 78 yr old woman; that's just embarrassing!"
       />
       <Interview
         interviewerImage={commissionerImg}
         interviewerName="Mason White, Commissioner"
-        intervieweeQuote="TBD"
-        intervieweeImage="TBD"
-        intervieweeName="Coach Jaime, Jaiwalking to Victory"
-        interviewerQuote="TBD"
+        interviewerQuote="How do you think your matchup against Jaime went?"
+        intervieweeImage={teams[1].logo}
+        intervieweeName="Coach Zari, Candace Bergen"
+        intervieweeQuote="Fantasy Football is all about taking big risks and hoping they play out (and not get injured). Our team is currently held together by scotch tape, Trevor Lawrence's luscious locks, and the ghost of Mac Jones in the Patriots locker room, so we had to shoot for the fences and hope someone had a big game because the bench is a sad mess. They obviously didn't, so next practice everyone including our injured players (looking at you, Pacheco and Mason) will be running extra laps!"
       />
       <Paragraph>
-        So who come away with the dubya?
+        So who came away with the dubya?
       </Paragraph>
       <Image
         src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2plYmNyb2sxeXA5Z2tpcHd4NnJsbDFieHFzcXVldjk2MWkweG5pcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/v4aN9JGFL62dO/giphy.gif"
         caption="Get it?! Dubya? Please don't make me explain it further..."
       />
       <Paragraph>
-        Well, you can call it beginner's luck, a blessing from "Uh Oh Stinky" himself or new age coaching, but the fact remains that Coach Jaime
+        Well, you can call it beginner's luck, a blessing from "Uh Oh Stinky" himself or that encouragement stuff she was talking about, but the fact remains that Coach Jaime
         emphatically claimed a Week 6 victory in a blowout 144.9 - 98.1
       </Paragraph>
       <Paragraph>
@@ -342,7 +339,7 @@ export const article: MainArticle = {
         Yes, after receiving an actual "F" draft grade and getting smoked like a brisket in the first two weeks, Coach Jaime is quite literally...jay walking to victory.
       </Paragraph>
       <Paragraph>
-        Now go hug your friendly neighborhood Scrum Master! But make sure you ask first because that could be an HR violation.
+        Now go hug your friendly neighborhood Scrum Master! But make sure you ask first, because that could be an HR violation.
       </Paragraph>
     </>
   ),
@@ -376,6 +373,6 @@ export const jokeArticles: JokeArticle[] = [
 ];
 
 export const playerOfTheWeek: Player = {
-  name: 'Dak Prescott',
-  points: 31,
+  name: 'Chris Godwin',
+  points: 35.5,
 };
