@@ -363,8 +363,8 @@ export const article: MainArticle = {
       <Paragraph>Not converted yet?</Paragraph>
       <Paragraph>
         <TeamName teamName="Henry's Hustle" /> received a double dose of stinky in Weeks 2 and 3.
-        Since then, he's gone on to win not only his first game, but also exploded for 165 points against
-        yours truly in Week 5.
+        Since then, he's gone on to win not only his first game, but also exploded for 165 points
+        against yours truly in Week 5.
       </Paragraph>
       <Paragraph>Starting to have a religious experience?</Paragraph>
       <Paragraph>
@@ -379,44 +379,54 @@ export const article: MainArticle = {
       <Interview
         interviewerImage={commissionerImg}
         interviewerName="Mason White, Commissioner"
-        interviewerQuote={'Do you believe that after you received the "Uh Oh Stinky" power ranking last week your team suddenly got better? Starting to wonder if it\'s a blessing vs. a curse...'}
+        interviewerQuote={
+          'Do you believe that after you received the "Uh Oh Stinky" power ranking last week your team suddenly got better? Starting to wonder if it\'s a blessing vs. a curse...'
+        }
         intervieweeImage={teams[10].logo}
         intervieweeName="Coach Jackie, Pattibot"
-        intervieweeQuote={'I recall getting the "uh oh stinky" power ranking and thinking, I can\'t go lower than this, so I do think it bolstered me to make some moves and be risky. Hoping this is the start of a turn around!'}
-      />
-      <Paragraph>You gotta risk it for the biscuit, Coach Jackie! Next I caught up with a neutral party, Coach Zari, who hasn't gotten the "Uh Oh Stinky!" blessing yet.</Paragraph>
-      <Interview
-        interviewerImage={commissionerImg}
-        interviewerName="Mason White, Commissioner"
-        interviewerQuote={'Are you believer or a skeptic that the "Uh Oh Stinky" power ranking is giving teams an unfair advantage? All of the teams that have received it seem to instantly get better.'}
-        intervieweeImage={teams[1].logo}
-        intervieweeName="Coach Zari, Candace Bergen"
-        intervieweeQuote="I'm a believer! There is something fishy going on. Seems like the title is motivating the players."
-      />
-      <Image
-        src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWdmcm16dDFwbHgwY250bm45ZWV0ZXkyN2l6bDdqcHBieWNuMnB2MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jl0T1gCUKl1PETWZOq/giphy.gif"
+        intervieweeQuote={
+          'I recall getting the "uh oh stinky" power ranking and thinking, I can\'t go lower than this, so I do think it bolstered me to make some moves and be risky. Hoping this is the start of a turn around!'
+        }
       />
       <Paragraph>
-        Finally, I chatted with the first ever recipient of the "Uh Oh Stinky" ranking, Coach Jaime, who's miraculously won 3 games in a row!
+        You gotta risk it for the biscuit, Coach Jackie! Next I caught up with a neutral party,
+        Coach Zari, who hasn't gotten the "Uh Oh Stinky!" blessing yet.
       </Paragraph>
       <Interview
         interviewerImage={commissionerImg}
         interviewerName="Mason White, Commissioner"
-        interviewerQuote={'You received the "Uh Oh Stinky" power ranking in Week 1. Now you\'ve won 3 games in a row, was it secretly a blessing?'}
+        interviewerQuote={
+          'Are you believer or a skeptic that the "Uh Oh Stinky" power ranking is giving teams an unfair advantage? All of the teams that have received it seem to instantly get better.'
+        }
+        intervieweeImage={teams[1].logo}
+        intervieweeName="Coach Zari, Candace Bergen"
+        intervieweeQuote="I'm a believer! There is something fishy going on. Seems like the title is motivating the players."
+      />
+      <Image src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWdmcm16dDFwbHgwY250bm45ZWV0ZXkyN2l6bDdqcHBieWNuMnB2MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Jl0T1gCUKl1PETWZOq/giphy.gif" />
+      <Paragraph>
+        Finally, I chatted with the first ever recipient of the "Uh Oh Stinky" ranking, Coach Jaime,
+        who's miraculously won 3 games in a row!
+      </Paragraph>
+      <Interview
+        interviewerImage={commissionerImg}
+        interviewerName="Mason White, Commissioner"
+        interviewerQuote={
+          'You received the "Uh Oh Stinky" power ranking in Week 1. Now you\'ve won 3 games in a row, was it secretly a blessing?'
+        }
         intervieweeImage={teams[3].logo}
         intervieweeName="Coach Jaime, Jaiwalking to Victory"
         intervieweeQuote="Honestly, they couldn't get any worse; they were literally at the bottom! Blessing or curse.....neither. I threatened I'd cut each and every single one of my players and now they're performing. On our way to the top!"
       />
       <Paragraph>
-        So there you have it! What do you think? Blessing? Curse? Coincidence? A stretch because I couldn't think of an article idea this week?
+        So there you have it! What do you think? Blessing? Curse? Coincidence? A stretch because I
+        couldn't think of an article idea this week?
       </Paragraph>
       <Paragraph>
-        All I know is that with Will still on vacation and me in charge of the power rankings, you better believe I'll be putting myself at number 12
-        this week to get my share of this orangutan-tastic divine power!
+        All I know is that with Will still on vacation and me in charge of the power rankings, you
+        better believe I'll be putting myself at number 12 this week to get my share of this
+        orangutan-tastic divine power!
       </Paragraph>
-      <Paragraph>
-        Amen!
-      </Paragraph>
+      <Paragraph>Amen!</Paragraph>
     </>
   ),
 };
@@ -431,7 +441,8 @@ export const jokeArticles: JokeArticle[] = [
     link: 'https://packaged-media.redd.it/z4h5hyn8unsd1/pb/m2-res_1080p.mp4?m=DASHPlaylist.mpd&v=1&e=1728363600&s=175cc278e1aad2ff004e0f210bc3b6262db9ad2b',
   },
   {
-    title: "Robert Saleh fired as Jets Head Coach for looking too much like Imhotep from 'The Mummy' movie franchise",
+    title:
+      "Robert Saleh fired as Jets Head Coach for looking too much like Imhotep from 'The Mummy' movie franchise",
     link: 'https://ibb.co/vPmxBgq',
   },
   {
