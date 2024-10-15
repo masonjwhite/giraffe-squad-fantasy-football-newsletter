@@ -8,7 +8,7 @@ import Interview from '../components/News/MainArticle/Interview/Interview';
 import TeamName from '../components/News/MainArticle/TeamName/TeamName';
 import { Team, Matchup, MainArticle, JokeArticle, Player } from '../types';
 import commissionerImg from '../images/Commissioner.jpg';
-import Week6 from '../images/Week6.png';
+import Week6 from '../images/week6.png';
 import GiraffeHelmet from '../images/Giraffe_Helmet.webp';
 
 export const teams: Team[] = [
