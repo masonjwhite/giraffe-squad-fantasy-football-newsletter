@@ -73,9 +73,9 @@ export const teams: Team[] = [
           height="560"
           src="https://www.youtube.com/embed/R6tWdGSA6QU"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </Center>
     ),
@@ -130,9 +130,9 @@ export const teams: Team[] = [
             height="560"
             src="https://www.youtube.com/embed/bBXtrdTxnr4?si=TmcRbQHVYRTf0r9E"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </Center>
       </>
@@ -220,10 +220,9 @@ export const teams: Team[] = [
             height="315"
             src="https://www.youtube.com/embed/FveF-we6lcE?si=tGNtntnqF0lzfb4d"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </Center>
       </>
