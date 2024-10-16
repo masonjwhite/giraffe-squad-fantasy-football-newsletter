@@ -32,7 +32,7 @@ export default function Week6() {
           teams={data.teams}
           lastWeekTeams={lastWeekData.teams}
         />
-        <MatchupOfTheWeek awayTeam={data.teams[1]} homeTeam={data.teams[3]} />
+        <MatchupOfTheWeek awayTeam={data.teams[4]} homeTeam={data.teams[10]} />
         <Standings teams={data.teams} />
 
         <WeekNav selectedWeek={6} />
