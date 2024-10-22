@@ -261,10 +261,10 @@ export const article: MainArticle = {
         Much like the title of the hit Netflix show "Somebody Feed Phil" (which Erin and I highly recommend if you like food, travel and wholesomeness) this week I have a simple statement for you all: Somebody Beat Will.
       </Paragraph>
       <Paragraph>
-        Like a 3-star Michelin chef building the restaraunt empire of their dreams, Will has forged a legacy in the Giraffe Squad Fantasy Football League. He's literally won 75% of the league championships. That's about the same probability as your neighborhood Dunkin Donuts getting your order wrong.
+        Like a 3-star Michelin chef building the restaraunt empire of his dreams, Will has forged a legacy in the Giraffe Squad Fantasy Football League. He's literally won 75% of the league championships. That's about the same probability as your neighborhood Dunkin Donuts getting your order wrong.
       </Paragraph>
       <Paragraph>
-        And if all that wasn't enough, Will is 7-0 this year, sitting comfortably atop the league and on pace to win his 4th title.
+        And if that wasn't enough, Will is 7-0 this year, sitting comfortably atop the league and on pace to win his 4th title (third in a row).
       </Paragraph>
       <Image
         src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmY1ZGJmamMxeW8zMXhhM2pqZTg0eXdpMmg0NXUzZWJoZGNna3MwdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0IyfhIdlVDpjAK0o/giphy.gif"
@@ -304,7 +304,7 @@ export const article: MainArticle = {
         src="https://i.ytimg.com/vi/lMHdDZIiJ0k/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVyhMMA8=&rs=AOn4CLBCwu3AsvQfjR5ChAAK1J1FOL_ukQ"
       />
       <Paragraph>
-        With so many teams defated, he has to have made some enemies over the years right?
+        With so many teams defated, he has to have made some enemies over the years, right?
         So like any good food writer I decided to ask Will's critics and competition what they think of him.
       </Paragraph>
       <Interview
@@ -327,7 +327,7 @@ export const article: MainArticle = {
         TBD
       </Paragraph>
       <Paragraph>
-        So there you have it folks. Will Will's will will himself to his third championship in a row? Or is his empire crash and burn like a vegan restaurant busted for serving meat?
+        So there you have it folks. Will Will's will will himself to his third championship in a row? Or is his empire going to crash and burn like a vegan restaurant busted for serving meat?
         Keep on reading to find out!
       </Paragraph>
       <Paragraph>
@@ -335,7 +335,7 @@ export const article: MainArticle = {
       </Paragraph>
       <Image
         src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnEzcGlhaGE5dnh6ZnFmdXF4NmMxZHc2MG02b3BrbmVsZDZybndoOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iTdnzSR4uVBEvLE8up/giphy.gif"
-        caption="Will on his way to another championship"
+        caption="Will on his way to his third championship in a row"
       />
     </>
   ),
