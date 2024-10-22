@@ -1,1 +1,1 @@
-export const CURRENT_PUBLISHED_WEEK = 6;
+export const CURRENT_PUBLISHED_WEEK = 7;

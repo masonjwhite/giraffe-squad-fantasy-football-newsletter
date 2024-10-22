@@ -9,6 +9,7 @@ import Week3 from './routes/weeks/week3';
 import Week4 from './routes/weeks/week4';
 import Week5 from './routes/weeks/week5';
 import Week6 from './routes/weeks/week6';
+import Week7 from './routes/weeks/week7';
 import History from './routes/history/history';
 import NotFound from './routes/notFound/notFound';
 // import { theme } from './theme';
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: 'weeks/6',
         element: <Week6 />,
+      },
+      {
+        path: 'weeks/7',
+        element: <Week7 />,
       },
       {
         path: 'history',
